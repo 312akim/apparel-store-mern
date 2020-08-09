@@ -1,3 +1,17 @@
 .App {
   text-align: center;
 }
+
+.NavigationBar {
+    background: turquoise;
+}
+
+.MainPage {
+  height: 700px;
+  background: blue;
+}
+
+.footer {
+  margin: 20px;
+  background: pink;
+}
