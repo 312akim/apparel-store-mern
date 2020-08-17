@@ -32,29 +32,31 @@ class TopNav extends Component {
 
     render() {
         return (
-            <div class="NavigationBar">
+            <div className="NavigationBar">
                 <Navbar sticky="top" light expand="md">
-                    <div className="navContainer">
-                        <NavbarBrand href="/">Brand Name</NavbarBrand>
+                        <NavbarBrand href="/">Mad Crowns</NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav className="mr-auto" navbar>
                                 <NavItem>
-                                    <NavLink href="/components/">Components</NavLink>
+                                    <NavLink href="/store/">Store</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                                    <NavLink href="/about/">About Us</NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink href="/contact/">Contact Us</NavLink>
                                 </NavItem>
                                 <UncontrolledDropdown nav inNavbar>
                                     <DropdownToggle nav caret>
-                                        Options
+                                        Our Brands
                                     </DropdownToggle>
                                     <DropdownMenu right>
                                         <DropdownItem>
-                                            Option 1
+                                            Brand 1
                                         </DropdownItem>
                                         <DropdownItem>
-                                            Option 2
+                                            Brand 2
                                         </DropdownItem>
                                         <DropdownItem divider />
                                         <DropdownItem>
@@ -63,9 +65,8 @@ class TopNav extends Component {
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
                             </Nav>
-                            <NavbarText>Simple Text</NavbarText>
+                            <NavbarText>My Cart</NavbarText>
                         </Collapse>
-                    </div>
                 </Navbar>
             </div>
         )
