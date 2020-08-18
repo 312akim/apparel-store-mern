@@ -3,11 +3,10 @@ import ProductItem from '../Products/ProductItemComponent'
 
 
 const MainStorePage = ({products}) => {
-    console.log(products)
     const featuredProducts = products.map((item) => {
         if (item.featured === true) {
             return (
-                    <ProductItem className="itemColumn" item={item}/>
+                    <ProductItem className="itemColumn" item={item} key={item.id}/>
             )
         }
     })

@@ -3,7 +3,6 @@ import { Card, CardImg, CardText, CardBody, CardTitle, Button } from 'reactstrap
 import { Link } from 'react-router-dom'
 
 const ItemDisplay = ({item}) => {
-    console.log(item.name)
     return (
         <Card className="itemCards">
             <Link to={`/store/${item.name}`}>
