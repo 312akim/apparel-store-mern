@@ -17,9 +17,16 @@
 }
 
 .featuredProductContainer {
-  
+  display: inline-block;
+  margin: 0 10% 0 10%;
 }
 
 .itemColumn {
   width: 25%;
+}
+
+.itemCards {
+  width: 20%;
+  margin: 1%;
+  display: inline-block;
 }
