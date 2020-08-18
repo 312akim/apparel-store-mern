@@ -3,6 +3,7 @@ import { Switch, Route, Redirect } from 'react-router-dom'
 import TopNav from './Navigation/TopNavigationComponent'
 import HomePage from './Home/HomeComponent'
 import MainStore from './Store/MainStoreComponent'
+import ProductPage from './Products/ProductItemPageComponent'
 import AboutUs from './About/AboutComponent'
 import ContactUs from './Contact/ContactComponent'
 import Footer from './Footer/FooterComponent'
@@ -26,6 +27,16 @@ class Main extends Component {
             )
         }
 
+        const ItemPage = ({match}) => {
+            const product = this.state.products.filter(
+                (item) => item.name === match.params.item_name
+            )[0]
+
+            return (
+                <ProductPage item={product}/>
+            )
+        }
+
         return (
             <>
                 <TopNav />
@@ -33,6 +44,7 @@ class Main extends Component {
                     <Switch>
                         <Route exact path="/" component={Home}/>
                         <Route exact path="/store" component={MainStorePage} />
+                        <Route path="/store/:item_name" component={ItemPage}/>
                         <Route exact path="/about" component={AboutUs} />
                         <Route exact path="/contact" component={ContactUs} />
                         <Redirect to="/home"/>
