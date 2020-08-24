@@ -30,3 +30,31 @@
   margin: 1%;
   display: inline-block;
 }
+
+.productPageContainer {
+  display: inline-block;
+  background: gray;
+  width: 30vw;
+}
+
+.productPageCartContainer {
+  display: inline-block;
+  width: 30vw;
+  height: 300px;
+  background: pink;
+}
+
+.itemCarousel {
+  width: 100%;
+}
+
+.imagePreview {
+  display: inline;
+  width: 50%;
+  padding: 5%;
+}
+
+.previewContainer {
+  width: 250px;
+}
+

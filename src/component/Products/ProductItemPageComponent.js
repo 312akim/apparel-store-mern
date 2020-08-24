@@ -1,20 +1,27 @@
-import React from 'react';
-import {
-    Button,
-    Carousel,
-    CarouselItem,
-    CarouselControl,
-    CarouselIndicators,
-    CarouselCaption
-  } from 'reactstrap';
+import React, { Component } from 'react';
   
-
-  //Need to add image carousel
 const ProductPage = ({item}) => {
+
+    const imageMap = item.images.map((image) => {
+        return (
+            <img className="imagePreview" src={image.src}></img>
+        )
+    })
+
+    const Cart = () => {
+        return (
+            <div className="">Add to cart button here</div>
+        )
+    }
     
+
     return (
         <div>
-            This is {item.name} Page!
+            <div>
+                <img src={item.images[0].src}></img>
+                <Cart />
+            </div>
+            <div className="previewContainer">{imageMap}</div>
         </div>
     )
 }
