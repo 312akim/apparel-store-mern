@@ -58,3 +58,39 @@
   width: 250px;
 }
 
+/* About us Page */
+.box1 {
+  display: inline-block;
+  height: 400px;
+  width: 35%;
+  margin-left: 15%;
+  background: blue;
+}
+
+.box2 {
+  float: right;
+  display: inline-block;
+  height: 400px;
+  width: 35%;
+  margin-right: 15%;
+  background: red;
+}
+
+.box3 {
+  margin-top: 5%;
+  float: left;
+  display: inline-block;
+  height: 400px;
+  width: 35%;
+  margin-left: 15%;
+  background: green;
+}
+
+.box4 {
+  margin-top: 5%;
+  display: inline-block;
+  height: 400px;
+  width: 35%;
+  margin-right: 15%;
+  background: yellow;
+}
