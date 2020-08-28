@@ -1,21 +1,46 @@
 import React from 'react';
+import styles from 'styled-components';
 
 const AboutPage = () => {
+    const AboutPageContainerDiv = styles.div`
+        margin: 0 20% 0 20%;
+    `; 
+    
+    const RightImageDiv = styles.img`
+        float: right;
+        background: red;
+    `;
+    
+    const LeftImageDiv = styles.img`
+        margin-top: 2%;
+        float: left;
+        background: green;
+`;
+
+    const LeftTextContainerDiv = styles.div`
+        background: blue;
+    `;
+
+    const RightTextContainerDiv = styles.div`
+        margin-top: 2%;
+        background: yellow;
+`;
+
     return (
-        <div>
+        <AboutPageContainerDiv>
             <div>This is the about us page!</div>
-            <div className="box1">
+            <LeftTextContainerDiv className="aboutUsContainers">
                 <div>Who are we?</div>
                 <div>Text for "Who are we?" Here</div>
-            </div>
-            <div className="box2">Image for "Who are we?"" here</div>
-            <div className="box3">Image for "Our Story here"</div>
-            <div className="box4">
+            </LeftTextContainerDiv>
+            <RightImageDiv className="aboutUsContainers" src=""></RightImageDiv>
+            <LeftImageDiv className="aboutUsContainers" src=""></LeftImageDiv>
+            <RightTextContainerDiv className="aboutUsContainers">
                 <div>Our story</div>
                 <div>Text for "Our story" Here</div>
-            </div>
+            </RightTextContainerDiv>
 
-        </div>
+        </AboutPageContainerDiv>
     )
 }
 
