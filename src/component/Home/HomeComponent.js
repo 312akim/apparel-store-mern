@@ -1,11 +1,12 @@
 import React from 'react';
-import StyledVideo from './HomeComponentStyles'
+import { StyledVideo, LogoImg } from './HomeComponentStyles'
 
 const HomePage = () => {
-    const videoSource = "https://www.w3schools.com/tags/movie.mp4";
+    const videoSource = "https://www.videvo.net/videvo_files/converted/2018_03/preview/180301_03_B_CausewayBay_02.mp422652.webm";
     return (
         <div>
-            <h1>This is the HomePage!! / Landing!!</h1>
+            {/* Video slightly extends out right side. */}
+            <LogoImg src={require('../../shared/images/sample-logo.png')} alt="Mad Crown Logo"></LogoImg>
             <div>
                 <StyledVideo autoPlay loop muted className="homeBackgroundVideo">
                     <source src={videoSource} type="video/mp4" />

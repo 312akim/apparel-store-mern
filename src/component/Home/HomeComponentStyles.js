@@ -1,7 +1,10 @@
 import styles from 'styled-components';
 
-const StyledVideo = styles.video`
-    height: 80vh;
-`;
+export const StyledVideo = styles.video`
+    width: 100vw;
+`
 
-export default StyledVideo;
+export const LogoImg = styles.img`
+    position: absolute;
+    height: 200px;
+`
