@@ -7,5 +7,7 @@ export const StyledVideo = styles.video`
 
 export const LogoImg = styles.img`
     position: absolute;
-    height: 200px;
+    height: 300px;
+    padding: 8px;
+    border: 12px solid black;
 `
