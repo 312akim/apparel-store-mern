@@ -17,7 +17,7 @@ class Main extends Component {
     render () {
         const Home = () => {
             return (
-                <HomePage />
+                <HomePage products={this.state.products}/>
             )
         }
 

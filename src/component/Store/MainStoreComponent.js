@@ -14,7 +14,7 @@ const MainStorePage = ({products}) => {
     const tshirtCategory = products.map((item) => {
         if (item.category.includes("shirt")) {
             return (
-                    <ProductItem item={item}/>
+                    <ProductItem item={item} key={item.id}/>
             )
         }
     })

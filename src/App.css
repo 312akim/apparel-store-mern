@@ -1,9 +1,36 @@
+.itemCards {
+  width: 50%;
+  margin: 1%;
+  display: inline-block;
+}
+
+.imagePreview {
+  display: inline;
+  padding: 5%;
+}
+
+.previewContainer {
+  width: 250px;
+}
+
+@media (min-width: 481px) {
+  .itemCards {
+    display: inline-block;
+    width: 20%;
+  }
+}
+.aboutUsContainers {
+  display: inline-block;
+  height: 400px;
+  width: 50%;
+}
+
 .App {
   text-align: center;
 }
 
 .NavigationBar {
-    background: turquoise;
+  background: turquoise;
 }
 
 .MainPage {
@@ -25,12 +52,6 @@
   width: 25%;
 }
 
-.itemCards {
-  width: 20%;
-  margin: 1%;
-  display: inline-block;
-}
-
 .productPageContainer {
   display: inline-block;
   background: gray;
@@ -48,19 +69,4 @@
   width: 100%;
 }
 
-.imagePreview {
-  display: inline;
-  width: 50%;
-  padding: 5%;
-}
-
-.previewContainer {
-  width: 250px;
-}
-
-/* About us Page */
-.aboutUsContainers {
-  display: inline-block;
-  height: 400px;
-  width: 50%;
-}
+/*# sourceMappingURL=App.css.map */

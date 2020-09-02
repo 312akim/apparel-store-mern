@@ -1,22 +1,47 @@
 // Import all other SCSS files here.
 // @import 'example';
+@import 'components';
 
 .App {
-    text-align: center;
-  }
-  
-  .NavigationBar {
-      background: turquoise;
-  }
-  
-  .MainPage {
-    height: 700px;
-    background: blue;
-  }
-  
-  .footer {
-    margin: 20px;
-    background: pink;
-  }
+  text-align: center;
+}
 
-  
+.NavigationBar {
+    background: turquoise;
+}
+
+.MainPage {
+  height: 700px;
+  background: blue;
+}
+
+.footer {
+  margin: 20px;
+  background: pink;
+}
+
+.featuredProductContainer {
+  display: inline-block;
+  margin: 0 10% 0 10%;
+}
+
+.itemColumn {
+  width: 25%;
+}
+
+.productPageContainer {
+  display: inline-block;
+  background: gray;
+  width: 30vw;
+}
+
+.productPageCartContainer {
+  display: inline-block;
+  width: 30vw;
+  height: 300px;
+  background: pink;
+}
+
+.itemCarousel {
+  width: 100%;
+}
