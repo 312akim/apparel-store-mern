@@ -6,7 +6,7 @@ const ItemDisplay = ({item}) => {
     return (
         <Card className="itemCards">
             <Link to={`/store/${item.name}`}>
-                <CardImg top width="20%" src={item.images[0]} alt={item.name} />
+                <CardImg top width="20%" src={item.images[0].src} alt={item.name} />
             </Link>
             <CardBody>
                 <CardTitle>{item.name}</CardTitle>
