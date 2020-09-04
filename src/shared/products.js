@@ -3,7 +3,7 @@ export const PRODUCTS = [
         id: 0,
         name: "Apple T-Shirt",
         images: [{src: require("./images/1.jpg")}, 
-        {src: "https://images.unsplash.com/photo-1503341733017-1901578f9f1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"}],
+        {src: require("./images/2.jpg")}],
         featured: true,
         price: 45,
         description: "This is the description",
