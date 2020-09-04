@@ -10,7 +10,6 @@ class ProductPage extends Component {
     }
 
     displayChanger = (image) => {
-        console.log("displayChanger working")
         this.setState({
             displayedImage: image
         })
@@ -26,8 +25,9 @@ class ProductPage extends Component {
         const Cart = () => {
             return (
                 <div>
-                    <p>Price Here</p>
+                    <p>${this.props.item.price}</p>
                     <div>Add to cart button here</div>
+                    <i className="fa fa-cart-plus fa-3x" onClick={event => console.log("add to cart")}></i>
                 </div>
             )
         }
