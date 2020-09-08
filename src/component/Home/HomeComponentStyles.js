@@ -1,11 +1,19 @@
 import styles from 'styled-components';
 
 export const StyledVideo = styles.video`
-    position: absolute;
+    position: fixed;
     left: 0;
-    width: 100vw;
-    max-width: 100%;
+    top: 0;
+    height: 100vh;
     z-index: -1;
+
+    @media (min-width: 720px) {
+        position: absolute;
+        left: 0;
+        width: 100vw;
+        max-width: 100%;
+        z-index: -1;
+    }
 `
 
 export const LogoImg = styles.img`

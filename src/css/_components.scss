@@ -1,6 +1,12 @@
+//Home Component
+.homeFeaturedItems {
+    height: 200px;
+}
+
 //Product Item Component
 .itemCards {
-    width: 50%;
+    width: 40%;
+    height: auto;
     margin: 1%;
     display: inline-block;
 }

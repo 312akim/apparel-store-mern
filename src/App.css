@@ -1,5 +1,10 @@
+.homeFeaturedItems {
+  height: 200px;
+}
+
 .itemCards {
-  width: 50%;
+  width: 40%;
+  height: auto;
   margin: 1%;
   display: inline-block;
 }
@@ -37,10 +42,6 @@
 .featuredProductContainer {
   display: inline-block;
   margin: 0 10% 0 10%;
-}
-
-.itemColumn {
-  width: 25%;
 }
 
 .productPageContainer {

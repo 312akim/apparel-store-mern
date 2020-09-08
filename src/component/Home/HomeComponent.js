@@ -4,13 +4,13 @@ import ProductItem from '../Products/ProductItemComponent'
 
 const HomePage = ({products}) => {
     //Limit # of displayed products
-    const limit = 3;
+    const limit = 4;
     let count = 0;
     const featuredProducts = products.map((item) => {
         if ((item.featured === true) && (count < limit)) {
             count++;
             return (
-                    <ProductItem className="itemColumn" item={item} key={item.id}/>
+                    <ProductItem className="homeFeaturedItems" item={item} key={item.id}/>
             )
         }
     })
@@ -27,6 +27,7 @@ const HomePage = ({products}) => {
             
             {/* Maybe limit to 3 or pass props for how many displayed for mobile/other views */}
             <FeaturedContainer>
+                <div>Featured</div>
                 {featuredProducts}
             </FeaturedContainer>
             <div>
