@@ -45,44 +45,4 @@ class ProductPage extends Component {
     }
 }
 
-// const ProductPage = ({item}) => {
-
-//     //Needs to update displayed image on preview image click
-//     let displayedImage = item.images[0].src;
-    
-//     const displayChanger = (image) => {
-//         console.log(image);
-//         console.log("hi")
-//         displayedImage = image;
-//         console.log(displayedImage);
-//     }
-    
-
-//     const imageMap = item.images.map((image) => {
-//         return (
-//             <StyledPreviewImg onClick={event => displayChanger(image.src)} src={image.src}></StyledPreviewImg>
-//         )
-//     })
-
-//     const Cart = () => {
-//         return (
-//             <div>
-//                 <p>Price Here</p>
-//                 <div>Add to cart button here</div>
-//             </div>
-//         )
-//     }
-
-//     return (
-//         <div>
-//             <div>
-//                 <h2>{item.name}</h2>
-//                 <MainProductImg src={displayedImage}></MainProductImg>
-//                 <Cart />
-//             </div>
-//             <PreviewContainerDiv>{imageMap}</PreviewContainerDiv>
-//         </div>
-//     )
-// }
-
 export default ProductPage;

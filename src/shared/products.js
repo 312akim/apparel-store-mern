@@ -1,7 +1,7 @@
 export const PRODUCTS = [
     {
         id: 0,
-        name: "Apple T-Shirt",
+        name: "Apple Shirt",
         images: [{src: require("./images/1.jpg")}, {src: require("./images/2.jpg")}, {src: require("./images/3.jpg")}],
         featured: true,
         price: 45,
