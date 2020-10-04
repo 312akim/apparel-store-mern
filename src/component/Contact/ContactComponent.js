@@ -6,10 +6,7 @@ const ContactPage = () => {
     return (
         <>
             <div>
-                This is the Contact Us page!
-            </div>
-            <div>
-                <h1>Sign Up</h1>
+                <h1>Contact Us!</h1>
                 <Formik
                     initialValues={{
                         firstName: '',
