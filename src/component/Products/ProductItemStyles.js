@@ -9,9 +9,10 @@ export const ItemDisplayCard = styles.div`
 
     @media (min-width: 480px) {
         display: inline-block;
-        width: 12%;
-        height: 24rem;
-        margin: 0 4%;
+        width: 20%;
+        height: 16rem;
+        margin: 0 2%;
+        margin-top: 2%;
         background: red;
     }
 `

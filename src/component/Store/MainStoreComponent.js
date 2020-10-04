@@ -1,4 +1,5 @@
 import React from 'react';
+import { FeaturedContainer } from '../Home/HomeComponentStyles'
 import ProductItem from '../Products/ProductItemComponent'
 
 
@@ -24,9 +25,9 @@ const MainStorePage = ({products}) => {
             <div>This is the Main store Page!!</div>
             <div>
                 <h3>Featured Products</h3>
-                <div className="featuredProductContainer">
+                <FeaturedContainer>
                     {featuredProducts}
-                </div>
+                </FeaturedContainer>
             </div>
             <h3>T Shirts</h3>
             {tshirtCategory}

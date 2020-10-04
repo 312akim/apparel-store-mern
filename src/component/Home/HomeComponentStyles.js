@@ -1,14 +1,13 @@
 import styles from 'styled-components';
 
 export const StyledVideo = styles.video`
-    position: fixed;
+    display: block;
     left: 0;
     top: 0;
-    height: 100vh;
+    width: 100vw;
     z-index: -1;
 
     @media (min-width: 720px) {
-        position: absolute;
         left: 0;
         width: 100vw;
         max-width: 100%;
@@ -17,12 +16,15 @@ export const StyledVideo = styles.video`
 `
 
 export const LogoImg = styles.img`
-    position: block;
+    position: fixed;
     margin-top: 1%;
-    left: 50%;
+    top: 0;
+    margin-left: 50%;
+    margin-right: 50%;
     height: 200px;
     padding: 8px;
     border: 12px solid black;
+    z-index: 1;
 
     @media (max-width: 720px) {
         margin-top: 20%;
@@ -31,5 +33,8 @@ export const LogoImg = styles.img`
 `
 
 export const FeaturedContainer = styles.div`
-    margin-top: 20%;
+    width: 100%;
+    background: lightgray;
+    padding-top: 5%;
+    padding-bottom: 6%;
 `
