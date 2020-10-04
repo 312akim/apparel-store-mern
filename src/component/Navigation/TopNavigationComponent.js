@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { LogoImg } from './TopNavigationSyles'
 import {
   Collapse,
   Navbar,
@@ -34,7 +35,10 @@ class TopNav extends Component {
         return (
             <div className="NavigationBar">
                 <Navbar sticky="top" light expand="md">
-                        <NavbarBrand href="/">Mad Crowns</NavbarBrand>
+                        <div>
+                            <LogoImg src={require('../../shared/images/sample-logo.png')} alt="Mad Crown Logo"></LogoImg>
+                            <NavbarBrand className="navbarBrandTitle" href="/">Mad Crowns</NavbarBrand>
+                        </div>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav className="mr-auto" navbar>

@@ -22,8 +22,6 @@ const HomePage = ({products}) => {
                 <source src={videoSource} type="video/mp4" />
                 Your browser does not support the video tag.
             </StyledVideo>
-
-            <LogoImg src={require('../../shared/images/sample-logo.png')} alt="Mad Crown Logo"></LogoImg>
             
             {/* Maybe limit to 3 or pass props for how many displayed for mobile/other views */}
             <FeaturedContainer>
