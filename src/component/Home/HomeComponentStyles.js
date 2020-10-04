@@ -18,6 +18,6 @@ export const StyledVideo = styles.video`
 export const FeaturedContainer = styles.div`
     width: 100%;
     background: lightgray;
-    padding-top: 5%;
-    padding-bottom: 6%;
+    padding-top: 4%;
+    padding-bottom: 5%;
 `

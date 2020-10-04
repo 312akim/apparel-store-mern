@@ -29,6 +29,11 @@
   background: turquoise;
 }
 
+.formField {
+  display: block;
+  margin: 0 37.5%;
+}
+
 .MainPage {
   height: 700px;
   background: blue;
