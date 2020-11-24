@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import TopNav from './Navigation/TopNavigationComponent'
 import HomePage from './Home/HomeComponent'
+import AdminPanel from './Admin/AdminPanel'
 import MainStore from './Store/MainStoreComponent'
 import ProductPage from './Products/ProductItemPageComponent'
 import AboutUs from './About/AboutComponent'
@@ -18,6 +19,13 @@ class Main extends Component {
         const Home = () => {
             return (
                 <HomePage products={this.state.products}/>
+            )
+        }
+
+        const AdminPanelPage = () => {
+
+            return (
+                <AdminPanel products={this.state.products}/>
             )
         }
 
@@ -43,6 +51,8 @@ class Main extends Component {
                     {/* <Cart /> */}
                     <Switch>
                         <Route exact path="/" component={Home}/>
+                        {/* Need to make Admin only accessible w/ login */}
+                        <Route exact path="/admin" component={AdminPanelPage}/>
                         <Route exact path="/store" component={MainStorePage} />
                         <Route path="/store/:item_name" component={ItemPage}/>
                         <Route exact path="/about" component={AboutUs} />

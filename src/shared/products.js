@@ -7,7 +7,8 @@ export const PRODUCTS = [
         price: 45,
         description: "This is the description",
         category:["shirt"],
-        color: ["red", "white"]
+        color: ["red", "white"],
+        inventory: 1
     },
     {
         id: 1,
@@ -18,7 +19,8 @@ export const PRODUCTS = [
         price: 45,
         description: "This is the description",
         category:["pants"],
-        color: ["red", "white"]
+        color: ["red", "white"],
+        inventory: 1
     },
     {
         id: 2,
@@ -29,7 +31,8 @@ export const PRODUCTS = [
         price: 45,
         description: "This is the description",
         category:["shirt"],
-        color: ["red", "white"]
+        color: ["red", "white"],
+        inventory: 1
     },
     {
         id: 3,
@@ -40,7 +43,8 @@ export const PRODUCTS = [
         price: 45,
         description: "This is the description",
         category:["jacket"],
-        color: ["red", "white"]
+        color: ["red", "white"],
+        inventory: 1
     },
     {
         id: 4,
@@ -50,6 +54,7 @@ export const PRODUCTS = [
         price: 45,
         description: "This is the description",
         category:["shirt"],
-        color: ["red", "white"]
+        color: ["red", "white"],
+        inventory: 1
     },
 ]
