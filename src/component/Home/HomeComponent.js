@@ -15,7 +15,7 @@ const HomePage = ({products}) => {
         }
     })
 
-    const videoSource = "https://www.videvo.net/videvo_files/converted/2018_03/preview/180301_03_B_CausewayBay_02.mp422652.webm";
+    const videoSource = "https://cdn.videvo.net/videvo_files/video/free/2020-03/small_watermarked/200207_London%20Streets_1_4k_072_preview.webm";
     return (
         <div>
             <StyledVideo autoPlay loop muted className="homeBackgroundVideo">

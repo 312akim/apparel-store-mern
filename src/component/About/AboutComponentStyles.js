@@ -63,5 +63,5 @@ export const ContainerTitle = styles.div`
 `;
 
 export const ContainerText = styles.div`
-    margin: 5%;
+    margin: 10%;
 `;
