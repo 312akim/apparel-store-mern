@@ -13,6 +13,7 @@ export const PanelMerch = styles.div`
     width: 35%;
     background: lightgreen;
     vertical-align: middle;
+    overflow: scroll;
 `
 
 export const PanelOrders = styles.div`
