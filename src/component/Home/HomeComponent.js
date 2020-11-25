@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledVideo, LogoImg, FeaturedContainer } from './HomeComponentStyles'
+import { StyledVideo, FeaturedContainer } from './HomeComponentStyles'
 import ProductItem from '../Products/ProductItemComponent'
 
 const HomePage = ({products}) => {

@@ -24,6 +24,9 @@ const AdminPanel = ({products}) => {
                 <h3>
                     EDIT PRODUCTS
                 </h3>
+                <hr/>
+                <div>Click here to add new merchandise</div>
+                <hr/>
                 {productList}
             </PanelMerch>
             <PanelOrders>
