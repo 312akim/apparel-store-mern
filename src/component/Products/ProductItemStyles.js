@@ -5,8 +5,8 @@ export const ItemDisplayCard = styles.div`
     width: 80%;
     height: 113px;
     margin: 5% 10%;
-    border: solid black 10px;
-    border-color: ${COLORS.primaryLight};
+    border: solid black 1px;
+    border-color: ${COLORS.secondaryDark};
     background: grey;
 
     @media (min-width: 480px) {
@@ -15,7 +15,7 @@ export const ItemDisplayCard = styles.div`
         height: 16rem;
         margin: 0 2%;
         margin-top: 2%;
-        background: ${COLORS.secondaryDark};
+        background: ${COLORS.secondaryLight};
     }
 `
 //Need to fix empty pixel

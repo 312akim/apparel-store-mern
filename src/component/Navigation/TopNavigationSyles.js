@@ -2,7 +2,7 @@ import styles from 'styled-components';
 import COLORS from '../../shared/colorScheme';
 
 export const NavigationBar = styles.div`
-    background: ${COLORS.secondaryDark};
+    background: ${COLORS.primaryLight};
 `
 
 export const LogoImg = styles.img`

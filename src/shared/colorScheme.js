@@ -1,8 +1,8 @@
 const COLORS = {
-    primaryDark: "#AEA293",  // off-white gray
-    secondaryDark: "#C4C1BD", // cream
-    primaryLight: "#FDF8F2", // white hue
-    secondaryLight: "#E6D6C1" // light gray
+    primaryDark: "#adaead",  // Dark Gray - Highlight Action
+    secondaryDark: "#e4e4e4", // Borders
+    primaryLight: "#f3f3f3", // Primary Background etc
+    secondaryLight: "#e8e8e8" // Cards / Content background
 }
 
 export default COLORS;

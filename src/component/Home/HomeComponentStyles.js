@@ -18,7 +18,7 @@ export const StyledVideo = styles.video`
 // Replace background image with marble background
 export const FeaturedContainer = styles.div`
     width: 100%;
-    background: ${COLORS.primaryDark};
+    background: ${COLORS.primaryLight};
     padding-top: 4%;
     padding-bottom: 5%;
 `
