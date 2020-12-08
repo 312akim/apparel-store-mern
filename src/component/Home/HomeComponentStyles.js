@@ -1,4 +1,5 @@
 import styles from 'styled-components';
+import COLORS from '../../shared/colorScheme';
 
 export const StyledVideo = styles.video`
     display: block;
@@ -14,10 +15,10 @@ export const StyledVideo = styles.video`
         z-index: -1;
     }
 `
-
+// Replace background image with marble background
 export const FeaturedContainer = styles.div`
     width: 100%;
-    background: lightgray;
+    background: ${COLORS.primaryDark};
     padding-top: 4%;
     padding-bottom: 5%;
 `

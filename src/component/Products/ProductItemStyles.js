@@ -1,10 +1,12 @@
 import styles from 'styled-components';
+import COLORS from '../../shared/colorScheme';
 
 export const ItemDisplayCard = styles.div`
     width: 80%;
     height: 113px;
     margin: 5% 10%;
-    border: solid black 6px;
+    border: solid black 10px;
+    border-color: ${COLORS.primaryLight};
     background: grey;
 
     @media (min-width: 480px) {
@@ -13,7 +15,7 @@ export const ItemDisplayCard = styles.div`
         height: 16rem;
         margin: 0 2%;
         margin-top: 2%;
-        background: red;
+        background: ${COLORS.secondaryDark};
     }
 `
 //Need to fix empty pixel
@@ -40,7 +42,7 @@ export const ItemDisplayBody = styles.div`
 
     @media (min-width: 480px) {
         display: block;
-        background: red;
+        background: white;
         height: 30%;
     }
 `

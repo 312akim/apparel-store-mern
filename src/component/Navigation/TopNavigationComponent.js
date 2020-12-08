@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { LogoImg } from './TopNavigationSyles'
+import { NavigationBar, LogoImg } from './TopNavigationSyles'
 import {
   Collapse,
   Navbar,
@@ -33,7 +33,7 @@ class TopNav extends Component {
 
     render() {
         return (
-            <div className="NavigationBar">
+            <NavigationBar>
                 <Navbar sticky="top" light expand="md">
                         <div>
                             <LogoImg src={require('../../shared/images/sample-logo.png')} alt="Mad Crown Logo"></LogoImg>
@@ -72,7 +72,7 @@ class TopNav extends Component {
                             <NavbarText>My Cart</NavbarText>
                         </Collapse>
                 </Navbar>
-            </div>
+            </NavigationBar>
         )
     }
 }
