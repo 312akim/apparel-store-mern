@@ -30,10 +30,16 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass": "sass --watch src/css:src/"
+    "sass": "sass --watch src/css:src/",
+    "now-start": "node server/index.js",
+    "deploy": "now --public --dotenv=.env.prod -d"
   },
+  "main": "server/",
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "now": {
+    "alias": "apparel-store"
   },
   "browserslist": {
     "production": [

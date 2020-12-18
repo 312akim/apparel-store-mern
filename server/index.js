@@ -21,9 +21,11 @@ mongoose.connect(
         if(err) {
             console.log('Data Base Error---------------', err);
         }
-        console.log('Connect to database');
+        console.log('Connected to database');
     }
 );
+console.log("GOT PAST MONGOOSE -------------");
+
 
 app.use(bodyParser.json());
 app.use(session({
@@ -36,8 +38,12 @@ app.use(session({
 }));
 app.use(cors());
 
+
+
     // Endpoints. Timeout so database connects before endpoints
 setTimeout(() => {
+
+    /* Currently no user controller
 
         // User Endpoints
     // Read user session data
@@ -51,9 +57,11 @@ setTimeout(() => {
     // User Logout
     app.post('/api/logout', userController.logout);
 
+    */
+
         // Products Endpoints
     // Get all products
-    app.get('/api/products', productsController.readdAllProducts);
+    app.get('/api/products', productsController.readAllProducts);
     // Get specific product
     app.get('/api/products/:id', productsController.readProduct);
 
@@ -61,12 +69,12 @@ setTimeout(() => {
     // Get admin users
     app.get('/api/users', adminController.getAdminUsers);
     // Create product
-    app.get('/api/products', adminController.createProduct);
+    app.post('/api/products', adminController.createProduct);
     // Update product
     app.put('/api/products/:id', adminController.updateProduct);
     // Delete product
     app.delete('/api/products/:id', adminController.deleteProduct);
-
+    
 }, 300)
 
 

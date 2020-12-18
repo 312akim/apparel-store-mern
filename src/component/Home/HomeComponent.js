@@ -1,6 +1,7 @@
 import React from 'react';
-import { StyledVideo, FeaturedContainer } from './HomeComponentStyles'
+import { FeaturedContainer, HeroImage } from './HomeComponentStyles'
 import ProductItem from '../Products/ProductItemComponent'
+
 
 const HomePage = ({products}) => {
     //Limit # of displayed products
@@ -10,18 +11,20 @@ const HomePage = ({products}) => {
         if ((item.featured === true) && (count < limit)) {
             count++;
             return (
-                    <ProductItem className="homeFeaturedItems" item={item} key={item.id}/>
-            )
-        }
-    })
-
-    const videoSource = "https://cdn.videvo.net/videvo_files/video/free/2020-03/small_watermarked/200207_London%20Streets_1_4k_072_preview.webm";
+                <ProductItem className="homeFeaturedItems" item={item} key={item.id}/>
+                )
+            }
+        })
+        
+    const heroImage = require('../../shared/images/home-background.jpg');
+    
     return (
         <div>
-            <StyledVideo autoPlay loop muted className="homeBackgroundVideo">
-                <source src={videoSource} type="video/mp4" />
-                Your browser does not support the video tag.
-            </StyledVideo>
+            <div>
+                <HeroImage src={heroImage}/>
+                <div>Brand Logo/Motto within Hero here</div>
+            </div>
+
             
             {/* Maybe limit to 3 or pass props for how many displayed for mobile/other views */}
             <FeaturedContainer>

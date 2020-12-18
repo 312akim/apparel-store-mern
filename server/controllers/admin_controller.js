@@ -1,4 +1,3 @@
-const product = require('../models/product');
 const Product = require('../models/product');
 const User = require('../models/user');
 
@@ -31,11 +30,15 @@ module.exports = {
 
     updateProduct(req, res) {
         const { id } = req.params;
+        const { name, description, price, quantity } = req.body;
 
         Product.findById(id).exec((err, product) => {
             if (err) {
                 console.log('Updated Product-----------------', err);
             }
+            console.log("name is ", req.body);
+            // Product is currently null...
+            console.log("product is ", product);
             // Assigning data to req.body
             product.name = name;
             product.description = description;
@@ -54,8 +57,8 @@ module.exports = {
         Product.deleteOne({_id: id}).exec((err, product) => {
             if (err) {
                 console.log('Delete One Error---------------', err);
-                res.status(200).json({product});
             }
+            res.status(200).json({product});
         })
     }
 };
