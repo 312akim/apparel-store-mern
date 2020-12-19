@@ -1,5 +1,5 @@
 import React from 'react';
-import { FeaturedContainer, HeroImage } from './HomeComponentStyles'
+import { FeaturedContainer, HeroContainer, HeroImage, HeroText } from './HomeComponentStyles'
 import ProductItem from '../Products/ProductItemComponent'
 
 
@@ -16,14 +16,14 @@ const HomePage = ({products}) => {
             }
         })
         
-    const heroImage = require('../../shared/images/home-background.jpg');
+    const heroImage = require('../../../shared/images/home-background.jpg');
     
     return (
         <div>
-            <div>
+            <HeroContainer>
                 <HeroImage src={heroImage}/>
-                <div>Brand Logo/Motto within Hero here</div>
-            </div>
+                <HeroText>Brand Logo/Motto within Hero here</HeroText>
+            </HeroContainer>
 
             
             {/* Maybe limit to 3 or pass props for how many displayed for mobile/other views */}

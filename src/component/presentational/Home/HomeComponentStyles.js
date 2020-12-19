@@ -1,5 +1,9 @@
 import styles from 'styled-components';
-import COLORS from '../../shared/colorScheme';
+import COLORS from '../../../shared/colorScheme';
+
+export const HeroContainer = styles.div`
+    positiion: relative;
+`
 
 export const HeroImage = styles.img`
     display: block;
@@ -10,16 +14,17 @@ export const HeroImage = styles.img`
     filter: brightness(75%);
 
     @media (min-width: 720px) {
-        left: 0;
         width: 100vw;
-        max-width: 100%;
-        z-index: -1;
     }
 `
 
-export const HeroLogo = ``
+export const HeroText = styles.div`
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    color: white;
+`
 
-// Replace background image with marble background
 export const FeaturedContainer = styles.div`
     width: 100%;
     background: ${COLORS.primaryLight};

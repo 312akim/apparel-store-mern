@@ -36,7 +36,7 @@ class TopNav extends Component {
             <NavigationBar>
                 <Navbar sticky="top" light expand="md">
                         <div>
-                            <LogoImg src={require('../../shared/images/sample-logo.png')} alt="Mad Crown Logo"></LogoImg>
+                            <LogoImg src={require('../../../shared/images/sample-logo.png')} alt="Mad Crown Logo"></LogoImg>
                             <NavbarBrand className="navbarBrandTitle" href="/">Mad Crowns</NavbarBrand>
                         </div>
                         <NavbarToggler onClick={this.toggleNav} />

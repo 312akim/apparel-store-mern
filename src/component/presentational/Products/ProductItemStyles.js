@@ -1,5 +1,5 @@
 import styles from 'styled-components';
-import COLORS from '../../shared/colorScheme';
+import COLORS from '../../../shared/colorScheme';
 
 export const ItemDisplayCard = styles.div`
     width: 80%;
