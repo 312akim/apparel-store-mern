@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { ItemDisplayCard, ItemDisplayImg, ItemDisplayBody, ItemDisplayPrice, ItemDisplayCartIcon } from './ProductItemStyles';
+import { ItemDisplayCard, ItemDisplayImg, ItemDisplayBody, ItemDisplayPrice, ItemDisplayCartIcon } from './ProductItemComponentStyles';
 
 const ItemDisplay = ({item}) => {
     return (

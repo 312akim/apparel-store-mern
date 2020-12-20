@@ -19,15 +19,23 @@ export const HeroImage = styles.img`
 `
 
 export const HeroText = styles.div`
-    position: absolute;
-    top: 30%;
-    left: 15%;
-    color: white;
+    @media (min-width: 720px) {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        font: bold 22px Helvetica;
+        color: white;
+    }
+
+    @media (min-width: 1024px) {
+        top: 45%;
+        left: 5%;
+    }
 `
 
 export const FeaturedContainer = styles.div`
     width: 100%;
     background: ${COLORS.primaryLight};
-    padding-top: 4%;
+    padding-top: 3%;
     padding-bottom: 5%;
 `

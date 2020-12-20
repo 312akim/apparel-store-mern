@@ -3,7 +3,7 @@ import { FeaturedContainer } from '../Home/HomeComponentStyles'
 import ProductItem from '../Products/ProductItemComponent'
 
 
-const MainStorePage = ({products}) => {
+const StorePage = ({products}) => {
     const featuredProducts = products.map((item) => {
         if (item.featured === true) {
             return (
@@ -35,4 +35,4 @@ const MainStorePage = ({products}) => {
     )
 }
 
-export default MainStorePage;
+export default StorePage;

@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
+//import axios from 'axios';
 import TopNav from './container/Navigation/TopNavigationComponent'
 import HomePage from './presentational/Home/HomeComponent'
 import AdminPanel from './Admin/AdminPanel'
-import MainStore from './presentational/Store/MainStoreComponent'
+import Store from './presentational/Store/StoreComponent'
 import ProductPage from './presentational/Products/ProductItemPageComponent'
 import AboutUs from './presentational/About/AboutComponent'
 import ContactUs from './container/Contact/ContactComponent'
@@ -12,12 +13,14 @@ import { PRODUCTS } from '../shared/products'
 
 class Main extends Component {
     state = {
-        products: PRODUCTS
+        // Products Array
+        products: PRODUCTS,
+        loading: true
     }
 
     render () {
         const Home = () => {
-            return (
+            return ( 
                 <HomePage products={this.state.products}/>
             )
         }
@@ -29,9 +32,9 @@ class Main extends Component {
             )
         }
 
-        const MainStorePage = () => {
+        const StorePage = () => {
             return (
-                <MainStore products={this.state.products}/>
+                <Store products={this.state.products}/>
             )
         }
 
@@ -53,7 +56,7 @@ class Main extends Component {
                         <Route exact path="/" component={Home}/>
                         {/* Need to make Admin only accessible w/ login */}
                         <Route exact path="/admin" component={AdminPanelPage}/>
-                        <Route exact path="/store" component={MainStorePage} />
+                        <Route exact path="/store" component={StorePage} />
                         <Route path="/store/:item_name" component={ItemPage}/>
                         <Route exact path="/about" component={AboutUs} />
                         <Route exact path="/contact" component={ContactUs} />

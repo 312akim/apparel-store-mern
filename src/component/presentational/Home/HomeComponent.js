@@ -16,6 +16,7 @@ const HomePage = ({products}) => {
             }
         })
         
+    // Hero Image is 1720x600
     const heroImage = require('../../../shared/images/home-background.jpg');
     
     return (
@@ -24,7 +25,6 @@ const HomePage = ({products}) => {
                 <HeroImage src={heroImage}/>
                 <HeroText>Brand Logo/Motto within Hero here</HeroText>
             </HeroContainer>
-
             
             {/* Maybe limit to 3 or pass props for how many displayed for mobile/other views */}
             <FeaturedContainer>
