@@ -7,7 +7,6 @@ export const PRODUCTS = [
         price: 45,
         description: "This is the description",
         category:["shirt"],
-        color: ["red", "white"],
         inventory: 1
     },
     {
@@ -19,7 +18,6 @@ export const PRODUCTS = [
         price: 45,
         description: "This is the description",
         category:["pants"],
-        color: ["red", "white"],
         inventory: 1
     },
     {
@@ -31,7 +29,6 @@ export const PRODUCTS = [
         price: 45,
         description: "This is the description",
         category:["shirt"],
-        color: ["red", "white"],
         inventory: 1
     },
     {
@@ -43,7 +40,6 @@ export const PRODUCTS = [
         price: 45,
         description: "This is the description",
         category:["jacket"],
-        color: ["red", "white"],
         inventory: 1
     },
     {
@@ -54,7 +50,6 @@ export const PRODUCTS = [
         price: 45,
         description: "This is the description",
         category:["shirt"],
-        color: ["red", "white"],
         inventory: 1
     },
 ]

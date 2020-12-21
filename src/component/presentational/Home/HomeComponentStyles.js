@@ -19,12 +19,17 @@ export const HeroImage = styles.img`
 `
 
 export const HeroText = styles.div`
+    color: white;
+
+    @media (max-width: 719px) {
+        background: black;
+    }
+
     @media (min-width: 720px) {
         position: absolute;
         top: 20%;
         left: 10%;
         font: bold 22px Helvetica;
-        color: white;
     }
 
     @media (min-width: 1024px) {
@@ -36,6 +41,6 @@ export const HeroText = styles.div`
 export const FeaturedContainer = styles.div`
     width: 100%;
     background: ${COLORS.primaryLight};
-    padding-top: 3%;
+    padding-top: 2%;
     padding-bottom: 5%;
 `
