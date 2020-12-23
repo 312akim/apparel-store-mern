@@ -14,13 +14,15 @@ import { PRODUCTS } from '../shared/products'
 class Main extends Component {
     state = {
         // Products Array
-        products: PRODUCTS,
+        products: [],
         // Set to true on active site. False for testing.
-        loading: false
+        loading: true
     }
-    /*
+
+    
     componentDidMount() {
-        axios.get('/api/products').then(res => {
+        axios.get('/api/products').then(
+            res => {
             console.log('res.data products-----------', res.data);
             this.setState({
                 products: res.data, loading: false
@@ -29,10 +31,13 @@ class Main extends Component {
         
         console.log("Component Mounted!")
     }
-    */
+    
 
     render () {
         const { products, loading } = this.state;
+        
+        // This needs to be an array thats mappable
+        console.log("products!!!!", products);
 
         const Home = () => {
             return ( 
@@ -54,7 +59,7 @@ class Main extends Component {
         }
 
         const ItemPage = ({match}) => {
-            const product = products.filter(
+            const product = products.products.filter(
                 (item) => item.name === match.params.item_name
             )[0]
 

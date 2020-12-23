@@ -15,13 +15,16 @@ module.exports = {
     // Products
     createProduct(req, res) {
         // MongoDB automatically generates id for created data
-        const { name, description, price, quantity } = req.body;
+        const { name, description, price, featured, inventory, category, images } = req.body;
 
         let newProduct = new Product({
             name,
             description,
             price,
-            quantity
+            featured,
+            inventory,
+            category,
+            images
         })
 
         newProduct.save();
@@ -30,7 +33,7 @@ module.exports = {
 
     updateProduct(req, res) {
         const { id } = req.params;
-        const { name, description, price, quantity } = req.body;
+        const { name, description, price, featured, inventory, category, images } = req.body;
 
         Product.findById(id).exec((err, product) => {
             if (err) {
@@ -43,7 +46,10 @@ module.exports = {
             product.name = name;
             product.description = description;
             product.price = price;
-            product.quantity = quantity;
+            product.inventory = inventory;
+            product.featured = featured;
+            product.category = category;
+            product.images = images;
             product.save();
 
             // Send back data for testing

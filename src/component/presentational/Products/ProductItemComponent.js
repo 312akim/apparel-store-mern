@@ -9,7 +9,7 @@ const ItemDisplay = ({item}) => {
                 <ItemDisplayImg src={item.images[0].src} alt={item.name}/>
             </Link>
             <ItemDisplayBody>
-                <ItemDisplayPrice>Price</ItemDisplayPrice>
+                <ItemDisplayPrice>${item.price}</ItemDisplayPrice>
                 <ItemDisplayCartIcon>Cart Button</ItemDisplayCartIcon>
             </ItemDisplayBody>
         </ItemDisplayCard>

@@ -7,7 +7,10 @@ const HomePage = ({products}) => {
     //Limit # of displayed products
     const limit = 4;
     let count = 0;
-    const featuredProducts = products.map((item) => {
+
+    console.log("PRODUCT PRODUCTS!", products.products)
+
+    const featuredProducts = products.products.map((item) => {
         if ((item.featured === true) && (count < limit)) {
             count++;
             return (
