@@ -4,7 +4,7 @@ import ProductItem from '../Products/ProductItemComponent'
 
 
 const StorePage = ({products}) => {
-    const featuredProducts = products.map((item) => {
+    const featuredProducts = products.products.map((item) => {
         if (item.featured === true) {
             return (
                     <ProductItem className="itemColumn" item={item} key={item.id}/>
@@ -12,7 +12,7 @@ const StorePage = ({products}) => {
         }
     })
 
-    const tshirtCategory = products.map((item) => {
+    const tshirtCategory = products.products.map((item) => {
         if (item.category.includes("shirt")) {
             return (
                     <ProductItem item={item} key={item.id}/>

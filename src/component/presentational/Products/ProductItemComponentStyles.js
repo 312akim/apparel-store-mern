@@ -17,6 +17,10 @@ export const ItemDisplayCard = styles.div`
         margin-top: 2%;
         background: ${COLORS.secondaryLight};
     }
+
+    @media (max-width: 1024px) {
+        width: 40%;
+    }
 `
 //Need to fix empty pixel
 // https://stackoverflow.com/questions/5804256/image-inside-div-has-extra-space-below-the-image
@@ -45,6 +49,12 @@ export const ItemDisplayBody = styles.div`
         background: white;
         height: 30%;
     }
+`
+
+export const ItemDisplayName = styles.div`
+    display: flex;
+    justify-content: center;
+    width: 200%;
 `
 
 export const ItemDisplayPrice = styles.div`

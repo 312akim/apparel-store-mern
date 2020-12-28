@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { ItemDisplayCard, ItemDisplayImg, ItemDisplayBody, ItemDisplayPrice, ItemDisplayCartIcon } from './ProductItemComponentStyles';
+import { ItemDisplayCard, ItemDisplayImg, ItemDisplayBody, ItemDisplayName, ItemDisplayPrice, ItemDisplayCartIcon } from './ProductItemComponentStyles';
 
 const ItemDisplay = ({item}) => {
     return (
@@ -9,6 +9,7 @@ const ItemDisplay = ({item}) => {
                 <ItemDisplayImg src={item.images[0].src} alt={item.name}/>
             </Link>
             <ItemDisplayBody>
+                <ItemDisplayName>{item.name}</ItemDisplayName>
                 <ItemDisplayPrice>${item.price}</ItemDisplayPrice>
                 <ItemDisplayCartIcon>Cart Button</ItemDisplayCartIcon>
             </ItemDisplayBody>
