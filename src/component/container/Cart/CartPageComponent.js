@@ -6,15 +6,22 @@ const samepleCartData = [
     { name: 'Test 3', description: 'Test Product 3', price: 30, id: 3}
 ];
 
-const cartItem  = (item) => {
-    <div>
-        <div>
-            {item.name}
-        </div>
-        <div>
-            {item.price}
-        </div>
-    </div>
+const CartItem = ({item}) => {
+    console.log(item);
+    console.log("ITEM NAME: ", item.name);
+    return (
+        <>
+            <div>
+                <div>
+                    {item.name}
+                </div>
+                <div>
+                    {item.price}
+                </div>
+            </div>
+            <hr />
+        </>
+        )
 }
 
 export default class Cart extends Component {
@@ -24,9 +31,12 @@ export default class Cart extends Component {
                 <h2>
                     Your Cart!
                 </h2>
+                <hr />
                 <div>
                     {samepleCartData.map(item => {
-                        <cartItem item={item} />
+                        return(
+                            <CartItem item={item} />
+                        )
                     })}
                 </div>
             </div>

@@ -9,13 +9,12 @@ import ProductPage from './presentational/Products/ProductItemPageComponent'
 import AboutUs from './presentational/About/AboutComponent'
 import ContactUs from './container/Contact/ContactComponent'
 import Footer from './presentational/Footer/FooterComponent'
-import { PRODUCTS } from '../shared/products'
+import Cart from './container/Cart/CartPageComponent';
+//import { PRODUCTS } from '../shared/products'
 
 class Main extends Component {
     state = {
-        // Products Array
         products: [],
-        // Set to true on active site. False for testing.
         loading: true
     }
 
@@ -35,9 +34,6 @@ class Main extends Component {
 
     render () {
         const { products, loading } = this.state;
-        
-        // This needs to be an array thats mappable
-        console.log("products!!!!", products);
 
         const Home = () => {
             return ( 
@@ -68,6 +64,12 @@ class Main extends Component {
             )
         }
 
+        const CartPage = () => {
+            return (
+                <Cart />
+            )
+        }
+
         if (!loading) {
             return (
                 <>
@@ -76,11 +78,12 @@ class Main extends Component {
                         <Switch>
                             <Route exact path="/" component={Home}/>
                             {/* Need to make Admin only accessible w/ login */}
-                            <Route exact path="/admin" component={AdminPanelPage}/>
+                            <Route path="/admin" component={AdminPanelPage}/>
                             <Route exact path="/store" component={StorePage} />
                             <Route path="/store/:item_name" component={ItemPage}/>
-                            <Route exact path="/about" component={AboutUs} />
-                            <Route exact path="/contact" component={ContactUs} />
+                            <Route path="/cart" component={CartPage} />
+                            <Route path="/about" component={AboutUs} />
+                            <Route path="/contact" component={ContactUs} />
                             <Redirect to="/home"/>
                             <div className="MainPage">This is the main page</div>
                         </Switch>
