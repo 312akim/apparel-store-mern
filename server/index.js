@@ -53,7 +53,7 @@ setTimeout(() => {
     // Remove item from cart
     app.delete('/api/user-data/cart:id', userController.removeFromCart);
     // User Login Auth0
-    app.post('/api/login', userController.login)
+    app.get('/auth/callback', userController.login)
     // User Logout
     app.post('/api/logout', userController.logout);
 

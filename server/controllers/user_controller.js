@@ -1,4 +1,4 @@
-/*
+
 const User = require('../models/user');
 ///import axios to do axios call .
 const axios = require('axios');
@@ -70,4 +70,3 @@ module.exports = {
     }
 }
 
-*/

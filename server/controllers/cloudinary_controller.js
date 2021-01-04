@@ -1,6 +1,6 @@
 /*
 
-//Import cloudinary that will be responisble for signing the credentials. 
+//Import cloudinary that will be responsible for signing the credentials. 
 const cloudinary = require('cloudinary');
 module.exports = {
     upload(req, res) {

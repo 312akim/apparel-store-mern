@@ -10,7 +10,6 @@ import AboutUs from './presentational/About/AboutComponent'
 import ContactUs from './container/Contact/ContactComponent'
 import Footer from './presentational/Footer/FooterComponent'
 import Cart from './container/Cart/CartPageComponent';
-//import { PRODUCTS } from '../shared/products'
 
 class Main extends Component {
     state = {
