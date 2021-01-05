@@ -13,26 +13,44 @@ export const HeroImage = styles.img`
     z-index: -1;
     filter: brightness(75%);
 
-    @media (min-width: 720px) {
+    @media (min-width: 576px) {
+        
+    }
+
+    @media (min-width: 768px) {
         width: 100vw;
+    }
+
+    @media (min-width: 992px) {
+
+    }
+
+    @media (min-width: 1200px) {
+
     }
 `
 
+// Need to fix 1024x1366 ipad pro resolution
 export const HeroText = styles.div`
+    background: black;
     color: white;
 
-    @media (max-width: 719px) {
-        background: black;
+    @media (min-width: 576px) {
+        
     }
 
-    @media (min-width: 720px) {
+    @media (min-width: 768px) {
         position: absolute;
         top: 20%;
         left: 10%;
         font: bold 22px Helvetica;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 992px) {
+
+    }
+
+    @media (min-width: 1200px) {
         top: 45%;
         left: 5%;
     }

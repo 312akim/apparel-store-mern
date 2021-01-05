@@ -2,14 +2,14 @@ import styles from 'styled-components';
 import COLORS from '../../../shared/colorScheme';
 
 export const ItemDisplayCard = styles.div`
-    width: 80%;
+    width: 40%;
     height: 113px;
     margin: 5% 10%;
     border: solid black 1px;
     border-color: ${COLORS.secondaryDark};
     background: grey;
 
-    @media (min-width: 480px) {
+    @media (min-width: 576px) {
         display: inline-block;
         width: 20%;
         height: 16rem;
@@ -18,8 +18,16 @@ export const ItemDisplayCard = styles.div`
         background: ${COLORS.secondaryLight};
     }
 
-    @media (max-width: 1024px) {
-        width: 40%;
+    @media (min-width: 768px) {
+
+    }
+
+    @media (min-width: 992px) {
+        width: 80%;
+    }
+
+    @media (min-width: 1200px) {
+
     }
 `
 //Need to fix empty pixel
@@ -32,10 +40,22 @@ export const ItemDisplayImg = styles.img`
     object-fit: cover;
     padding-bottom: 0;
 
-    @media (min-width: 480px) {
+    @media (min-width: 576px) {
         display: block;
         width: 100%;
         height: 70%;
+    }
+
+    @media (min-width: 768px) {
+
+    }
+
+    @media (min-width: 992px) {
+
+    }
+
+    @media (min-width: 1200px) {
+
     }
 `
 
@@ -44,10 +64,22 @@ export const ItemDisplayBody = styles.div`
     width: 50%;
     padding: 0;
 
-    @media (min-width: 480px) {
+    @media (min-width: 576px) {
         display: block;
         background: white;
         height: 30%;
+    }
+
+    @media (min-width: 768px) {
+
+    }
+
+    @media (min-width: 992px) {
+
+    }
+
+    @media (min-width: 1200px) {
+
     }
 `
 
@@ -58,17 +90,41 @@ export const ItemDisplayName = styles.div`
 `
 
 export const ItemDisplayPrice = styles.div`
-@media (min-width: 480px) {    
+@media (min-width: 576px) {
     display: flex;
     justify-content: center;
     width: 200%;
 }
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
 `
 
 export const ItemDisplayCartIcon = styles.div`
-@media (min-width: 480px) {    
+@media (min-width: 576px) {
     display: flex;
     justify-content: center;
     width: 200%;
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
 }
 `
