@@ -2,12 +2,12 @@ import styles from 'styled-components';
 import COLORS from '../../../shared/colorScheme';
 
 export const ItemDisplayCard = styles.div`
-    width: 40%;
-    height: 113px;
+    width: 80%;
+    height: 7em;
     margin: 5% 10%;
     border: solid black 1px;
     border-color: ${COLORS.secondaryDark};
-    background: grey;
+    background: ${COLORS.secondaryLight};
 
     @media (min-width: 576px) {
         display: inline-block;
@@ -15,7 +15,7 @@ export const ItemDisplayCard = styles.div`
         height: 16rem;
         margin: 0 2%;
         margin-top: 2%;
-        background: ${COLORS.secondaryLight};
+        vertical-align: bottom;
     }
 
     @media (min-width: 768px) {
@@ -23,20 +23,19 @@ export const ItemDisplayCard = styles.div`
     }
 
     @media (min-width: 992px) {
-        width: 80%;
+        width: 40%;
     }
 
     @media (min-width: 1200px) {
 
     }
 `
-//Need to fix empty pixel
-// https://stackoverflow.com/questions/5804256/image-inside-div-has-extra-space-below-the-image
+
 export const ItemDisplayImg = styles.img`
     display: inline-block;
     float: left;
-    width:  100px;
-    height: 100px;
+    width:  70%;
+    height: 100%;
     object-fit: cover;
     padding-bottom: 0;
 
@@ -61,12 +60,13 @@ export const ItemDisplayImg = styles.img`
 
 export const ItemDisplayBody = styles.div`
     display: inline-block;
-    width: 50%;
-    padding: 0;
+    width: 30%;
+    padding-top: 8%;
+    color: black;
 
     @media (min-width: 576px) {
         display: block;
-        background: white;
+        width: 100%;
         height: 30%;
     }
 
@@ -84,47 +84,21 @@ export const ItemDisplayBody = styles.div`
 `
 
 export const ItemDisplayName = styles.div`
-    display: flex;
-    justify-content: center;
-    width: 200%;
-`
+    display: inline-block;
 
-export const ItemDisplayPrice = styles.div`
-@media (min-width: 576px) {
-    display: flex;
-    justify-content: center;
-    width: 200%;
-}
+    @media (min-width: 576px) {
+        padding: 10% 15% 0 15%;
+    }
 
-@media (min-width: 768px) {
+    @media (min-width: 768px) {
 
-}
+    }
 
-@media (min-width: 992px) {
+    @media (min-width: 992px) {
 
-}
+    }
 
-@media (min-width: 1200px) {
+    @media (min-width: 1200px) {
 
-}
-`
-
-export const ItemDisplayCartIcon = styles.div`
-@media (min-width: 576px) {
-    display: flex;
-    justify-content: center;
-    width: 200%;
-}
-
-@media (min-width: 768px) {
-
-}
-
-@media (min-width: 992px) {
-
-}
-
-@media (min-width: 1200px) {
-
-}
+    }
 `
