@@ -17,6 +17,7 @@ export const ItemDisplayCard = styles.div`
         margin: 0 2%;
         margin-top: 2%;
         vertical-align: bottom;
+        width: 40%;
     }
 
     @media (min-width: 768px) {
@@ -24,7 +25,7 @@ export const ItemDisplayCard = styles.div`
     }
 
     @media (min-width: 992px) {
-        width: 40%;
+        
     }
 
     @media (min-width: 1200px) {
