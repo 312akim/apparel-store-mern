@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { FeaturedContainer, HeroContainer, HeroImage, HeroText, ShopAllLink, LinkContainer } from './HomeComponentStyles'
+import { FeaturedContainer, HeroContainer, HeroImage, HeroText, ShopAllLink, ShopButtonContainer } from './HomeComponentStyles'
 import ProductItem from '../Products/ProductItemComponent'
 
 
@@ -35,11 +35,11 @@ const HomePage = ({products}) => {
                 {featuredProducts}
             </FeaturedContainer>
             <Link to={`/store`}>
-                <LinkContainer>
+                <ShopButtonContainer>
                     <ShopAllLink>
                         Shop All
                     </ShopAllLink>
-                </LinkContainer>
+                </ShopButtonContainer>
             </Link>
         </div>
     )

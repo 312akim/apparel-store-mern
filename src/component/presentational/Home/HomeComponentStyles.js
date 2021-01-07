@@ -36,7 +36,7 @@ export const HeroText = styles.div`
     color: white;
 
     @media (min-width: 576px) {
-        
+        font-size: 116%;
     }
 
     @media (min-width: 768px) {
@@ -44,15 +44,17 @@ export const HeroText = styles.div`
         top: 20%;
         left: 10%;
         font: bold 22px Helvetica;
+        padding: 0 3px;
     }
 
     @media (min-width: 992px) {
-
+        font-size: 170%;
     }
 
     @media (min-width: 1200px) {
         top: 45%;
         left: 5%;
+        font-size: 190%;
     }
 `
 
@@ -63,15 +65,54 @@ export const FeaturedContainer = styles.div`
     padding-bottom: 5%;
 `
 
-export const LinkContainer = styles.div`
+export const ShopButtonContainer = styles.div`
     background: ${COLORS.primaryLight};
-    padding-bottom: 2em;
+    padding-bottom: 8%;
+
+    @media (min-width: 576px) {
+        padding-bottom: 5%;
+    }
+
+    @media (min-width: 768px) {
+        position: absolute;
+        top: 23%;
+        left: 10%;
+        padding-bottom: 0;
+    }
+
+    @media (min-width: 992px) {
+        top: 23%;
+        left: 10%;
+    }
+
+    @media (min-width: 1200px) {
+        top: 49%;
+        left: 5%;
+    }
 `
 
-export const ShopAllLink = styles.div`
+export const ShopAllLink = styles.button`
+    positon: absolute;
     background: black;
     color: white;
-    width: 30%;
-    margin: auto;
-    padding: 1em 0;
+
+    @media (min-width: 576px) {
+        
+    }
+
+    @media (max-width: 767px) {
+        width: 30%;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 116%;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 130%;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 170%;
+    }
 `

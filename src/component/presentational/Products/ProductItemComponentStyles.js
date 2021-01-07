@@ -28,7 +28,7 @@ export const ItemDisplayCard = styles.div`
     }
 
     @media (min-width: 1200px) {
-
+        width: 21%;
     }
 `
 
@@ -63,6 +63,7 @@ export const ItemDisplayBody = styles.div`
     display: inline-block;
     width: 30%;
     padding-top: 8%;
+    padding-bottom: 10%;
     color: black;
 
     @media (min-width: 576px) {
@@ -96,7 +97,8 @@ export const ItemDisplayName = styles.div`
     }
 
     @media (min-width: 992px) {
-
+        padding: 5% 15% 0 15%;
+        font-size: 130%;
     }
 
     @media (min-width: 1200px) {
