@@ -1,5 +1,6 @@
 import React from 'react';
-import { FeaturedContainer, HeroContainer, HeroImage, HeroText } from './HomeComponentStyles'
+import { Link } from 'react-router-dom'
+import { FeaturedContainer, HeroContainer, HeroImage, HeroText, ShopAllLink, LinkContainer } from './HomeComponentStyles'
 import ProductItem from '../Products/ProductItemComponent'
 
 
@@ -33,9 +34,13 @@ const HomePage = ({products}) => {
                 <div>Featured</div>
                 {featuredProducts}
             </FeaturedContainer>
-            <div>
-                Fade in Featured Clothes display
-            </div>
+            <Link to={`/store`}>
+                <LinkContainer>
+                    <ShopAllLink>
+                        Shop All
+                    </ShopAllLink>
+                </LinkContainer>
+            </Link>
         </div>
     )
 }

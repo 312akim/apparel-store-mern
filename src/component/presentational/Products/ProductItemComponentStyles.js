@@ -9,6 +9,7 @@ export const ItemDisplayCard = styles.div`
     border-color: ${COLORS.secondaryDark};
     background: ${COLORS.secondaryLight};
 
+
     @media (min-width: 576px) {
         display: inline-block;
         width: 20%;

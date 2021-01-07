@@ -62,3 +62,16 @@ export const FeaturedContainer = styles.div`
     padding-top: 2%;
     padding-bottom: 5%;
 `
+
+export const LinkContainer = styles.div`
+    background: ${COLORS.primaryLight};
+    padding-bottom: 2em;
+`
+
+export const ShopAllLink = styles.div`
+    background: black;
+    color: white;
+    width: 30%;
+    margin: auto;
+    padding: 1em 0;
+`
