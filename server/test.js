@@ -20,8 +20,7 @@ const app = express();
 const PORT = 4000;
 
 mongoose.connect(
-    //process.env.CONNECTION_STRING, 
-    "mongodb+srv://312akim:44fbf6c7@cluster0.sqp5f.mongodb.net/sample_airbnb?retryWrites=true&w=majority",
+    process.env.CONNECTION_STRING,
     { useNewUrlParser: true },
     (err) => {
         if(err) {
