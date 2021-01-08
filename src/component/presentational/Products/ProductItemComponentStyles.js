@@ -25,11 +25,12 @@ export const ItemDisplayCard = styles.div`
     }
 
     @media (min-width: 992px) {
-        
+
     }
 
     @media (min-width: 1200px) {
         width: 21%;
+        height: 20rem;
     }
 `
 
@@ -44,7 +45,7 @@ export const ItemDisplayImg = styles.img`
     @media (min-width: 576px) {
         display: block;
         width: 100%;
-        height: 70%;
+        height: 80%;
     }
 
     @media (min-width: 768px) {
@@ -56,7 +57,7 @@ export const ItemDisplayImg = styles.img`
     }
 
     @media (min-width: 1200px) {
-
+        
     }
 `
 
@@ -70,7 +71,7 @@ export const ItemDisplayBody = styles.div`
     @media (min-width: 576px) {
         display: block;
         width: 100%;
-        height: 30%;
+        height: 20%;
     }
 
     @media (min-width: 768px) {
@@ -88,9 +89,11 @@ export const ItemDisplayBody = styles.div`
 
 export const ItemDisplayName = styles.div`
     display: inline-block;
+    padding: 2% 5% 0 5%;
+    font-size: calc(1.1rem + 0.5vw);
 
     @media (min-width: 576px) {
-        padding: 10% 15% 0 15%;
+        padding-top: 3%;
     }
 
     @media (min-width: 768px) {
@@ -98,11 +101,10 @@ export const ItemDisplayName = styles.div`
     }
 
     @media (min-width: 992px) {
-        padding: 5% 15% 0 15%;
-        font-size: 130%;
+        padding-top: 2%;
     }
 
     @media (min-width: 1200px) {
-
+        padding-bottom: 5%;
     }
 `

@@ -18,7 +18,7 @@ export const HeroImage = styles.img`
     }
 
     @media (min-width: 768px) {
-        width: 100vw;
+
     }
 
     @media (min-width: 992px) {
@@ -34,35 +34,51 @@ export const HeroImage = styles.img`
 export const HeroText = styles.div`
     background: black;
     color: white;
+    font: bold Helvetica;
+    font-size: calc(1rem + 1vw);
 
     @media (min-width: 576px) {
-        font-size: 116%;
     }
 
     @media (min-width: 768px) {
         position: absolute;
         top: 20%;
         left: 10%;
-        font: bold 22px Helvetica;
         padding: 0 3px;
     }
 
     @media (min-width: 992px) {
-        font-size: 170%;
+
     }
 
     @media (min-width: 1200px) {
         top: 45%;
         left: 5%;
-        font-size: 190%;
     }
 `
 
 export const FeaturedContainer = styles.div`
     width: 100%;
     background: ${COLORS.primaryLight};
-    padding-top: 2%;
+    padding-top: 3%;
     padding-bottom: 5%;
+`
+
+export const FeaturedHeader = styles.h2`
+    font-size: calc(1.2rem + 1vw);    
+
+    @media (min-width: 576px) {
+
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (min-width: 992px) {
+    }
+
+    @media (min-width: 1200px) {
+    }
 `
 
 export const ShopButtonContainer = styles.div`
@@ -75,18 +91,17 @@ export const ShopButtonContainer = styles.div`
 
     @media (min-width: 768px) {
         position: absolute;
-        top: 23%;
+        top: 24%;
         left: 10%;
         padding-bottom: 0;
     }
 
     @media (min-width: 992px) {
-        top: 23%;
-        left: 10%;
+
     }
 
     @media (min-width: 1200px) {
-        top: 49%;
+        top: 51%;
         left: 5%;
     }
 `
@@ -95,24 +110,21 @@ export const ShopAllLink = styles.button`
     positon: absolute;
     background: black;
     color: white;
+    font-size: calc(1rem + 0.6vw);
 
     @media (min-width: 576px) {
         
     }
 
     @media (max-width: 767px) {
-        width: 30%;
     }
 
     @media (min-width: 768px) {
-        font-size: 116%;
     }
 
     @media (min-width: 992px) {
-        font-size: 130%;
     }
 
     @media (min-width: 1200px) {
-        font-size: 170%;
     }
 `
