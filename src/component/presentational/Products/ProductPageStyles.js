@@ -1,7 +1,6 @@
 import styles from 'styled-components';
 
 export const MainProductImg = styles.img`
-    margin-top: 1rem;
     height: auto;
     width: 100vw;
 
@@ -58,7 +57,45 @@ export const StyledItemName = styles.div`
 
 export const StyledItemPrice = styles.div`
     text-align: right;
-    padding-right: 2em;
+    padding-right: calc(1rem + 4vw);
     font: bold Helvetica;
     font-size: calc(0.8rem + 0.9vw);
+
+    @media (min-width: 576px) {
+        
+    }
+
+    @media (min-width: 768px) {
+
+    }
+
+    @media (min-width: 992px) {
+
+    }
+
+    @media (min-width: 1200px) {
+        display: none;
+    }
+`
+
+export const StyledSizeContainer = styles.div`
+
+    @media (min-width: 1200px) {
+       
+    }
+`
+
+export const StyledLaptopContainer = styles.div`
+    position: absolute;
+    top: 25vh;
+    right: 0;
+    width: 25%;
+`
+
+export const StyledLaptopPrice = styles.div`
+
+`
+
+export const StyledLaptopSize = styles.div`
+
 `
