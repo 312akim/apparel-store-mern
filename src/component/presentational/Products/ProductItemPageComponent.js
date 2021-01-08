@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyledPreviewImg, PreviewContainerDiv, MainProductImg } from './ProductPageStyles';
+import { StyledPreviewImg, PreviewContainerDiv, MainProductImg, StyledItemName, StyledItemPrice } from './ProductPageStyles';
   
 class ProductPage extends Component {
 	constructor(props) {
@@ -25,8 +25,6 @@ class ProductPage extends Component {
         const Cart = () => {
             return (
                 <div>
-                    <p>${this.props.item.price}</p>
-                    <div>Add to cart button here</div>
                     <i className="fa fa-cart-plus fa-3x" onClick={event => console.log("add to cart")}></i>
                 </div>
             )
@@ -35,11 +33,14 @@ class ProductPage extends Component {
         return (
             <div>
                 <div>
-                    <h2>{this.props.item.name}</h2>
+                    <div>Breadcrumb path to page</div>
+                    <StyledItemName>{this.props.item.name}</StyledItemName>
+                    <StyledItemPrice>${this.props.item.price}</StyledItemPrice>
                     <MainProductImg src={this.state.displayedImage}></MainProductImg>
                     <Cart />
                 </div>
                 <PreviewContainerDiv>{imageMap}</PreviewContainerDiv>
+                <div> XS    SM    MED    LG    XL</div>
             </div>
         )
     }
