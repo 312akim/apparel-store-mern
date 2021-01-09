@@ -22,15 +22,19 @@ export const MainProductImg = styles.img`
 `;
 
 export const PreviewContainerDiv = styles.div`
-    border: solid black 1px;
     text-align: left;
+    padding-top: calc(1rem + 1vw);
+
+    @media (min-width: 1200px) {
+        padding-left: 25%;
+    }
 `;
 
 export const StyledPreviewImg = styles.img`
     display: inline-block;
     padding-left: calc(0.3rem + 2vw);
     text-align: left;
-    width: 22%;
+    width: 18%;
     height: auto;
 
     @media (min-width: 576px) {
@@ -47,6 +51,8 @@ export const StyledPreviewImg = styles.img`
 
     @media (min-width: 1200px) {
         width: 15%;
+        padding-right: calc(0.3rem + 2vw);
+        padding-left: 0;
     }
 `;
 
@@ -93,9 +99,17 @@ export const StyledLaptopContainer = styles.div`
 `
 
 export const StyledLaptopPrice = styles.div`
-
+    color: red;
 `
 
 export const StyledLaptopSize = styles.div`
+    color: red;
+`
 
+export const SizeBox = styles.div`
+    display: inline-block;
+    margin: calc(1rem + 1vw) 0.5rem 0.5rem 0.5rem;
+    padding: 1px 0 1px 0;
+    width: 15%;
+    border: 1px solid black;
 `

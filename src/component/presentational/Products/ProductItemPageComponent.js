@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyledPreviewImg, PreviewContainerDiv, MainProductImg, StyledItemName, StyledItemPrice, StyledSizeContainer, StyledLaptopContainer, StyledLaptopPrice, StyledLaptopSize } from './ProductPageStyles';
+import { StyledPreviewImg, PreviewContainerDiv, MainProductImg, StyledItemName, StyledItemPrice, StyledSizeContainer, StyledLaptopContainer, StyledLaptopPrice, StyledLaptopSize, SizeBox } from './ProductPageStyles';
   
 class ProductPage extends Component {
 	constructor(props) {
@@ -30,10 +30,14 @@ class ProductPage extends Component {
             )
         }
 
-        const SizePicker = (props) => {
+        const SizePicker = () => {
             return (
                 <StyledSizeContainer>
-                    <div>XS SM MED LG XL</div>
+                    <SizeBox>XS</SizeBox>
+                    <SizeBox>SM</SizeBox>
+                    <SizeBox>MED</SizeBox>
+                    <SizeBox>LG</SizeBox>
+                    <SizeBox>XL</SizeBox>
                 </StyledSizeContainer>
             )
         }
@@ -43,6 +47,7 @@ class ProductPage extends Component {
                 <StyledLaptopContainer className="hideIfSmallDisplay">
                     <StyledLaptopPrice>${this.props.item.price}</StyledLaptopPrice>
                     <SizePicker />
+                    <Cart />
                 </StyledLaptopContainer>
             )
         }
@@ -55,11 +60,11 @@ class ProductPage extends Component {
                     <StyledItemPrice>${this.props.item.price}</StyledItemPrice>
                     <LargeScreenDisplay />
                     <MainProductImg src={this.state.displayedImage}></MainProductImg>
-                    <Cart />
                 </div>
                 <PreviewContainerDiv>{imageMap}</PreviewContainerDiv>
                 <div className="hideIfLargeDisplay">    
                     <SizePicker />
+                    <Cart />
                 </div>
 
             </div>
