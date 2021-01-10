@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ItemPageContainer, PreviewImg, PreviewContainerDiv, MainProductImg, ItemName, ItemPrice, LaptopContainer, LaptopPrice,
-        OptionsContainer, SizeContainer, QuantityContainer, OptionsLabel, SelectSize, SelectQuantity } from './ProductPageStyles';
+        OptionsContainer, SizeContainer, QuantityContainer, OptionsLabel, SelectOptions, CartContainer, AddProductButton } from './ProductPageStyles';
   
 class ProductPage extends Component {
 	constructor(props) {
@@ -25,9 +25,11 @@ class ProductPage extends Component {
     
         const Cart = () => {
             return (
-                <div>
-                    <i className="fa fa-cart-plus fa-3x" onClick={event => console.log("add to cart")}></i>
-                </div>
+                <CartContainer>
+                    <AddProductButton>
+                        Add to Cart
+                    </AddProductButton>
+                </CartContainer>
             )
         }
 
@@ -36,18 +38,19 @@ class ProductPage extends Component {
                 <OptionsContainer>
                     <SizeContainer>
                         <OptionsLabel for="size">Size:</OptionsLabel>
-                        <SelectSize name="size" id="size">
-                            <option value="xs">XS</option>
-                            <option value="sm">SM</option>
-                            <option value="med" selected>MED</option>
-                            <option value="lg">LG</option>
-                            <option value="xlg">X-LG</option>
-                        </SelectSize>
+                        <SelectOptions name="size" id="size">
+                            <option value="choose" disabled selected>Choose Size</option>
+                            <option value="xs">X-Small</option>
+                            <option value="sm">Small</option>
+                            <option value="med">Medium</option>
+                            <option value="lg">Large</option>
+                            <option value="xlg">X-Large</option>
+                        </SelectOptions>
                     </SizeContainer>
                     <QuantityContainer>
                         <OptionsLabel for="quantity">Quantity:</OptionsLabel>
-                        <SelectQuantity name="size" id="size" selected="1">
-                            <option value="1">1</option>
+                        <SelectOptions name="quantity" id="quantity">
+                            <option value="1" selected>1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
@@ -57,7 +60,7 @@ class ProductPage extends Component {
                             <option value="8">8</option>
                             <option value="9">9</option>
                             <option value="10">10</option>
-                        </SelectQuantity>
+                        </SelectOptions>
                     </QuantityContainer>
                 </OptionsContainer>
             )
@@ -81,13 +84,12 @@ class ProductPage extends Component {
                     <ItemPrice>${this.props.item.price}</ItemPrice>
                     <LargeScreenDisplay />
                     <MainProductImg src={this.state.displayedImage}></MainProductImg>
+                    <PreviewContainerDiv>{imageMap}</PreviewContainerDiv>
                 </div>
-                <PreviewContainerDiv>{imageMap}</PreviewContainerDiv>
                 <div className="hideIfLargeDisplay">    
                     <OptionPicker />
                     <Cart />
                 </div>
-
             </ItemPageContainer>
         )
     }
