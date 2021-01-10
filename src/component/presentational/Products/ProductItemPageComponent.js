@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyledPreviewImg, PreviewContainerDiv, MainProductImg, StyledItemName, StyledItemPrice, StyledSizeContainer, StyledLaptopContainer, StyledLaptopPrice, StyledLaptopSize, SizeBox } from './ProductPageStyles';
+import { ItemPageContainer, PreviewImg, PreviewContainerDiv, MainProductImg, ItemName, ItemPrice, SizeContainer, LaptopContainer, LaptopPrice, SizeBox } from './ProductPageStyles';
   
 class ProductPage extends Component {
 	constructor(props) {
@@ -18,7 +18,7 @@ class ProductPage extends Component {
     render() {
         const imageMap = this.props.item.images.map((image) => {
             return (
-                <StyledPreviewImg onClick={event => this.displayChanger(image.src)} src={image.src}></StyledPreviewImg>
+                <PreviewImg onClick={event => this.displayChanger(image.src)} src={image.src}></PreviewImg>
             )
         })
     
@@ -32,32 +32,32 @@ class ProductPage extends Component {
 
         const SizePicker = () => {
             return (
-                <StyledSizeContainer>
+                <SizeContainer>
                     <SizeBox>XS</SizeBox>
                     <SizeBox>SM</SizeBox>
                     <SizeBox>MED</SizeBox>
                     <SizeBox>LG</SizeBox>
                     <SizeBox>XL</SizeBox>
-                </StyledSizeContainer>
+                </SizeContainer>
             )
         }
 
         const LargeScreenDisplay = () => {
             return (
-                <StyledLaptopContainer className="hideIfSmallDisplay">
-                    <StyledLaptopPrice>${this.props.item.price}</StyledLaptopPrice>
+                <LaptopContainer className="hideIfSmallDisplay">
+                    <LaptopPrice>${this.props.item.price}</LaptopPrice>
                     <SizePicker />
                     <Cart />
-                </StyledLaptopContainer>
+                </LaptopContainer>
             )
         }
     
         return (
-            <div>
+            <ItemPageContainer>
+                <div>Breadcrumb path to page</div>
                 <div>
-                    <div>Breadcrumb path to page</div>
-                    <StyledItemName>{this.props.item.name}</StyledItemName>
-                    <StyledItemPrice>${this.props.item.price}</StyledItemPrice>
+                    <ItemName>{this.props.item.name}</ItemName>
+                    <ItemPrice>${this.props.item.price}</ItemPrice>
                     <LargeScreenDisplay />
                     <MainProductImg src={this.state.displayedImage}></MainProductImg>
                 </div>
@@ -67,7 +67,7 @@ class ProductPage extends Component {
                     <Cart />
                 </div>
 
-            </div>
+            </ItemPageContainer>
         )
     }
 }

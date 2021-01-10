@@ -110,6 +110,7 @@ export const ShopAllLink = styles.button`
     positon: absolute;
     background: black;
     color: white;
+    border: none;
     font-size: calc(1rem + 0.6vw);
 
     @media (min-width: 576px) {
