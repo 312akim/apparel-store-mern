@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { ItemPageContainer, PreviewImg, PreviewContainerDiv, MainProductImg, ItemName, ItemPrice, SizeContainer, LaptopContainer, LaptopPrice, SizeBox } from './ProductPageStyles';
+import { ItemPageContainer, PreviewImg, PreviewContainerDiv, MainProductImg, ItemName, ItemPrice, LaptopContainer, LaptopPrice,
+        OptionsContainer, SizeContainer, QuantityContainer, OptionsLabel, SelectSize, SelectQuantity } from './ProductPageStyles';
   
 class ProductPage extends Component {
 	constructor(props) {
@@ -30,15 +31,35 @@ class ProductPage extends Component {
             )
         }
 
-        const SizePicker = () => {
+        const OptionPicker = () => {
             return (
-                <SizeContainer>
-                    <SizeBox>XS</SizeBox>
-                    <SizeBox>SM</SizeBox>
-                    <SizeBox>MED</SizeBox>
-                    <SizeBox>LG</SizeBox>
-                    <SizeBox>XL</SizeBox>
-                </SizeContainer>
+                <OptionsContainer>
+                    <SizeContainer>
+                        <OptionsLabel for="size">Size:</OptionsLabel>
+                        <SelectSize name="size" id="size">
+                            <option value="xs">XS</option>
+                            <option value="sm">SM</option>
+                            <option value="med" selected>MED</option>
+                            <option value="lg">LG</option>
+                            <option value="xlg">X-LG</option>
+                        </SelectSize>
+                    </SizeContainer>
+                    <QuantityContainer>
+                        <OptionsLabel for="quantity">Quantity:</OptionsLabel>
+                        <SelectQuantity name="size" id="size" selected="1">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </SelectQuantity>
+                    </QuantityContainer>
+                </OptionsContainer>
             )
         }
 
@@ -46,7 +67,7 @@ class ProductPage extends Component {
             return (
                 <LaptopContainer className="hideIfSmallDisplay">
                     <LaptopPrice>${this.props.item.price}</LaptopPrice>
-                    <SizePicker />
+                    <OptionPicker />
                     <Cart />
                 </LaptopContainer>
             )
@@ -63,7 +84,7 @@ class ProductPage extends Component {
                 </div>
                 <PreviewContainerDiv>{imageMap}</PreviewContainerDiv>
                 <div className="hideIfLargeDisplay">    
-                    <SizePicker />
+                    <OptionPicker />
                     <Cart />
                 </div>
 

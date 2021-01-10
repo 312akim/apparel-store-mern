@@ -89,12 +89,6 @@ export const ItemPrice = styles.div`
     }
 `
 
-export const SizeContainer = styles.div`
-
-    @media (min-width: 1200px) {
-       
-    }
-`
 
 export const LaptopContainer = styles.div`
     position: absolute;
@@ -108,15 +102,43 @@ export const LaptopPrice = styles.div`
     font-size: calc(0.8rem + 0.9vw);
 `
 
-export const SizeBox = styles.div`
-    display: inline-block;
-    margin: 3.5% 0.7rem 0.7rem 0.7rem;
-    padding: 2% 0 2% 0;
-    width: 13%;
-    border: 1px solid black;
-    font-size: calc(0.8rem + 0.5vw);
+export const OptionsContainer = styles.div`
+    text-align: left;
+    padding-top: calc(1rem + 1vw);
+    width: 100%;
+    padding-left: calc(50% - 6rem);
 
-    :hover {
-        background: ${COLORS.secondaryDark};
+    @media (min-width: 1200px) {
+        padding-left: calc(50% - 8rem);
     }
 `
+
+export const SizeContainer = styles.div`
+
+`
+
+export const OptionsLabel = styles.label`
+    width: 6rem;
+    font-size: calc(1rem + 0.9vw);
+
+    @media (min-width: 992px) {
+        margin-right: calc(1rem + 2vw);
+    }
+`
+
+export const SelectSize = styles.select`
+    margin-left: 2rem;
+    width: 6rem;
+    font-size: calc(0.8rem + 0.9vw);
+`
+
+export const QuantityContainer = styles.div`
+    margin: calc(1rem + 1vw) 0;
+`
+
+export const SelectQuantity = styles.select`
+    margin-left: 2rem;
+    width: 6rem;
+    font-size: calc(0.8rem + 0.9vw);
+`
+
