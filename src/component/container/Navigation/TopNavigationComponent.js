@@ -34,7 +34,7 @@ class TopNav extends Component {
     render() {
         return (
             <NavigationBar>
-                <Navbar sticky="top" light expand="md">
+                <Navbar light expand="md">
                         <div>
                             <LogoImg src={require('../../../shared/images/sample-logo.png')} alt="Mad Crown Logo"></LogoImg>
                             <NavbarBrand className="navbarBrandTitle" href="/">Mad Crowns</NavbarBrand>

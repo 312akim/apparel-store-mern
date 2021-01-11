@@ -8,13 +8,15 @@ import Store from './presentational/Store/StoreComponent'
 import ProductPage from './presentational/Products/ProductItemPageComponent'
 import AboutUs from './presentational/About/AboutComponent'
 import ContactUs from './container/Contact/ContactComponent'
-import Footer from './presentational/Footer/FooterComponent'
+import FooterComponent from './presentational/Footer/FooterComponent'
 import Cart from './container/Cart/CartPageComponent';
 
 class Main extends Component {
     state = {
         products: [],
-        loading: true
+        loading: true,
+        // If true, show email sign-up, on close, set to false.
+        showEmailSignup: true
     }
 
     
@@ -32,7 +34,7 @@ class Main extends Component {
     
 
     render () {
-        const { products, loading } = this.state;
+        const { products, loading, showEmailSignup } = this.state;
 
         const Home = () => {
             return ( 
@@ -66,6 +68,16 @@ class Main extends Component {
         const CartPage = () => {
             return (
                 <Cart />
+            )
+        }
+
+        const footerExitHandler = () => {
+            this.setState({showEmailSignup: false});
+        }
+
+        const Footer = () => {
+            return (
+                <FooterComponent showEmailSignup={showEmailSignup} footerExitHandler={footerExitHandler}/>
             )
         }
 

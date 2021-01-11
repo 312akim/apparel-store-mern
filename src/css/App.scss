@@ -10,6 +10,18 @@
   overflow-x: hidden; 
 }
 
+@media only screen and (min-width: 1200px) { 
+  .hideIfLargeDisplay { 
+      display: none; 
+  } 
+}
+
+@media only screen and (max-width: 1199px) { 
+  .hideIfSmallDisplay { 
+      display: none; 
+  } 
+}
+
 .formField {
   display: block;
   margin: 0 37.5%;
@@ -18,11 +30,6 @@
 .MainPage {
   height: 700px;
   background: blue;
-}
-
-.footer {
-  margin: 20px;
-  background: pink;
 }
 
 .featuredProductContainer {
@@ -45,16 +52,4 @@
 
 .itemCarousel {
   width: 100%;
-}
-
-@media only screen and (min-width: 1200px) { 
-  .hideIfLargeDisplay { 
-      display: none; 
-  } 
-}
-
-@media only screen and (max-width: 1199px) { 
-  .hideIfSmallDisplay { 
-      display: none; 
-  } 
 }
