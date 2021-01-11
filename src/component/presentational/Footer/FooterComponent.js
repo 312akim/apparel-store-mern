@@ -1,10 +1,21 @@
 import React from 'react'
+import InputGroupText from 'reactstrap/lib/InputGroupText';
+import { FooterContainer } from './FooterComponentStyles';
 
 
 const Footer = () => {
 	return (
 		<>
-			<div className="footer">This is the footer! Email Subscribe here?</div>
+			<FooterContainer>
+				<div>
+					Type in Email to Subscribe to new releases and more!
+				</div>
+				<input>
+				</input>
+				<button type="submit">
+					Submit
+				</button>
+			</FooterContainer>
 		</>
 	)
 }
