@@ -9,6 +9,7 @@ export const TopContainer = styles.div`
 
     @media (min-width: 768px) {
         height: 35vh;
+        padding: 15% 0;
     }
 `
 
@@ -43,7 +44,7 @@ export const BottomContainerImage = styles.img`
     padding: 0 0 2vh 0;
 
     @media (min-width: 768px) {
-        height: 100%;
+        height: 50%;
         width: auto;
         vertical-align: top;
         padding: 2vh 0;
