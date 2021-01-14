@@ -6,9 +6,9 @@ export const MainFooterContainer = styles.div`
     z-index: 10;
     background: ${COLORS.primaryHighlight};
     color: ${COLORS.secondaryLight};
-    height: 30vh;
-    padding-top:2vh;
-    padding-bottom: 9vh;
+    height: 30%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
 `
 export const StaticEmailSignupContainer = styles.div`
     width: 100%;
