@@ -43,7 +43,8 @@ export const BottomContainerImage = styles.img`
     padding: 0 0 2vh 0;
 
     @media (min-width: 768px) {
-        width: 50%;
+        height: 100%;
+        width: auto;
         vertical-align: top;
         padding: 2vh 0;
     }
