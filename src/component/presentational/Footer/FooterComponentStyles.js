@@ -9,6 +9,11 @@ export const MainFooterContainer = styles.div`
     height: 30vh;
     padding-top: 3vh;
     padding-bottom: 3vh;
+    bottom: 0;
+
+    @media (min-width: 768px) {
+        height: 26vh;
+    }
 `
 export const StaticEmailSignupContainer = styles.div`
     width: 100%;
@@ -29,6 +34,7 @@ export const StaticEmailSignupContainer = styles.div`
 
 export const FooterEmailSignupContainer = styles.div`
     text-align: center;
+    border: ${COLORS.primaryDark} 2px solid;
     height: 15vh;
     width: 50%;
     margin-left: 25%;
@@ -82,7 +88,20 @@ export const FooterNavigationContainer = styles.div`
 export const FooterCopyrightContainer = styles.div`
     height: 20%;
     padding-top: 2vh;
+    padding-bottom: 2vh;
     background: ${COLORS.primaryHighlight};
+
+    @media (min-width: 768px) {
+
+    }
+
+    @media (min-width: 992px) {
+
+    }
+
+    @media (min-width: 1200px) {
+
+    }
 `
 
 export const IconContainer = styles.div`
@@ -103,11 +122,19 @@ export const LeftFooterContainer = styles.div`
 export const RightFooterContainer = styles.div`
     display: inline-block;
     vertical-align: top;
-    height: 100%;
+    height: 80%;
     width: 50%;
     padding-right: 10%;
 
     @media (min-width: 768px) {
         padding-right: 15%;
+    }
+
+    @media (min-width: 992px) {
+        height: 70%
+    }
+
+    @media (min-width: 1200px) {
+        height: 60%
     }
 `

@@ -85,19 +85,19 @@ class Main extends Component {
             return (
                 <>
                     <TopNav />
-                        {/* <Cart /> */}
-                        <Switch>
-                            <Route exact path="/" component={Home}/>
-                            {/* Need to make Admin only accessible w/ login */}
-                            <Route path="/admin" component={AdminPanelPage}/>
-                            <Route exact path="/store" component={StorePage} />
-                            <Route path="/store/:item_name" component={ItemPage}/>
-                            <Route path="/cart" component={CartPage} />
-                            <Route path="/about" component={AboutUs} />
-                            <Route path="/contact" component={ContactUs} />
-                            <Redirect to="/home"/>
-                            <div className="MainPage">This is the main page</div>
-                        </Switch>
+                    {/* <Cart /> */}
+                    <Switch>
+                        <Route exact path="/" component={Home}/>
+                        {/* Need to make Admin only accessible w/ login */}
+                        <Route path="/admin" component={AdminPanelPage}/>
+                        <Route exact path="/store" component={StorePage} />
+                        <Route path="/store/:item_name" component={ItemPage}/>
+                        <Route path="/cart" component={CartPage} />
+                        <Route path="/about" component={AboutUs} />
+                        <Route path="/contact" component={ContactUs} />
+                        <Redirect to="/home"/>
+                        <div className="MainPage">This is the main page</div>
+                    </Switch>
                     <Footer />
                 </>
             )

@@ -14,7 +14,7 @@ const AboutPage = () => {
           WHO WE ARE
         </TopContainerHeader>
         <TopContainerHeaderText>
-          We are MadCrown, proud designers, developers and anime lovers.
+          We are MadCrown, proud designers, developers and lovers of all things anime.
         </TopContainerHeaderText>
       </TopContainer>
       <BottomContainer>
@@ -24,7 +24,7 @@ const AboutPage = () => {
             WE STAND BY OUR PRODUCT
           </BottomContainerCardHeader>
           <BottomContainerCardText>
-            Everyone appreciates the feeling of soft, plush, sturdy and well made clothes on their skin. You can tell the difference and we want to make sure you get the same feeling.
+            You deserve the feeling of soft, plush, sturdy and well made clothes on their skin. You can tell the difference and we want to make sure you get the same feeling.
           </BottomContainerCardText>
         </BottomContainerCard>
       </BottomContainer>
