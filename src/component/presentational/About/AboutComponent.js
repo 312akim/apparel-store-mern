@@ -1,30 +1,33 @@
 import React from "react";
-import { MainAboutUsContainer, TopContainer, TopContainerHeader, BottomContainerImage,
+import { MainAboutUsContainer, TopContainer, AboutUsHero, TopContainerHeader, BottomContainerImage,
   BottomContainer, TopContainerHeaderText, BottomContainerCard, BottomContainerCardHeader, BottomContainerCardText
  } from "./AboutComponentStyles";
 
 const AboutPage = () => {
 
-  const imageLink = "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+  const imageLink = require("../../../shared/images/coffee-photo.jpg");
+  const aboutHero = require("../../../shared/images/group-people.jpg");
+  const qualityImage = require("../../../shared/images/hand-measuring.jpg");
 
   return (
     <MainAboutUsContainer>
       <TopContainer>
+        <AboutUsHero src={aboutHero} />
         <TopContainerHeader>
           WHO WE ARE
         </TopContainerHeader>
         <TopContainerHeaderText>
-          We are MadCrown, proud designers, developers and lovers of all things anime.
+          We are MadCrown. Local individual artists brought together by love of design, anime and friends.
         </TopContainerHeaderText>
       </TopContainer>
       <BottomContainer>
-        <BottomContainerImage src={imageLink}/>
+        <BottomContainerImage src={qualityImage}/>
         <BottomContainerCard>
           <BottomContainerCardHeader>
             WE STAND BY OUR PRODUCT
           </BottomContainerCardHeader>
           <BottomContainerCardText>
-            You deserve the feeling of soft, plush, sturdy and well made clothes on their skin. You can tell the difference and we want to make sure you get the same feeling.
+            You deserve the feeling of soft, plush, sturdy and well made clothes. Our products are handmade for each order to ensure you get what you deserve and experience the joy of wearing true quality clothing. 
           </BottomContainerCardText>
         </BottomContainerCard>
       </BottomContainer>

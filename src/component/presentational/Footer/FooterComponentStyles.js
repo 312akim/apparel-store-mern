@@ -7,7 +7,7 @@ export const MainFooterContainer = styles.div`
     background: ${COLORS.primaryHighlight};
     color: ${COLORS.secondaryLight};
     height: 30vh;
-    padding-top: 3vh;
+    padding-top: 2vh;
     padding-bottom: 3vh;
     bottom: 0;
 
