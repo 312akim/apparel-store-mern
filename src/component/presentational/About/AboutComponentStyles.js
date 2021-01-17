@@ -18,10 +18,8 @@ export const AboutUsHero = styles.img`
 `
 
 export const TopContainerHeader = styles.h1`
-    padding-top: 3vh;
-    padding-bottom: 2vh;
     margin: 0;
-    padding: 3vh 15vw 2vh 15vw;
+    padding: 5vh 15vw 2vh 15vw;
 
     @media (min-width: 768px) {
         position: absolute;
@@ -51,12 +49,13 @@ export const TopContainerHeaderText = styles.p`
 
 export const BottomContainer = styles.div`
     width: 100%;
-    padding-bottom: 2vh;
-    padding-top: 3vh;
+    padding-bottom: 3vh;
+    padding-top: 4vh;
 
     @media (min-width: 768px) {
         display: flex;
         flex-direction: row-reverse;
+        padding-bottom: 10vh;
     }
 `
 
@@ -89,7 +88,7 @@ export const BottomContainerCardHeader = styles.h2`
     
     @media (min-width: 768px) {
         padding: 2vh 3vw 0 3vw;
-        height: 25%;
+        height: 20%;
     }
 `
 
@@ -98,7 +97,13 @@ export const BottomContainerCardText = styles.p`
     padding: 2vh 20vw 2vh 20vw;
 
     @media (min-width: 768px) {
-        padding: 2vh 3vw 0 3vw;
+        padding: 5vh 3vw 0 3vw;
+        height: 80%;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 0 7vw;
+        font-size: 2rem;
     }
 `
 

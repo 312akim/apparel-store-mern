@@ -18,6 +18,7 @@ export const MainProductImg = styles.img`
 export const PreviewContainerDiv = styles.div`
     text-align: left;
     padding-top: calc(1rem + 1vw);
+    padding-bottom: calc(1rem + 1vw);
 
     @media (min-width: 1200px) {
         padding-left: 25%;
