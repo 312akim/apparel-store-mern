@@ -1,6 +1,6 @@
 import React from 'react';
 import { Formik } from 'formik';
-import { MainContactContainer, FieldLabel, FieldInput, FormFieldContainer, FormSubmitButton } from './ContactPageStyles';
+import { MainContactContainer, FieldLabel, FieldInput, FieldTextArea, FormFieldContainer, FormSubmitButton } from './ContactPageStyles';
 import { HeroContainer, HeroImage, HeroContainerHeader, HeroHeaderText } from '../../../shared/themes';
 
 
@@ -74,7 +74,7 @@ const ContactPage = () => {
                                 <FieldLabel htmlFor="message">
                                     Message
                                 </FieldLabel>
-                                <FieldInput
+                                <FieldTextArea
                                     onChange={handleChange}
                                     onBlur={handleBlur}
                                     value={values.message}

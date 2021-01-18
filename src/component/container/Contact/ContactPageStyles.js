@@ -35,6 +35,12 @@ export const FieldInput = styles.input`
     background: ${COLORS.secondaryLight};
 `
 
+export const FieldTextArea = styles.textarea`
+    width: 40%;
+    height: 4rem;
+    background: ${COLORS.secondaryLight};
+`
+
 export const FormSubmitButton = styles.button`
     margin-top: 4rem;
 `
