@@ -60,20 +60,24 @@ export const BottomContainerCardHeader = styles.h2`
         padding: 2vh 3vw 0 3vw;
         height: 20%;
     }
+
+    @media (min-width: 1200px) {
+        margin-top: 6vh;
+    }
 `
 
 export const BottomContainerCardText = styles.p`
     height: 50%;
     padding: 2vh 20vw 2vh 20vw;
+    font-size: calc(1rem + .5vw);
 
     @media (min-width: 768px) {
-        padding: 5vh 3vw 0 3vw;
+        padding: 4vh 3vw 0 3vw;
         height: 80%;
     }
 
     @media (min-width: 1200px) {
-        padding: 0 7vw;
-        font-size: 2rem;
+        padding: 2vh 7vw 0 7vw;
     }
 `
 

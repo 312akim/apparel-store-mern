@@ -19,10 +19,11 @@ export const FormFieldContainer = styles.div`
 `
 
 export const FieldLabel = styles.label`
-    display: inline-block;
-    width: 40%;
-    padding-right: 2rem;
-    background: gray;
+    display: block;
+    width: 20%;
+    margin-left: 40%;
+    color: ${COLORS.primaryLight};
+    background: ${COLORS.primaryHighlight};
 `
 
 export const WarningText = styles.div`
@@ -31,4 +32,9 @@ export const WarningText = styles.div`
 
 export const FieldInput = styles.input`
     width: 40%;
+    background: ${COLORS.secondaryLight};
+`
+
+export const FormSubmitButton = styles.button`
+    margin-top: 4rem;
 `

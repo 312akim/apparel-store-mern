@@ -11,22 +11,6 @@ export const HeroImage = styles.img`
     width: 100vw;
     z-index: -1;
     filter: brightness(75%);
-
-    @media (min-width: 576px) {
-        
-    }
-
-    @media (min-width: 768px) {
-
-    }
-
-    @media (min-width: 992px) {
-
-    }
-
-    @media (min-width: 1200px) {
-
-    }
 `
 
 export const HeroContainerHeader = styles.h1`
@@ -51,6 +35,8 @@ export const HeroContainerHeader = styles.h1`
 export const HeroHeaderText = styles.p`
     display: block;
     padding: 0 15vw 2vh 15vw;
+    font-size: calc(1rem + .5vw);
+    color: black;
 
     @media (min-width: 768px) {
         display: inline-block;
