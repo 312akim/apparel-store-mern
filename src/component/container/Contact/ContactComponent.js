@@ -18,6 +18,7 @@ const ContactPage = () => {
                     initialValues={{
                         name: '',
                         email: '',
+                        message: '',
                     }}
                     validate={values => {
                         console.log(values);
