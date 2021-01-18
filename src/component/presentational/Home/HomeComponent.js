@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { FeaturedContainer, FeaturedHeader, HeroContainer, HeroImage, HeroText, ShopAllLink, ShopButtonContainer } from './HomeComponentStyles'
+import { FeaturedContainer, FeaturedHeader, HeroText, ShopAllLink, ShopButtonContainer } from './HomeComponentStyles'
+import { HeroContainer, HeroImage } from '../../../shared/themes';
 import ProductItem from '../Products/ProductItemComponent'
 
 

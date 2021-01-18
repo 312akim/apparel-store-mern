@@ -3,6 +3,7 @@ import COLORS from '../../../shared/colorScheme'
 
 export const MainContactContainer = styles.div`
     padding-bottom: 4rem;
+    background: ${COLORS.primaryLight};
 `
 
 export const ContactHeader = styles.div`

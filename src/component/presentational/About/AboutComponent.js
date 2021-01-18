@@ -1,7 +1,8 @@
 import React from "react";
-import { MainAboutUsContainer, TopContainer, AboutUsHero, TopContainerHeader, BottomContainerImage,
-  BottomContainer, TopContainerHeaderText, BottomContainerCard, BottomContainerCardHeader, BottomContainerCardText
+import { MainAboutUsContainer, BottomContainerImage,
+  BottomContainer, BottomContainerCard, BottomContainerCardHeader, BottomContainerCardText
  } from "./AboutComponentStyles";
+ import { HeroContainer, HeroImage, HeroContainerHeader, HeroHeaderText } from '../../../shared/themes';
 
 const AboutPage = () => {
   
@@ -10,15 +11,17 @@ const AboutPage = () => {
 
   return (
     <MainAboutUsContainer>
-      <TopContainer>
-        <AboutUsHero src={aboutHero} />
-        <TopContainerHeader>
+
+      <HeroContainer>
+        <HeroImage src={aboutHero} />
+        <HeroContainerHeader>
           WHO WE ARE
-        </TopContainerHeader>
-        <TopContainerHeaderText>
+        </HeroContainerHeader>
+        <HeroHeaderText>
           We are MadCrown. Local individual artists brought together by love of design, anime and friends.
-        </TopContainerHeaderText>
-      </TopContainer>
+        </HeroHeaderText>
+      </HeroContainer>
+
       <BottomContainer>
         <BottomContainerImage src={qualityImage}/>
         <BottomContainerCard>

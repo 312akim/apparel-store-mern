@@ -1,7 +1,7 @@
 import React from 'react';
 import { Formik } from 'formik';
 import { MainContactContainer, FieldLabel, FieldInput, FormFieldContainer } from './ContactPageStyles';
-import { HeroContainer, HeroImage } from '../../../shared/themes';
+import { HeroContainer, HeroImage, HeroContainerHeader, HeroHeaderText } from '../../../shared/themes';
 
 
 const ContactPage = () => {
@@ -12,8 +12,13 @@ const ContactPage = () => {
             <MainContactContainer>
                 <HeroContainer>
                     <HeroImage src={contactPageHero} />
+                    <HeroContainerHeader>
+                        Contact Us
+                    </HeroContainerHeader>
+                    <HeroHeaderText>
+                        We're so happy you're reaching out to us! We look forward to your message below!
+                    </HeroHeaderText>
                 </HeroContainer>
-                <h1>Contact Us!</h1>
                 <Formik
                     initialValues={{
                         name: '',

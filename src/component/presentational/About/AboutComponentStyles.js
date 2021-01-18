@@ -17,36 +17,6 @@ export const AboutUsHero = styles.img`
     width: 100%;
 `
 
-export const TopContainerHeader = styles.h1`
-    margin: 0;
-    padding: 5vh 15vw 2vh 15vw;
-
-    @media (min-width: 768px) {
-        position: absolute;
-        top: 25vh;
-        background: white;
-        opacity: 0.8;
-        left: 25vw;
-        width: 50%;
-        padding: 0;
-    }
-
-    @media (min-width: 1200px) {
-        top: 55vh;
-    }
-`
-
-export const TopContainerHeaderText = styles.p`
-    display: block;
-    padding: 0 15vw 2vh 15vw;
-
-    @media (min-width: 768px) {
-        display: inline-block;
-        padding: 1vh 0 0 0;
-        width: 50%;
-    }
-`
-
 export const BottomContainer = styles.div`
     width: 100%;
     padding-bottom: 3vh;
