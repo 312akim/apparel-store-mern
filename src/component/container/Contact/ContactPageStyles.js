@@ -2,6 +2,14 @@ import styles from 'styled-components';
 import COLORS from '../../../shared/colorScheme'
 
 export const MainContactContainer = styles.div`
+    padding-bottom: 4rem;
+`
+
+export const ContactHeader = styles.div`
+
+`
+
+export const ContactHeaderText = styles.div`
 
 `
 

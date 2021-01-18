@@ -1,12 +1,18 @@
 import React from 'react';
 import { Formik } from 'formik';
 import { MainContactContainer, FieldLabel, FieldInput, FormFieldContainer } from './ContactPageStyles';
+import { HeroContainer, HeroImage } from '../../../shared/themes';
 
 
 const ContactPage = () => {
+    const contactPageHero = require('../../../shared/images/hello.jpg')
+    
     return (
         <>
             <MainContactContainer>
+                <HeroContainer>
+                    <HeroImage src={contactPageHero} />
+                </HeroContainer>
                 <h1>Contact Us!</h1>
                 <Formik
                     initialValues={{
