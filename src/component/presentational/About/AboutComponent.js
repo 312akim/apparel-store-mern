@@ -4,8 +4,7 @@ import { MainAboutUsContainer, TopContainer, AboutUsHero, TopContainerHeader, Bo
  } from "./AboutComponentStyles";
 
 const AboutPage = () => {
-
-  const imageLink = require("../../../shared/images/coffee-photo.jpg");
+  
   const aboutHero = require("../../../shared/images/group-people.jpg");
   const qualityImage = require("../../../shared/images/hand-measuring.jpg");
 

@@ -1,39 +1,84 @@
 import React from 'react';
-import { Formik, Field, Form } from 'formik';
+import { Formik } from 'formik';
+import { MainContactContainer, FieldLabel, FieldInput, FormFieldContainer } from './ContactPageStyles';
 
 
 const ContactPage = () => {
     return (
         <>
-            <div>
+            <MainContactContainer>
                 <h1>Contact Us!</h1>
                 <Formik
                     initialValues={{
-                        firstName: '',
+                        name: '',
                         email: '',
                     }}
-                    onSubmit={async (values) => {
-                        await new Promise((r) => setTimeout(r, 500));
-                        alert(JSON.stringify(values, null, 2));
+                    validate={values => {
+                        console.log(values);
                     }}
-                >
-                <Form>
-                    <label htmlFor="name">Name</label>
-                    <Field className="formField" id="name" name="name" placeholder="Jane Doe" />
-                    <label htmlFor="feedback">Message</label>
-                    <Field className="formField" id="feedback" name="feedback" placeholder="Type Here" />
-                    <label htmlFor="email">Email</label>
-                    <Field
-                        id="email"
-                        name="email"
-                        placeholder="jane@acme.com"
-                        type="email"
-                        className="formField"
-                    />
-                    <button type="submit">Submit</button>
-                </Form>
+                    onSubmit={values => {
+                        console.log(values);
+                    }}
+                    render={({
+                        touched,
+                        errors,
+                        values,
+                        handleChange,
+                        handleBlur,
+                        handleSubmit
+                    }) => (
+                        <form onSubmit={handleSubmit}>
+                        <FormFieldContainer>
+                            <FieldLabel htmlFor="name">
+                                Name
+                            </FieldLabel>
+                            <FieldInput
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                                value={values.name}
+                                border={errors.name && "1px solid red"}
+                                type="text"
+                                name="name"
+                                id="name"
+                                placeholder="Name"
+                            />
+                        </FormFieldContainer>
+                        <FormFieldContainer>
+                            <FieldLabel htmlFor="email">
+                                Email
+                            </FieldLabel>
+                            <FieldInput
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                                value={values.email}
+                                border={errors.email && "1px solid red"}
+                                type="text"
+                                name="email"
+                                id="email"
+                                placeholder="Email"
+                            />
+                        </FormFieldContainer>
+                        <FormFieldContainer>
+                            <FieldLabel htmlFor="message">
+                                Message
+                            </FieldLabel>
+                            <FieldInput
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                                value={values.message}
+                                border={errors.message && "1px solid red"}
+                                type="text"
+                                name="message"
+                                id="message"
+                                placeholder="Message"
+                            />
+                        </FormFieldContainer>
+                        <button type="submit">Submit</button>
+                    </form>
+                    )}
+                    >
                 </Formik>
-            </div>
+            </MainContactContainer>
         </>
     )
 }
