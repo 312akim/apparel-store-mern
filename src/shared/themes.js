@@ -1,4 +1,5 @@
 import styles from 'styled-components';
+import { fontSizeRegular, fontSizeMainHeader } from './fontsTheme';
 
 export const HeroContainer = styles.div`
     positiion: relative;
@@ -16,6 +17,7 @@ export const HeroImage = styles.img`
 export const HeroContainerHeader = styles.h1`
     margin: 0;
     padding: 5vh 15vw 2vh 15vw;
+    font-size: ${fontSizeMainHeader};
 
     @media (min-width: 768px) {
         position: absolute;
@@ -35,7 +37,7 @@ export const HeroContainerHeader = styles.h1`
 export const HeroHeaderText = styles.p`
     display: block;
     padding: 0 15vw 2vh 15vw;
-    font-size: calc(1rem + .5vw);
+    font-size: ${fontSizeRegular};
     color: black;
 
     @media (min-width: 768px) {

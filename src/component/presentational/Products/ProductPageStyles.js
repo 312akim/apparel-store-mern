@@ -1,5 +1,6 @@
 import styles from 'styled-components';
 import COLORS from '../../../shared/colorScheme';
+import { fontSizeProductLabel, fontSizeProductSelect } from '../../../shared/fontsTheme';
 
 export const ItemPageContainer = styles.div`
     background: ${COLORS.primaryLight};
@@ -82,7 +83,7 @@ export const OptionsContainer = styles.div`
 export const OptionsLabel = styles.label`
     text-align: left;
     width: 30%;
-    font-size: calc(1rem + 0.9vw);
+    font-size: ${fontSizeProductLabel};
 
     @media (min-width: 1200px) {
         text-align: left;
@@ -93,7 +94,7 @@ export const OptionsLabel = styles.label`
 export const SelectOptions = styles.select`
     text-align: right;
     width: 50%;
-    font-size: calc(0.8rem + 0.9vw);
+    font-size: ${fontSizeProductSelect};
     
 
     

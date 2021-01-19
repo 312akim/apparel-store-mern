@@ -1,5 +1,6 @@
 import React from 'react';
 import { FeaturedContainer } from '../Home/HomeComponentStyles'
+import { FeaturedHeader } from './StorePageStyles'
 import ProductItem from '../Products/ProductItemComponent'
 
 
@@ -22,14 +23,13 @@ const StorePage = ({products}) => {
 
     return (
         <div>
-            <div>This is the Main store Page!!</div>
             <div>
-                <h3>Featured Products</h3>
+                <FeaturedHeader>Featured Products</FeaturedHeader>
                 <FeaturedContainer>
                     {featuredProducts}
                 </FeaturedContainer>
             </div>
-            <h3>T Shirts</h3>
+            <FeaturedHeader>T Shirts</FeaturedHeader>
             {tshirtCategory}
         </div>
     )

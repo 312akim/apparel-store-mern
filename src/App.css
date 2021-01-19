@@ -4,6 +4,10 @@
   width: 50%;
 }
 
+body {
+  background: #F3F3F3;
+}
+
 .App {
   text-align: center;
   width: 100%;
