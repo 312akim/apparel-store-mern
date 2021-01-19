@@ -2,12 +2,16 @@ export const fontSizeRegular = `
     calc(1rem + .5vw);
 `
 
+export const fontSizeRegularPlus = `
+    calc(1.4rem + .5vw);
+`
+
 export const fontSizeMainHeader = `
     calc(2.5rem + .5vw);
 `
 
 export const fontSizeSecondaryHeader = `
-    calc(2rem + .5vw);
+    calc(1.8rem + .5vw);
 `
 
 export const fontSizeLabelInput = `
@@ -20,4 +24,8 @@ export const fontSizeProductLabel = `
 
 export const fontSizeProductSelect = `
     calc(1.2rem + .5vw);
+`
+
+export const fontSizeButton = `
+    calc(1.2rem + .5vw)
 `

@@ -1,5 +1,6 @@
 import COLORS from "../../../shared/colorScheme"
 import styles from "styled-components"
+import { fontSizeRegular } from '../../../shared/fontsTheme'
 
 export const MainAboutUsContainer = styles.div`
     background: ${COLORS.primaryLight};
@@ -7,10 +8,6 @@ export const MainAboutUsContainer = styles.div`
 
 export const TopContainer = styles.div`
     width: 100%;
-
-    @media (min-width: 768px) {
-
-    }
 `
 
 export const AboutUsHero = styles.img`
@@ -69,7 +66,7 @@ export const BottomContainerCardHeader = styles.h2`
 export const BottomContainerCardText = styles.p`
     height: 50%;
     padding: 2vh 20vw 2vh 20vw;
-    font-size: calc(1rem + .5vw);
+    font-size: ${fontSizeRegular};
 
     @media (min-width: 768px) {
         padding: 4vh 3vw 0 3vw;
@@ -80,23 +77,4 @@ export const BottomContainerCardText = styles.p`
         padding: 2vh 7vw 0 7vw;
     }
 `
-
-export const Example = styles.div`
-
-    @media (min-width: 576px) {
-
-    }
-    
-    @media (min-width: 768px) {
-    
-    }
-    
-    @media (min-width: 992px) {
-    
-    }
-    
-    @media (min-width: 1200px) {
-    
-    }
-`;
 

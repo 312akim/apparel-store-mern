@@ -1,6 +1,6 @@
 import styles from 'styled-components';
 import COLORS from '../../../shared/colorScheme';
-import { fontSizeProductLabel, fontSizeProductSelect } from '../../../shared/fontsTheme';
+import { fontSizeProductLabel, fontSizeProductSelect, fontSizeButton } from '../../../shared/fontsTheme';
 
 export const ItemPageContainer = styles.div`
     background: ${COLORS.primaryLight};
@@ -49,7 +49,7 @@ export const ItemPrice = styles.div`
     text-align: right;
     padding-right: calc(1rem + 4vw);
     font: bold Helvetica;
-    font-size: calc(0.8rem + 0.9vw);
+    font-size: ${fontSizeProductLabel};
 
     @media (min-width: 1200px) {
         display: none;
@@ -133,7 +133,7 @@ export const AddProductButton = styles.button`
     width: 50%;
     background-color: black;
     border: none;
-    font-size: calc(0.8rem + 0.9vw);
+    font-size: ${fontSizeButton};
     color: ${COLORS.primaryLight};
     padding: 10px 25px;
     border-radius: 24px;

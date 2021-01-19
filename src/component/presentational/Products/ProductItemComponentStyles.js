@@ -1,5 +1,6 @@
 import styles from 'styled-components';
 import COLORS from '../../../shared/colorScheme';
+import { fontSizeRegular } from '../../../shared/fontsTheme';
 
 export const ItemDisplayCard = styles.div`
     width: 80%;
@@ -18,14 +19,6 @@ export const ItemDisplayCard = styles.div`
         margin-top: 2%;
         vertical-align: bottom;
         width: 40%;
-    }
-
-    @media (min-width: 768px) {
-
-    }
-
-    @media (min-width: 992px) {
-
     }
 
     @media (min-width: 1200px) {
@@ -47,18 +40,6 @@ export const ItemDisplayImg = styles.img`
         width: 100%;
         height: 80%;
     }
-
-    @media (min-width: 768px) {
-
-    }
-
-    @media (min-width: 992px) {
-
-    }
-
-    @media (min-width: 1200px) {
-        
-    }
 `
 
 export const ItemDisplayBody = styles.div`
@@ -73,35 +54,15 @@ export const ItemDisplayBody = styles.div`
         width: 100%;
         height: 20%;
     }
-
-    @media (min-width: 768px) {
-
-    }
-
-    @media (min-width: 992px) {
-
-    }
-
-    @media (min-width: 1200px) {
-
-    }
 `
 
 export const ItemDisplayName = styles.div`
     display: inline-block;
     padding: 2% 5% 0 5%;
-    font-size: calc(1.1rem + 0.5vw);
+    font-size: ${fontSizeRegular};
 
     @media (min-width: 576px) {
         padding-top: 3%;
-    }
-
-    @media (min-width: 768px) {
-
-    }
-
-    @media (min-width: 992px) {
-        padding-top: 2%;
     }
 
     @media (min-width: 1200px) {
