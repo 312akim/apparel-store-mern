@@ -59,12 +59,9 @@ class TopNav extends Component {
                                         <DropdownItem>
                                             Brand 1
                                         </DropdownItem>
-                                        <DropdownItem>
-                                            Brand 2
-                                        </DropdownItem>
                                         <DropdownItem divider />
                                         <DropdownItem>
-                                            Reset
+                                            Brand 2
                                         </DropdownItem>
                                     </DropdownMenu>
                                 </UncontrolledDropdown>

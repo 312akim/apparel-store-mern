@@ -6,9 +6,9 @@ export const MainFooterContainer = styles.div`
     z-index: 10;
     background: ${COLORS.primaryHighlight};
     color: ${COLORS.secondaryLight};
-    height: 30vh;
+    height: 32vh;
     padding-top: 2vh;
-    padding-bottom: 3vh;
+    padding-bottom: 1vh;
     bottom: 0;
 
     @media (min-width: 768px) {
@@ -96,22 +96,34 @@ export const FooterNavigationContainer = styles.div`
     width: 50%;
 `
 
+export const FooterLinks = styles.div`
+    color: white;
+    padding-bottom: 8%;
+    :hover {
+        color: ${COLORS.primaryDark};
+    }
+
+    @media (min-width: 1200px) {
+        padding-bottom: 3%;
+    }
+`
+
 export const FooterCopyrightContainer = styles.div`
     height: 20%;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     background: ${COLORS.primaryHighlight};
 `
 
 export const IconContainer = styles.div`
     display: inline-block;
-    padding: 0 2%;
+    padding: 0 3%;
 `
 
 export const LeftFooterContainer = styles.div`
     display: inline-block;
     width: 50%;
-    padding-left: 10%;
+    padding-left: 7%;
 
     @media (min-width: 768px) {
         padding-left: 15%;
@@ -123,7 +135,7 @@ export const RightFooterContainer = styles.div`
     vertical-align: top;
     height: 80%;
     width: 50%;
-    padding-right: 10%;
+    padding-right: 7%;
 
     @media (min-width: 768px) {
         padding-right: 15%;

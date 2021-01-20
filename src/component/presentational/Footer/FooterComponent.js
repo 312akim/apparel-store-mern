@@ -1,8 +1,7 @@
 import React from 'react'
-import { MainFooterContainer, StaticEmailSignupContainer, FloatingSignupContainer, EmailSignupText, FloatingSignupExit, EmailSignupInput, EmailSignupButton, FooterSocialIconsContainer, FooterNavigationContainer, FooterCopyrightContainer, IconContainer, LeftFooterContainer, RightFooterContainer } from './FooterComponentStyles';
+import { MainFooterContainer, StaticEmailSignupContainer, FloatingSignupContainer, EmailSignupText, FloatingSignupExit, EmailSignupInput, EmailSignupButton, FooterSocialIconsContainer, FooterNavigationContainer, FooterLinks, FooterCopyrightContainer, IconContainer, LeftFooterContainer, RightFooterContainer } from './FooterComponentStyles';
+import { Link } from 'react-router-dom';
 
-
-//Sticky footer? Email subscribe should always be visible...
 const Footer = ({showEmailSignup, footerExitHandler}) => {
 	
 	const EmailSignup = () => {
@@ -19,7 +18,7 @@ const Footer = ({showEmailSignup, footerExitHandler}) => {
 			</>
 		)
 	}
-	// Needs to be resized & centered due to exit button
+
 	const FloatingEmailSignup = () => {
 		if (showEmailSignup) {
 			return (
@@ -39,16 +38,24 @@ const Footer = ({showEmailSignup, footerExitHandler}) => {
 		return (
 			<FooterSocialIconsContainer>
 				<IconContainer>
-					<i class="fa fa-instagram fa-2x"></i>
+					<FooterLinks>
+						<i class="fa fa-instagram fa-2x"></i>
+					</FooterLinks>
 				</IconContainer>
 				<IconContainer>
-					<i class="fa fa-youtube-square fa-2x"></i>
+					<FooterLinks>
+						<i class="fa fa-youtube-square fa-2x"></i>
+					</FooterLinks>
 				</IconContainer>
 				<IconContainer>
-					<i class="fa fa-facebook-square fa-2x"></i>
+					<FooterLinks>
+						<i class="fa fa-facebook-square fa-2x"></i>
+					</FooterLinks>
 				</IconContainer>
 				<IconContainer>
-					<i class="fa fa-twitter-square fa-2x"></i>
+					<FooterLinks>
+						<i class="fa fa-twitter-square fa-2x"></i>
+					</FooterLinks>
 				</IconContainer>
 			</FooterSocialIconsContainer>
 		)
@@ -73,12 +80,27 @@ const Footer = ({showEmailSignup, footerExitHandler}) => {
 				</LeftFooterContainer>
 				<RightFooterContainer>
 					<FooterNavigationContainer>
-						<div>Navigation</div>
-						<div>Store</div>
-						<div>About Us</div>
-						<div>Contact Us</div>
-						<div>Brand 1</div>
-						<div>Brand 2</div>
+						<Link to="/store/">
+							<FooterLinks>
+								Store
+							</FooterLinks>
+						</Link>
+						<Link to="/about/">
+							<FooterLinks>
+								About Us
+							</FooterLinks>
+						</Link>
+						<Link to="/contact/">
+							<FooterLinks>
+								Contact Us
+							</FooterLinks>
+						</Link>
+						<FooterLinks>
+							Brand1
+						</FooterLinks>
+						<FooterLinks>
+							Brand2
+						</FooterLinks>
 					</FooterNavigationContainer>
 				</RightFooterContainer>
 				<CopyrightComponent/>

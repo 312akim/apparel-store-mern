@@ -26,6 +26,10 @@ body {
     display: none;
   }
 }
+a:hover {
+  text-decoration: none;
+}
+
 .formField {
   display: block;
   margin: 0 37.5%;
