@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { FeaturedContainer, FeaturedHeader, HeroText, ShopAllIconContainer, ShopAllLinkContainer } from './HomeComponentStyles'
+import { ProductsContainer, FeaturedContainer, FeaturedHeader, HeroText, ShopAllIconContainer, ShopAllLinkContainer } from './HomeComponentStyles'
 import { HeroContainer, HeroImage } from '../../../shared/themes';
 import ProductItem from '../Products/ProductItemComponent'
 
@@ -17,7 +17,7 @@ const HomePage = ({products}) => {
             count++;
             return (
                 <ProductItem className="homeFeaturedItems" item={item} key={item.id}/>
-                )
+            )
         }
     })
 
@@ -43,13 +43,17 @@ const HomePage = ({products}) => {
                 <HeroText>Brand Logo/Motto here. Image is 1720x600</HeroText>
             </HeroContainer>
             
+            <ShopAllLink />
             {/* Maybe limit to 3 or pass props for how many displayed for mobile/other views */}
             <FeaturedContainer>
-                <FeaturedHeader>
-                    Featured
-                    <ShopAllLink />
-                </FeaturedHeader>
-                {featuredProducts}
+                <Link to={`/store`}>
+                    <FeaturedHeader>
+                        Featured
+                    </FeaturedHeader>
+                </Link>
+                <ProductsContainer>
+                    {featuredProducts}
+                </ProductsContainer>
             </FeaturedContainer>
         </div>
     )

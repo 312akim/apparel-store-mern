@@ -30,7 +30,13 @@ export const FeaturedContainer = styles.div`
 `
 
 export const FeaturedHeader = styles.h2`
-    font-size: ${fontSizeSecondaryHeader};    
+    display: inline-block;
+    color: black;
+    margin: 0 auto;
+    font-size: ${fontSizeSecondaryHeader};
+    :hover {
+        color: ${COLORS.primaryDark}
+    }    
 `
 
 export const ShopButtonContainer = styles.div`
@@ -57,6 +63,7 @@ export const ShopButtonContainer = styles.div`
 export const ShopAllLinkContainer = styles.div`
     display: inline-block;
     position: absolute;
+    margin-top: 2vh;
     right: -34px;
     padding: 5px 2px 2px 2px;
     margin-right: 10%;
@@ -71,4 +78,8 @@ export const ShopAllLinkContainer = styles.div`
 export const ShopAllIconContainer = styles.div`
     display: inline-block;
     padding-left: 8px;
+`
+
+export const ProductsContainer = styles.div`
+    display: block;
 `

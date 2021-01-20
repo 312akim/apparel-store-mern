@@ -10,6 +10,13 @@ export const ItemDisplayCard = styles.div`
     border-color: ${COLORS.secondaryDark};
     background: ${COLORS.secondaryLight};
 
+    :hover {
+        background: ${COLORS.primaryDark};
+    }
+
+    :hover div {
+        color: ${COLORS.primaryLight};
+    }
 
     @media (min-width: 576px) {
         display: inline-block;
