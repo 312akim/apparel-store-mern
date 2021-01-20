@@ -1,5 +1,5 @@
 import React from 'react'
-import { MainFooterContainer, StaticEmailSignupContainer, FooterEmailSignupContainer, EmailSignupText, EmailSignupExit, EmailSignupInput, EmailSignupButton, FooterSocialIconsContainer, FooterNavigationContainer, FooterCopyrightContainer, IconContainer, LeftFooterContainer, RightFooterContainer } from './FooterComponentStyles';
+import { MainFooterContainer, StaticEmailSignupContainer, FloatingSignupContainer, EmailSignupText, FloatingSignupExit, EmailSignupInput, EmailSignupButton, FooterSocialIconsContainer, FooterNavigationContainer, FooterCopyrightContainer, IconContainer, LeftFooterContainer, RightFooterContainer } from './FooterComponentStyles';
 
 
 //Sticky footer? Email subscribe should always be visible...
@@ -23,10 +23,10 @@ const Footer = ({showEmailSignup, footerExitHandler}) => {
 	const FloatingEmailSignup = () => {
 		if (showEmailSignup) {
 			return (
-				<FooterEmailSignupContainer className="fixed-bottom">
-					<EmailSignupExit onClick={footerExitHandler}>X</EmailSignupExit>
+				<FloatingSignupContainer className="fixed-bottom">
+					<FloatingSignupExit onClick={footerExitHandler}>X</FloatingSignupExit>
 					<EmailSignup />
-				</FooterEmailSignupContainer>
+				</FloatingSignupContainer>
 			)
 		} else {
 			return (

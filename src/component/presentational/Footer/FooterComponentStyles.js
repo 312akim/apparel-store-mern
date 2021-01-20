@@ -32,15 +32,16 @@ export const StaticEmailSignupContainer = styles.div`
     }
 `
 
-export const FooterEmailSignupContainer = styles.div`
+// Floating signup
+export const FloatingSignupContainer = styles.div`
     text-align: center;
     border: ${COLORS.primaryDark} 2px solid;
-    height: 15vh;
+    height: 7rem;
     width: 50%;
     margin-left: 25%;
     background: ${COLORS.primaryHighlight};
     color: ${COLORS.secondaryLight};
-    bottom: 1vh;
+    bottom: 3vh;
     z-index: 5;
 
     @media (min-width: 992px) {
@@ -54,19 +55,29 @@ export const FooterEmailSignupContainer = styles.div`
     }
 `
 
-export const EmailSignupExit = styles.button`
-    display: inline-block;
+export const FloatingSignupExit = styles.button`
+    position: absolute;
+    top: 0;
+    right: 0;
     float: right;
+    width: 2rem;
+    height: 2rem;
 `
 
 export const EmailSignupText = styles.div`
-    display: inline-block;
+    display: block;
 `
 
 
 export const EmailSignupInput = styles.input`
     width: 80%;
     margin-top: 0.5rem;
+
+    @media (min-width: 768px) {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
 `
 
 export const EmailSignupButton = styles.button`
@@ -90,18 +101,6 @@ export const FooterCopyrightContainer = styles.div`
     padding-top: 2vh;
     padding-bottom: 2vh;
     background: ${COLORS.primaryHighlight};
-
-    @media (min-width: 768px) {
-
-    }
-
-    @media (min-width: 992px) {
-
-    }
-
-    @media (min-width: 1200px) {
-
-    }
 `
 
 export const IconContainer = styles.div`
