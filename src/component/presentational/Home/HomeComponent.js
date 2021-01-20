@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { FeaturedContainer, FeaturedHeader, HeroText, ShopAllLink, ShopButtonContainer } from './HomeComponentStyles'
+import { FeaturedContainer, FeaturedHeader, HeroText, ShopAllIconContainer, ShopAllLinkContainer } from './HomeComponentStyles'
 import { HeroContainer, HeroImage } from '../../../shared/themes';
 import ProductItem from '../Products/ProductItemComponent'
 
@@ -18,8 +18,21 @@ const HomePage = ({products}) => {
             return (
                 <ProductItem className="homeFeaturedItems" item={item} key={item.id}/>
                 )
-            }
-        })
+        }
+    })
+
+    const ShopAllLink = () => {
+        return (
+            <Link to={`/store`}>
+                <ShopAllLinkContainer>
+                    Shop All
+                    <ShopAllIconContainer>
+                        <i class="fa fa-angle-right"></i>
+                    </ShopAllIconContainer>
+                </ShopAllLinkContainer>
+            </Link>
+        )
+    }
         
     const heroImage = require('../../../shared/images/home-background.jpg');
     
@@ -32,16 +45,12 @@ const HomePage = ({products}) => {
             
             {/* Maybe limit to 3 or pass props for how many displayed for mobile/other views */}
             <FeaturedContainer>
-                <FeaturedHeader>Featured</FeaturedHeader>
+                <FeaturedHeader>
+                    Featured
+                    <ShopAllLink />
+                </FeaturedHeader>
                 {featuredProducts}
             </FeaturedContainer>
-            <Link to={`/store`}>
-                <ShopButtonContainer>
-                    <ShopAllLink>
-                        Shop All
-                    </ShopAllLink>
-                </ShopButtonContainer>
-            </Link>
         </div>
     )
 }

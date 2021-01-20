@@ -19,11 +19,15 @@ const Footer = ({showEmailSignup, footerExitHandler}) => {
 		)
 	}
 
+
+	//Exiting float should set state to hidden 
 	const FloatingEmailSignup = () => {
 		if (showEmailSignup) {
 			return (
 				<FloatingSignupContainer className="fixed-bottom">
-					<FloatingSignupExit onClick={footerExitHandler}>X</FloatingSignupExit>
+					<FloatingSignupExit onClick={footerExitHandler}>
+						<i class="fa fa-2x fa-times"></i>
+					</FloatingSignupExit>
 					<EmailSignup />
 				</FloatingSignupContainer>
 			)

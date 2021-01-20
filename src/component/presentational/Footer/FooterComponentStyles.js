@@ -1,5 +1,6 @@
 import styles from 'styled-components';
 import COLORS from '../../../shared/colorScheme';
+import { fontSizeRegular } from '../../../shared/fontsTheme';
 
 export const MainFooterContainer = styles.div`
     position: relative;
@@ -36,7 +37,7 @@ export const StaticEmailSignupContainer = styles.div`
 export const FloatingSignupContainer = styles.div`
     text-align: center;
     border: ${COLORS.primaryDark} 2px solid;
-    height: 7rem;
+    height: 7.5rem;
     width: 50%;
     margin-left: 25%;
     background: ${COLORS.primaryHighlight};
@@ -57,14 +58,19 @@ export const FloatingSignupContainer = styles.div`
 
 export const FloatingSignupExit = styles.button`
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -2px;
+    right: -2px;
     float: right;
-    width: 2rem;
-    height: 2rem;
+    background: none;
+    border: none;
+
+    :hover {
+        color: ${COLORS.primaryDark};
+    }
 `
 
 export const EmailSignupText = styles.div`
+    margin-top: 0.5rem;
     display: block;
 `
 

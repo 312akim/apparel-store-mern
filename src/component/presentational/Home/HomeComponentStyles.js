@@ -1,6 +1,6 @@
 import styles from 'styled-components';
 import COLORS from '../../../shared/colorScheme';
-import { fontSizeButton, fontSizeRegularPlus, fontSizeSecondaryHeader } from '../../../shared/fontsTheme';
+import { fontSizeRegular, fontSizeRegularPlus, fontSizeSecondaryHeader } from '../../../shared/fontsTheme';
 
 // Need to fix 1024x1366 ipad pro resolution
 export const HeroText = styles.div`
@@ -54,10 +54,21 @@ export const ShopButtonContainer = styles.div`
     }
 `
 
-export const ShopAllLink = styles.button`
-    positon: absolute;
-    background: black;
-    color: white;
-    border: none;
-    font-size: ${fontSizeButton};
+export const ShopAllLinkContainer = styles.div`
+    display: inline-block;
+    position: absolute;
+    right: -34px;
+    padding: 5px 2px 2px 2px;
+    margin-right: 10%;
+    font-size: ${fontSizeRegular}
+    color: black;
+
+    :hover {
+        color: ${COLORS.primaryDark}
+    }
+`
+
+export const ShopAllIconContainer = styles.div`
+    display: inline-block;
+    padding-left: 8px;
 `
