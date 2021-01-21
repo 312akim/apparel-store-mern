@@ -9,6 +9,16 @@
   padding-top: 3px;
   padding-bottom: 3px;
 }
+.breadcrumb a {
+  color: black;
+}
+.breadcrumb .active {
+  color: #ADAEAD;
+}
+
+.breadcrumb-item :hover {
+  color: #ADAEAD;
+}
 
 .App {
   text-align: center;
