@@ -10,14 +10,14 @@
   padding-bottom: 3px;
 }
 .breadcrumb a {
-  color: black;
+  color: #ADAEAD;
 }
 .breadcrumb .active {
-  color: #ADAEAD;
+  color: black;
 }
 
 .breadcrumb-item :hover {
-  color: #ADAEAD;
+  color: black;
 }
 
 .App {

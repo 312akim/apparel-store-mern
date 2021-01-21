@@ -17,16 +17,16 @@ $primaryHighlight: #685d61; // Purple/Brown - Highlight Action
     padding-top: 3px;
     padding-bottom: 3px;
     a {
-        color: black;
+        color: $primaryDark;
     }
 
     .active {
-        color: $primaryDark;
+        color: black;
     }
 }
 
 .breadcrumb-item {
     :hover {
-        color: $primaryDark;
+        color: black;
     }
 }

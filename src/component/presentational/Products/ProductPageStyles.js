@@ -66,7 +66,6 @@ export const LaptopContainer = styles.div`
 
 export const LaptopPrice = styles.div`
     text-align: left;
-    color: red;
     font-size: calc(0.8rem + 0.9vw);
 `
 
