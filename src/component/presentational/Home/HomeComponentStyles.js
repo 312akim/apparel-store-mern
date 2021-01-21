@@ -22,23 +22,6 @@ export const HeroText = styles.div`
     }
 `
 
-export const FeaturedContainer = styles.div`
-    width: 100%;
-    background: ${COLORS.primaryLight};
-    padding-top: 3%;
-    padding-bottom: 5%;
-`
-
-export const FeaturedHeader = styles.h2`
-    display: inline-block;
-    color: black;
-    margin: 0 auto;
-    font-size: ${fontSizeSecondaryHeader};
-    :hover {
-        color: ${COLORS.primaryDark}
-    }    
-`
-
 export const ShopButtonContainer = styles.div`
     background: ${COLORS.primaryLight};
     padding-bottom: 8%;

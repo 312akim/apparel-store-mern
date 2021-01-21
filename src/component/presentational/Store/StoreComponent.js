@@ -1,6 +1,5 @@
 import React from 'react';
-import { FeaturedContainer } from '../Home/HomeComponentStyles'
-import { FeaturedHeader } from './StorePageStyles'
+import { ProductHeader, ProductContainer } from './StorePageStyles'
 import ProductItem from '../Products/ProductItemComponent'
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 
@@ -34,12 +33,12 @@ const StorePage = ({products}) => {
         <div>
             <BreadcrumbComponent />
             <div>
-                <FeaturedHeader>Featured Products</FeaturedHeader>
-                <FeaturedContainer>
+                <ProductContainer>
+                    <ProductHeader>Featured Products</ProductHeader>
                     {featuredProducts}
-                </FeaturedContainer>
+                </ProductContainer>
             </div>
-            <FeaturedHeader>T Shirts</FeaturedHeader>
+            <ProductHeader>T Shirts</ProductHeader>
             {tshirtCategory}
         </div>
     )

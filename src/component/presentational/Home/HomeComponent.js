@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { ProductsContainer, FeaturedContainer, FeaturedHeader, HeroText, ShopAllIconContainer, ShopAllLinkContainer } from './HomeComponentStyles'
+import { ProductsContainer, HeroText, ShopAllIconContainer, ShopAllLinkContainer } from './HomeComponentStyles'
+import { ProductContainer, ProductHeader } from '../Store/StorePageStyles';
 import { HeroContainer, HeroImage } from '../../../shared/themes';
 import ProductItem from '../Products/ProductItemComponent'
 
@@ -45,16 +46,14 @@ const HomePage = ({products}) => {
             
             <ShopAllLink />
             {/* Maybe limit to 3 or pass props for how many displayed for mobile/other views */}
-            <FeaturedContainer>
-                <Link to={`/store`}>
-                    <FeaturedHeader>
-                        Featured
-                    </FeaturedHeader>
-                </Link>
+            <ProductContainer>
+                <ProductHeader>
+                    Featured
+                </ProductHeader>
                 <ProductsContainer>
                     {featuredProducts}
                 </ProductsContainer>
-            </FeaturedContainer>
+            </ProductContainer>
         </div>
     )
 }

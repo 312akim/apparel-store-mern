@@ -12,6 +12,8 @@ export const ItemDisplayCard = styles.div`
 
     :hover {
         background: ${COLORS.primaryDark};
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+        border: none;
     }
 
     :hover div {
