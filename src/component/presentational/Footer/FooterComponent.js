@@ -13,7 +13,7 @@ const Footer = ({showEmailSignup, footerExitHandler}) => {
 				<EmailSignupInput placeholder="Email Address">
 				</EmailSignupInput>
 				<EmailSignupButton type="submit">
-					Submit
+					<i class="fa fa-paper-plane"></i>
 				</EmailSignupButton>
 			</>
 		)
@@ -73,40 +73,52 @@ const Footer = ({showEmailSignup, footerExitHandler}) => {
 		)
 	}
 
+	const LeftFooter = () => {
+		return (
+			<LeftFooterContainer>
+				<SocialIconComponent/>
+				<StaticEmailSignupContainer>
+					<EmailSignup/>
+				</StaticEmailSignupContainer>
+			</LeftFooterContainer>
+		)
+	}
+
+	const RightFooter = () => {
+		return (
+			<RightFooterContainer>
+				<FooterNavigationContainer>
+					<Link to="/store/">
+						<FooterLinks>
+							Store
+						</FooterLinks>
+					</Link>
+					<Link to="/about/">
+						<FooterLinks>
+							About Us
+						</FooterLinks>
+					</Link>
+					<Link to="/contact/">
+						<FooterLinks>
+							Contact Us
+						</FooterLinks>
+					</Link>
+					<FooterLinks>
+						Brand1
+					</FooterLinks>
+					<FooterLinks>
+						Brand2
+					</FooterLinks>
+				</FooterNavigationContainer>
+			</RightFooterContainer>
+		)
+	}
+
 	return (
 		<>
 			<MainFooterContainer>
-				<LeftFooterContainer>
-					<SocialIconComponent/>
-					<StaticEmailSignupContainer>
-						<EmailSignup/>
-					</StaticEmailSignupContainer>
-				</LeftFooterContainer>
-				<RightFooterContainer>
-					<FooterNavigationContainer>
-						<Link to="/store/">
-							<FooterLinks>
-								Store
-							</FooterLinks>
-						</Link>
-						<Link to="/about/">
-							<FooterLinks>
-								About Us
-							</FooterLinks>
-						</Link>
-						<Link to="/contact/">
-							<FooterLinks>
-								Contact Us
-							</FooterLinks>
-						</Link>
-						<FooterLinks>
-							Brand1
-						</FooterLinks>
-						<FooterLinks>
-							Brand2
-						</FooterLinks>
-					</FooterNavigationContainer>
-				</RightFooterContainer>
+				<LeftFooter />
+				<RightFooter />
 				<CopyrightComponent/>
 			</MainFooterContainer>
 			<FloatingEmailSignup />

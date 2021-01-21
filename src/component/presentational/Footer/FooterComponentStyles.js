@@ -1,6 +1,5 @@
 import styles from 'styled-components';
 import COLORS from '../../../shared/colorScheme';
-import { fontSizeRegular } from '../../../shared/fontsTheme';
 
 export const MainFooterContainer = styles.div`
     position: relative;
@@ -87,7 +86,16 @@ export const EmailSignupInput = styles.input`
 `
 
 export const EmailSignupButton = styles.button`
-    margin-top: 0.5rem;
+    display: block;
+    background-color: ${COLORS.primaryHighlight};
+    border: 1px solid white;
+    margin-top: 8px;
+    margin: 10px auto;
+    color: white;
+
+    :hover {
+        background-color: ${COLORS.primaryDark};
+    }
 `
 
 export const FooterSocialIconsContainer = styles.div`
@@ -118,6 +126,7 @@ export const FooterCopyrightContainer = styles.div`
     height: 20%;
     padding-top: 1vh;
     padding-bottom: 1vh;
+    color: white;
     background: ${COLORS.primaryHighlight};
 `
 
