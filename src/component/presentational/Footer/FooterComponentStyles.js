@@ -96,6 +96,7 @@ export const EmailSignupButton = styles.button`
 
     :hover {
         background-color: ${COLORS.primaryDark};
+        transform: scale(1.2,1.2);
     }
 `
 
@@ -116,6 +117,7 @@ export const FooterLinks = styles.div`
     padding-bottom: 8%;
     :hover {
         color: ${COLORS.primaryDark};
+        transform: scale(1.2,1.2);
     }
 
     @media (min-width: 1200px) {
