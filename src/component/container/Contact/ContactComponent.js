@@ -2,24 +2,28 @@ import React from 'react';
 import { Formik } from 'formik';
 import { MainContactContainer, FieldLabel, FieldInput, FieldTextArea, FormFieldContainer, FormSubmitButton } from './ContactPageStyles';
 import { HeroContainer, HeroImage, HeroContainerHeader, HeroHeaderText } from '../../../shared/themes';
-
+import { Breadcrumb, BreadcrumbItem } from 'reactstrap'; 
 
 const ContactPage = () => {
     const contactPageHero = require('../../../shared/images/hello.jpg')
     
-    return (
-        <>
-            <MainContactContainer>
-                <HeroContainer>
-                    <HeroImage src={contactPageHero} />
-                    <HeroContainerHeader>
-                        Contact Us
-                    </HeroContainerHeader>
-                    <HeroHeaderText>
-                        We're so happy you're reaching out to us. We look forward to your message below!
-                    </HeroHeaderText>
-                </HeroContainer>
-                <Formik
+    const Hero = () => {
+        return (
+            <HeroContainer>
+                <HeroImage src={contactPageHero} />
+                <HeroContainerHeader>
+                    Contact Us
+                </HeroContainerHeader>
+                <HeroHeaderText>
+                    We're so happy you're reaching out to us. We look forward to your message below!
+                </HeroHeaderText>
+            </HeroContainer>
+        )
+    }
+
+    const ContactForm = () => {
+        return (
+            <Formik
                     initialValues={{
                         name: '',
                         email: '',
@@ -90,6 +94,24 @@ const ContactPage = () => {
                     )}
                     >
                 </Formik>
+        )
+    }
+
+    const BreadcrumbComponent = () => {
+        return (
+                <Breadcrumb>
+                    <BreadcrumbItem><a href="/">Home</a></BreadcrumbItem>
+                    <BreadcrumbItem active>Contact Us</BreadcrumbItem>
+                </Breadcrumb>
+        )
+    }
+
+    return (
+        <>
+            <BreadcrumbComponent />
+            <MainContactContainer>
+                <Hero />
+                <ContactForm />
             </MainContactContainer>
         </>
     )

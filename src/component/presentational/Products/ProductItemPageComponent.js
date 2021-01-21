@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { ItemPageContainer, PreviewImg, PreviewContainerDiv, MainProductImg, ItemName, ItemPrice, LaptopContainer, LaptopPrice,
         OptionsContainer, SizeContainer, QuantityContainer, OptionsLabel, SelectOptions, CartContainer, AddProductButton } from './ProductPageStyles';
-  
+import { Breadcrumb, BreadcrumbItem } from 'reactstrap'; 
+
 class ProductPage extends Component {
 	constructor(props) {
 		super(props)
@@ -75,10 +76,20 @@ class ProductPage extends Component {
                 </LaptopContainer>
             )
         }
+
+        const BreadcrumbComponent = () => {
+            return (
+                    <Breadcrumb>
+                        <BreadcrumbItem><a href="/">Home</a></BreadcrumbItem>
+                        <BreadcrumbItem><a href="/about">About Us</a></BreadcrumbItem>
+                        <BreadcrumbItem active>{this.props.item.name}</BreadcrumbItem>
+                    </Breadcrumb>
+            )
+        }
     
         return (
             <ItemPageContainer>
-                <div>Breadcrumb path to page</div>
+                <BreadcrumbComponent />
                 <div>
                     <ItemName>{this.props.item.name}</ItemName>
                     <ItemPrice>${this.props.item.price}</ItemPrice>

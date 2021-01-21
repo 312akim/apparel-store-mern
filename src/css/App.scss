@@ -10,6 +10,10 @@
   overflow-x: hidden; 
 }
 
+body {
+  background: #F3F3F3;
+}
+
 @media only screen and (min-width: 1200px) { 
   .hideIfLargeDisplay { 
       display: none; 
@@ -26,34 +30,3 @@ a:hover {
   text-decoration: none;
 }
 
-.formField {
-  display: block;
-  margin: 0 37.5%;
-}
-
-.MainPage {
-  height: 700px;
-  background: blue;
-}
-
-.featuredProductContainer {
-  display: inline-block;
-  margin: 0 10% 0 10%;
-}
-
-.productPageContainer {
-  display: inline-block;
-  background: gray;
-  width: 30vw;
-}
-
-.productPageCartContainer {
-  display: inline-block;
-  width: 30vw;
-  height: 300px;
-  background: pink;
-}
-
-.itemCarousel {
-  width: 100%;
-}

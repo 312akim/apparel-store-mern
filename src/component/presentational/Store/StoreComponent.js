@@ -2,7 +2,7 @@ import React from 'react';
 import { FeaturedContainer } from '../Home/HomeComponentStyles'
 import { FeaturedHeader } from './StorePageStyles'
 import ProductItem from '../Products/ProductItemComponent'
-
+import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 
 const StorePage = ({products}) => {
     const featuredProducts = products.products.map((item) => {
@@ -21,8 +21,18 @@ const StorePage = ({products}) => {
         }
     })
 
+    const BreadcrumbComponent = () => {
+        return (
+                <Breadcrumb>
+                    <BreadcrumbItem><a href="/">Home</a></BreadcrumbItem>
+                    <BreadcrumbItem active>Store</BreadcrumbItem>
+                </Breadcrumb>
+        )
+    }
+
     return (
         <div>
+            <BreadcrumbComponent />
             <div>
                 <FeaturedHeader>Featured Products</FeaturedHeader>
                 <FeaturedContainer>
