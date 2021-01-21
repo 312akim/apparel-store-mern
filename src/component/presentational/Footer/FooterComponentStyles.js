@@ -62,6 +62,7 @@ export const FloatingSignupExit = styles.button`
     float: right;
     background: none;
     border: none;
+    color: white;
 
     :hover {
         color: ${COLORS.primaryDark};
