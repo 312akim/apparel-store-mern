@@ -81,7 +81,7 @@ class ProductPage extends Component {
             return (
                     <Breadcrumb>
                         <BreadcrumbItem><a href="/">Home</a></BreadcrumbItem>
-                        <BreadcrumbItem><a href="/about">About Us</a></BreadcrumbItem>
+                        <BreadcrumbItem><a href="/store">Store</a></BreadcrumbItem>
                         <BreadcrumbItem active>{this.props.item.name}</BreadcrumbItem>
                     </Breadcrumb>
             )

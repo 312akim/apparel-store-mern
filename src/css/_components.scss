@@ -18,10 +18,12 @@ $primaryHighlight: #685d61; // Purple/Brown - Highlight Action
     padding-bottom: 3px;
     a {
         color: $primaryDark;
+        opacity: 0.75;
     }
 
     .active {
         color: black;
+        opacity: 0.85;
     }
 }
 
