@@ -117,7 +117,9 @@ export const FooterLinks = styles.div`
     padding-bottom: 8%;
     :hover {
         color: ${COLORS.primaryDark};
-        transform: scale(1.2,1.2);
+        i {
+            transform: scale(1.3,1.3);
+        }
     }
 
     @media (min-width: 1200px) {
