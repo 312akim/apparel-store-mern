@@ -1,6 +1,6 @@
 import styles from 'styled-components';
 import COLORS from '../../../shared/colorScheme'
-import { fontSizeLabelInput, fontSizeButton } from '../../../shared/fontsTheme';
+import { fontSizeLabelInput } from '../../../shared/fontsTheme';
 
 export const MainContactContainer = styles.div`
     padding-bottom: 4rem;

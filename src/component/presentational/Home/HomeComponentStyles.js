@@ -1,6 +1,6 @@
 import styles from 'styled-components';
 import COLORS from '../../../shared/colorScheme';
-import { fontSizeRegular, fontSizeRegularPlus, fontSizeSecondaryHeader } from '../../../shared/fontsTheme';
+import { fontSizeRegular, fontSizeRegularPlus } from '../../../shared/fontsTheme';
 
 // Need to fix 1024x1366 ipad pro resolution
 export const HeroText = styles.div`

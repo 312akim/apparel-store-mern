@@ -9,6 +9,10 @@ const StorePage = ({products}) => {
             return (
                     <ProductItem className="itemColumn" item={item} key={item.id}/>
             )
+        } else {
+            return (
+                <div>Failed</div>
+            )
         }
     })
 

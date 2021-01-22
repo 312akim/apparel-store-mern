@@ -19,6 +19,10 @@ const HomePage = ({products}) => {
             return (
                 <ProductItem className="homeFeaturedItems" item={item} key={item.id}/>
             )
+        } else {
+            return (
+                <div>Failed</div>
+            )
         }
     })
 

@@ -1,6 +1,6 @@
 import styles from 'styled-components';
 import COLORS from '../../../shared/colorScheme';
-import { fontSizeProductLabel, fontSizeProductSelect, fontSizeButton } from '../../../shared/fontsTheme';
+import { fontSizeProductLabel, fontSizeProductSelect } from '../../../shared/fontsTheme';
 
 export const ItemPageContainer = styles.div`
     background: ${COLORS.primaryLight};
