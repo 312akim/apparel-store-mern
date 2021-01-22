@@ -1,7 +1,7 @@
 import React from 'react';
 import { Formik } from 'formik';
-import { MainContactContainer, FieldLabel, FieldInput, FieldTextArea, FormFieldContainer, FormSubmitButton } from './ContactPageStyles';
-import { HeroContainer, HeroImage, HeroContainerHeader, HeroHeaderText } from '../../../shared/themes';
+import { MainContactContainer, FieldLabel, FieldInput, FieldTextArea, FormFieldContainer } from './ContactPageStyles';
+import { HeroContainer, HeroImage, HeroContainerHeader, HeroHeaderText, StyledButton } from '../../../shared/themes';
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap'; 
 
 const ContactPage = () => {
@@ -89,7 +89,7 @@ const ContactPage = () => {
                                     placeholder="Message"
                                 />
                             </FormFieldContainer>
-                            <FormSubmitButton type="submit">Send Message</FormSubmitButton>
+                            <StyledButton largeWidth='30%' type="submit">Send Message</StyledButton>
                         </form>
                     )}
                     >

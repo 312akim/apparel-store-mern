@@ -1,6 +1,6 @@
 import styles from 'styled-components';
 import COLORS from '../../../shared/colorScheme'
-import { fontSizeLabelInput } from '../../../shared/fontsTheme';
+import { fontSizeLabelInput, fontSizeButton } from '../../../shared/fontsTheme';
 
 export const MainContactContainer = styles.div`
     padding-bottom: 4rem;
@@ -35,8 +35,4 @@ export const FieldTextArea = styles.textarea`
     height: 4rem;
     background: ${COLORS.secondaryLight};
     font-size: ${fontSizeLabelInput};
-`
-
-export const FormSubmitButton = styles.button`
-    margin-top: 2rem;
 `

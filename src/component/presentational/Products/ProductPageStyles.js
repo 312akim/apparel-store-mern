@@ -127,21 +127,3 @@ export const CartContainer = styles.div`
         width: 100%;
     }
 `
-
-export const AddProductButton = styles.button`
-    width: 50%;
-    background-color: black;
-    border: none;
-    font-size: ${fontSizeButton};
-    color: ${COLORS.primaryLight};
-    padding: 10px 25px;
-    border-radius: 24px;
-
-    :hover {
-        background-color: ${COLORS.primaryDark};
-    }
-
-    @media (min-width: 1200px) {
-        width: 70%;
-    }
-`

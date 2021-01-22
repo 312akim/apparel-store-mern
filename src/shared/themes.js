@@ -1,5 +1,7 @@
 import styles from 'styled-components';
 import { fontSizeRegular, fontSizeMainHeader } from './fontsTheme';
+import COLORS from './colorScheme'
+import { fontSizeButton } from './fontsTheme';
 
 export const HeroContainer = styles.div`
     positiion: relative;
@@ -49,4 +51,23 @@ export const HeroHeaderText = styles.p`
 
 export const LoadingContainer = styles.div`
     margin-top: 20%;
+`
+
+export const StyledButton = styles.button`
+    margin-top: 2rem;
+    width: 50%;
+    background-color: black;
+    border: none;
+    font-size: ${fontSizeButton};
+    color: ${COLORS.primaryLight};
+    padding: 10px 25px;
+    border-radius: 24px;
+
+    :hover {
+        background-color: ${COLORS.primaryDark};
+    }
+
+    @media (min-width: 1200px) {
+        width: ${props => props.largeWidth};
+    }
 `

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { ItemPageContainer, PreviewImg, PreviewContainerDiv, MainProductImg, ItemName, ItemPrice, LaptopContainer, LaptopPrice,
-        OptionsContainer, SizeContainer, QuantityContainer, OptionsLabel, SelectOptions, CartContainer, AddProductButton } from './ProductPageStyles';
+        OptionsContainer, SizeContainer, QuantityContainer, OptionsLabel, SelectOptions, CartContainer } from './ProductPageStyles';
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap'; 
+import { StyledButton } from '../../../shared/themes';
 
 class ProductPage extends Component {
 	constructor(props) {
@@ -27,9 +28,9 @@ class ProductPage extends Component {
         const Cart = () => {
             return (
                 <CartContainer>
-                    <AddProductButton>
+                    <StyledButton largeWidth='70%'>
                         Add to Cart
-                    </AddProductButton>
+                    </StyledButton>
                 </CartContainer>
             )
         }
