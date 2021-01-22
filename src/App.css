@@ -17,10 +17,15 @@
 }
 
 .delayed-spinner {
-  animation: fa-spin 1s 1 linear;
+  animation: spin 5s infinite;
   animation-delay: 4s;
 }
 
+@keyframes spin {
+  20%, 100% {
+    transform: rotate(360deg);
+  }
+}
 .App {
   text-align: center;
   width: 100%;
