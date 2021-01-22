@@ -46,3 +46,7 @@ export const HeroHeaderText = styles.p`
         width: 50%;
     }
 `
+
+export const LoadingContainer = styles.div`
+    margin-top: 20%;
+`

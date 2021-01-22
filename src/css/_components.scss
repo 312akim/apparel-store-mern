@@ -1,17 +1,10 @@
-//About Component
-
 $primaryDark: #ADAEAD; // Dark Gray - Highlight Action
 $secondaryDark: #E4E4E4; // Borders
 $primaryLight: #F3F3F3; // Primary Background etc
 $secondaryLight: #E8E8E8; // Cards / Content background
 $primaryHighlight: #685d61; // Purple/Brown - Highlight Action
 
-.aboutUsContainers {
-    display: inline-block;
-    height: 400px;
-    width: 50%;
-}
-
+// Breadcrumbs
 .breadcrumb {
     background: $primaryLight;
     padding-top: 3px;

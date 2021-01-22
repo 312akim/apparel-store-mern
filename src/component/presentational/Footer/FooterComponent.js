@@ -43,7 +43,7 @@ const Footer = ({showEmailSignup, footerExitHandler}) => {
 			<FooterSocialIconsContainer>
 				<IconContainer>
 					<FooterLinks>
-						<i class="fa fa-instagram fa-2x"></i>
+						<i class="fa fa-instagram fa-2x fa-spin delayed-spinner"></i>
 					</FooterLinks>
 				</IconContainer>
 				<IconContainer>

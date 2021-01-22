@@ -115,6 +115,7 @@ export const FooterNavigationContainer = styles.div`
 export const FooterLinks = styles.div`
     color: white;
     padding-bottom: 8%;
+
     :hover {
         color: ${COLORS.primaryDark};
         i {

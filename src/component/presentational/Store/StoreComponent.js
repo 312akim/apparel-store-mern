@@ -32,14 +32,15 @@ const StorePage = ({products}) => {
     return (
         <div>
             <BreadcrumbComponent />
-            <div>
-                <ProductContainer>
-                    <ProductHeader>Featured Products</ProductHeader>
-                    {featuredProducts}
-                </ProductContainer>
-            </div>
-            <ProductHeader>T Shirts</ProductHeader>
-            {tshirtCategory}
+
+            <ProductContainer>
+                <ProductHeader>Featured Products</ProductHeader>
+                {featuredProducts}
+            </ProductContainer>
+            <ProductContainer>
+                <ProductHeader>T Shirts</ProductHeader>
+                {tshirtCategory}
+            </ProductContainer>
         </div>
     )
 }

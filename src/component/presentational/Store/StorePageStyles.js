@@ -6,7 +6,7 @@ export const ProductContainer = styles.div`
     width: 100%;
     background: ${COLORS.primaryLight};
     padding-top: 3%;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
 `
 
 export const ProductHeader = styles.h2`

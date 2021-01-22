@@ -1,6 +1,7 @@
 // Import all other SCSS files here.
 // @import 'example';
 @import 'components';
+@import 'animations';
 
 .App {
   text-align: center;
@@ -30,4 +31,3 @@ body {
 a:hover {
   text-decoration: none;
 }
-

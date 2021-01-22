@@ -10,6 +10,7 @@ import AboutUs from './presentational/About/AboutComponent'
 import ContactUs from './container/Contact/ContactComponent'
 import FooterComponent from './presentational/Footer/FooterComponent'
 import Cart from './container/Cart/CartPageComponent';
+import { LoadingContainer } from '../shared/themes';
 
 class Main extends Component {
     state = {
@@ -105,7 +106,12 @@ class Main extends Component {
             // <Loader />
             return (
                 <>
-                    <h1>LOADING!</h1>
+                    <LoadingContainer>
+                        <i class="fa fa-spinner fa-pulse fa-4x"></i>
+                        <h1>
+                            Loading
+                        </h1>
+                    </LoadingContainer>
                 </>
             )
         }
