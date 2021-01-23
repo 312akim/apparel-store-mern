@@ -14,6 +14,8 @@ const express = require('express');
 const app = express();
 const PORT = 4000;
 
+console.log("ENV FILE TEST: " + process.env.TEST);
+
 mongoose.connect(
     process.env.CONNECTION_STRING, 
     { useNewUrlParser: true },
