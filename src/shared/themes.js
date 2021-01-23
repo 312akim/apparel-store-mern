@@ -46,6 +46,7 @@ export const HeroHeaderText = styles.p`
         display: inline-block;
         padding: 1vh 0 0 0;
         width: 50%;
+        margin-bottom: 0;
     }
 `
 
