@@ -10,7 +10,6 @@ const productsController = require('./controllers/products_controller');
 
 const mongoose = require('mongoose');
 const express = require('express');
-const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -40,7 +39,6 @@ app.use(session({
     }
 }));
 app.use(cors());
-app.use('/api', createProxyMiddleware({ target: 'https://frozen-garden-94356.herokuapp.com/', changeOrigin: true }));
 
 
 
