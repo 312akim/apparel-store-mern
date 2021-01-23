@@ -35,4 +35,7 @@ export const FieldTextArea = styles.textarea`
     height: 4rem;
     background: ${COLORS.secondaryLight};
     font-size: ${fontSizeLabelInput};
+    border: solid rgb(118, 118, 118) 2px;
+    border-top: solid black 2px;
+    border-left: solid black 2px;
 `
