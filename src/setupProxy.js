@@ -4,14 +4,14 @@ module.exports = function (app) {
   app.use(
     '/auth/callback',
     createProxyMiddleware({ 
-      target: 'http://localhost:4000/',
+      target: 'https://frozen-garden-94356.herokuapp.com/',
       changeOrigin: true
     })
   );
   app.use(
     '/api',
     createProxyMiddleware({ 
-      target: 'http://localhost:4000/',
+      target: 'https://frozen-garden-94356.herokuapp.com/',
       changeOrigin: true
     })
   );
