@@ -14,14 +14,10 @@ const HomePage = ({products}) => {
     console.log("PRODUCT PRODUCTS!", products.products)
 
     const featuredProducts = products.products.map((item) => {
-        if ((item.featured === true) && (count < limit)) {
+        while ((item.featured === true) && (count < limit)) {
             count++;
             return (
                 <ProductItem className="homeFeaturedItems" item={item} key={item.id}/>
-            )
-        } else {
-            return (
-                <div>Failed</div>
             )
         }
     })

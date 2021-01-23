@@ -16,6 +16,7 @@ class Main extends Component {
     state = {
         products: [],
         loading: true,
+        
         // If true, show email sign-up, on close, set to false.
         showEmailSignup: true
     }

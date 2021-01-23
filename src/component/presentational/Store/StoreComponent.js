@@ -11,7 +11,7 @@ const StorePage = ({products}) => {
             )
         } else {
             return (
-                <div>Failed</div>
+                <div>Failed to retrieve featured products.</div>
             )
         }
     })
