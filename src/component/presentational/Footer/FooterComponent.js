@@ -1,5 +1,5 @@
 import React from 'react'
-import { MainFooterContainer, StaticEmailSignupContainer, FloatingSignupContainer, EmailSignupText, FloatingSignupExit, EmailSignupInput, EmailSignupButton, FooterSocialIconsContainer, FooterNavigationContainer, FooterLinks, FooterCopyrightContainer, IconContainer, LeftFooterContainer, RightFooterContainer } from './FooterComponentStyles';
+import { MainFooterContainer, StaticEmailSignupContainer, FloatingSignupContainer, EmailSignupLabel, FloatingSignupExit, EmailSignupInput, EmailSignupButton, FooterSocialIconsContainer, FooterNavigationContainer, FooterLinks, FooterCopyrightContainer, IconContainer, LeftFooterContainer, RightFooterContainer } from './FooterComponentStyles';
 import { Link } from 'react-router-dom';
 
 const Footer = ({showEmailSignup, footerExitHandler}) => {
@@ -7,10 +7,10 @@ const Footer = ({showEmailSignup, footerExitHandler}) => {
 	const EmailSignup = () => {
 		return (
 			<>
-				<EmailSignupText>
+				<EmailSignupLabel for="subEmail">
 					Stay up to date!
-				</EmailSignupText>
-				<EmailSignupInput placeholder="Email Address">
+				</EmailSignupLabel>
+				<EmailSignupInput placeholder="Email Address" id="subEmail" name="subEmail">
 				</EmailSignupInput>
 				<EmailSignupButton type="submit">
 					<i class="fa fa-paper-plane"></i>
