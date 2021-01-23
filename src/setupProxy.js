@@ -4,14 +4,14 @@ module.exports = function (app) {
   app.use(
     '/auth/callback',
     createProxyMiddleware({ 
-      target: 'http://localhost:4000/',
+      target: 'https://apparel-store-mern.netlify.app/',
       changeOrigin: true
     })
   );
   app.use(
     '/api',
     createProxyMiddleware({ 
-      target: 'http://localhost:4000/',
+      target: 'https://apparel-store-mern.netlify.app/',
       changeOrigin: true
     })
   );
