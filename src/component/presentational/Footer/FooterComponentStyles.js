@@ -69,7 +69,7 @@ export const FloatingSignupExit = styles.button`
     }
 `
 
-export const EmailSignupLabel = styles.label`
+export const EmailSignupText = styles.div`
     margin-top: 0.5rem;
     display: block;
 `
