@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/api"
+  from = "/api/*"
   to = "https://frozen-garden-94356.herokuapp.com/"
   force = true
   status = 200
