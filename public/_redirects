@@ -1,4 +1,4 @@
 # Redirects from what the browser requests to what we serve
-/api/products      https://frozen-garden-94356.herokuapp.com/
-/auth/callback     https://frozen-garden-94356.herokuapp.com/
-/api/*             https://frozen-garden-94356.herokuapp.com/
+/api/products      https://frozen-garden-94356.herokuapp.com/api/products
+/auth/callback     https://frozen-garden-94356.herokuapp.com/auth/callback
+/api/*             https://frozen-garden-94356.herokuapp.com//api/*
