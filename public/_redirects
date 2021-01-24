@@ -2,3 +2,4 @@
 /api/products      https://frozen-garden-94356.herokuapp.com/api/products
 /auth/callback     https://frozen-garden-94356.herokuapp.com/auth/callback
 /api/*             https://frozen-garden-94356.herokuapp.com//api/*
+/*                 /index.html   200
