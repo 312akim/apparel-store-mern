@@ -76,23 +76,25 @@ export const EmailSignupLabel = styles.label`
 
 
 export const EmailSignupInput = styles.input`
+    display: inline-block
     width: 80%;
     margin-top: 0.5rem;
 
     @media (min-width: 768px) {
         width: 70%;
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 `
 
 export const EmailSignupButton = styles.button`
-    display: block;
+    display: inline-block;
     background-color: ${COLORS.primaryHighlight};
     border: 1px solid white;
     margin-top: 8px;
     margin: 10px auto;
     color: white;
+    margin-right: 5%;
 
     :hover {
         background-color: ${COLORS.primaryDark};
