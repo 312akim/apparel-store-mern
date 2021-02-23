@@ -28,7 +28,14 @@ class ProductPage extends Component {
         const Cart = () => {
             return (
                 <CartContainer>
-                    <StyledButton largeWidth='70%'>
+                    <StyledButton largeWidth='70%' class="snipcart-add-item"
+                      data-item-id={this.props.item._id}
+                      data-item-price={this.props.item.price}
+                      data-item-url="/store/Everstar%20T-Shirt"
+                      data-item-description="Test description for item"
+                      data-item-image={this.props.item.images[0]}
+                      data-item-name={this.props.item.name}
+                      data-item-custom1-options="Small|Medium|Large[+2.00]">
                         Add to Cart
                     </StyledButton>
                 </CartContainer>
