@@ -7,8 +7,11 @@ import { StyledButton } from '../../../shared/themes';
 class ProductPage extends Component {
 	constructor(props) {
 		super(props)
+
 		this.state = {
-			displayedImage: props.item.images[0].src
+			displayedImage: props.item.images[0].src,
+            productQuantity: 1,
+            productSize: 'Choose Size'
 		}
     }
 
@@ -16,6 +19,18 @@ class ProductPage extends Component {
         this.setState({
             displayedImage: image
         })
+    }
+
+    quantityChangeHandler = (event) => {
+        this.setState({
+            productQuantity: event.target.value
+        });
+    }
+
+    sizeChangeHandler = (event) => {
+        this.setState({
+            productSize: event.target.value
+        });
     }
 
     render() {
@@ -36,7 +51,9 @@ class ProductPage extends Component {
                       data-item-image={this.props.item.images[0].src}
                       data-item-name={this.props.item.name}
                       data-item-custom1-name="Size"
-                      data-item-custom1-options="Small|Medium|Large">
+                      data-item-custom1-options={this.state.productSize}
+                      data-item-quantity={this.state.productQuantity}
+                    >
                         Add to Cart
                     </StyledButton>
                 </CartContainer>
@@ -48,19 +65,19 @@ class ProductPage extends Component {
                 <OptionsContainer>
                     <SizeContainer>
                         <OptionsLabel for="size">Size:</OptionsLabel>
-                        <SelectOptions name="size" id="size">
+                        <SelectOptions name="size" id="size" value={this.state.productSize} onChange={this.sizeChangeHandler.bind(this)}>
                             <option value="choose" disabled selected>Choose Size</option>
-                            <option value="xs">X-Small</option>
-                            <option value="sm">Small</option>
-                            <option value="med">Medium</option>
-                            <option value="lg">Large</option>
-                            <option value="xlg">X-Large</option>
+                            <option value="X-Small">X-Small</option>
+                            <option value="Small">Small</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Large">Large</option>
+                            <option value="X-Large">X-Large</option>
                         </SelectOptions>
                     </SizeContainer>
                     <QuantityContainer>
                         <OptionsLabel for="quantity">Quantity:</OptionsLabel>
-                        <SelectOptions name="quantity" id="quantity">
-                            <option value="1" selected>1</option>
+                        <SelectOptions name="quantity" id="quantity" value={this.state.productQuantity} onChange={this.quantityChangeHandler.bind(this)}>
+                            <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
