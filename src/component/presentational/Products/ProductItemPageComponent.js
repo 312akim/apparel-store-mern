@@ -34,6 +34,10 @@ class ProductPage extends Component {
     }
 
     render() {
+
+        // Match tester for link finding
+        console.log("Match2: " + this.props.match.item_name)
+
         const imageMap = this.props.item.images.map((image) => {
             return (
                 <PreviewImg onClick={event => this.displayChanger(image.src)} src={image.src}></PreviewImg>
@@ -46,7 +50,7 @@ class ProductPage extends Component {
                     <StyledButton largeWidth='70%' className="snipcart-add-item"
                       data-item-id={this.props.item._id}
                       data-item-price={this.props.item.price}
-                      data-item-url="/store/Everstar%20T-Shirt"
+                      data-item-url="/"
                       data-item-description={this.props.item.description}
                       data-item-image={this.props.item.images[0].src}
                       data-item-name={this.props.item.name}
@@ -64,9 +68,9 @@ class ProductPage extends Component {
             return (
                 <OptionsContainer>
                     <SizeContainer>
-                        <OptionsLabel for="size">Size:</OptionsLabel>
+                        <OptionsLabel htmlFor="size">Size:</OptionsLabel>
                         <SelectOptions name="size" id="size" value={this.state.productSize} onChange={this.sizeChangeHandler.bind(this)}>
-                            <option value="choose" disabled selected>Choose Size</option>
+                            <option value="choose" disabled>Choose Size</option>
                             <option value="X-Small">X-Small</option>
                             <option value="Small">Small</option>
                             <option value="Medium">Medium</option>
@@ -75,7 +79,7 @@ class ProductPage extends Component {
                         </SelectOptions>
                     </SizeContainer>
                     <QuantityContainer>
-                        <OptionsLabel for="quantity">Quantity:</OptionsLabel>
+                        <OptionsLabel htmlFor="quantity">Quantity:</OptionsLabel>
                         <SelectOptions name="quantity" id="quantity" value={this.state.productQuantity} onChange={this.quantityChangeHandler.bind(this)}>
                             <option value="1">1</option>
                             <option value="2">2</option>

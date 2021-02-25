@@ -45,7 +45,6 @@ class Main extends Component {
         }
 
         const AdminPanelPage = () => {
-
             return (
                 <AdminPanel products={products}/>
             )
@@ -61,9 +60,10 @@ class Main extends Component {
             const product = products.products.filter(
                 (item) => item.name === match.params.item_name
             )[0]
-
+            
+            // Passing Match for snipcart Testing.
             return (
-                <ProductPage item={product}/>
+                <ProductPage item={product} match={match.params}/>
             )
         }
 
@@ -97,7 +97,7 @@ class Main extends Component {
                         <Route path="/cart" component={CartPage} />
                         <Route path="/about" component={AboutUs} />
                         <Route path="/contact" component={ContactUs} />
-                        <Redirect to="/home"/>
+                        <Redirect to="/"/>
                         <div className="MainPage">This is the main page</div>
                     </Switch>
                     <Footer />
