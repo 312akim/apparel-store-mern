@@ -45,7 +45,7 @@ class ProductPage extends Component {
                 <CartContainer>
                     <StyledButton largeWidth='70%' className="snipcart-add-item"
                       data-item-id={this.props.item._id}
-                      data-item-price={45}
+                      data-item-price={this.props.item.price}
                       data-item-url="/store/Everstar%20T-Shirt"
                       data-item-description={this.props.item.description}
                       data-item-image={this.props.item.images[0].src}

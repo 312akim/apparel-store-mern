@@ -21,6 +21,8 @@ const StorePage = ({products}) => {
             return (
                     <ProductItem item={item} key={item.id}/>
             )
+        } else {
+            return <div></div>
         }
     })
 

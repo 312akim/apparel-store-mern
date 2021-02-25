@@ -14,11 +14,13 @@ const HomePage = ({products}) => {
     console.log("PRODUCT PRODUCTS!", products.products)
 
     const featuredProducts = products.products.map((item) => {
-        while ((item.featured === true) && (count < limit)) {
+        if ((item.featured === true) && (count < limit)) {
             count++;
             return (
                 <ProductItem className="homeFeaturedItems" item={item} key={item.id}/>
             )
+        } else {
+            return <div></div>
         }
     })
 
@@ -28,7 +30,7 @@ const HomePage = ({products}) => {
                 <ShopAllLinkContainer>
                     Shop All
                     <ShopAllIconContainer>
-                        <i class="fa fa-angle-right"></i>
+                        <i className="fa fa-angle-right"></i>
                     </ShopAllIconContainer>
                 </ShopAllLinkContainer>
             </Link>

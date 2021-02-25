@@ -108,7 +108,7 @@ class Main extends Component {
             return (
                 <>
                     <LoadingContainer>
-                        <i class="fa fa-spinner fa-pulse fa-4x"></i>
+                        <i className="fa fa-spinner fa-pulse fa-4x"></i>
                         <h1>
                             Loading
                         </h1>

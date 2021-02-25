@@ -7,13 +7,13 @@ const Footer = ({showEmailSignup, footerExitHandler}) => {
 	const EmailSignup = () => {
 		return (
 			<>
-				<EmailSignupLabel for="subEmail">
+				<EmailSignupLabel htmlFor="subEmail">
 					Stay up to date!
 				</EmailSignupLabel>
 				<EmailSignupInput placeholder="Email Address" id="subEmail" name="subEmail">
 				</EmailSignupInput>
 				<EmailSignupButton type="submit">
-					<i class="fa fa-paper-plane"></i>
+					<i className="fa fa-paper-plane"></i>
 				</EmailSignupButton>
 			</>
 		)
@@ -26,7 +26,7 @@ const Footer = ({showEmailSignup, footerExitHandler}) => {
 			return (
 				<FloatingSignupContainer className="fixed-bottom">
 					<FloatingSignupExit onClick={footerExitHandler}>
-						<i class="fa fa-2x fa-times"></i>
+						<i className="fa fa-2x fa-times"></i>
 					</FloatingSignupExit>
 					<EmailSignup />
 				</FloatingSignupContainer>
@@ -43,22 +43,22 @@ const Footer = ({showEmailSignup, footerExitHandler}) => {
 			<FooterSocialIconsContainer>
 				<IconContainer>
 					<FooterLinks>
-						<i class="fa fa-instagram fa-2x fa-spin delayed-spinner"></i>
+						<i className="fa fa-instagram fa-2x fa-spin delayed-spinner"></i>
 					</FooterLinks>
 				</IconContainer>
 				<IconContainer>
 					<FooterLinks>
-						<i class="fa fa-youtube-square fa-2x"></i>
+						<i className="fa fa-youtube-square fa-2x"></i>
 					</FooterLinks>
 				</IconContainer>
 				<IconContainer>
 					<FooterLinks>
-						<i class="fa fa-facebook-square fa-2x"></i>
+						<i className="fa fa-facebook-square fa-2x"></i>
 					</FooterLinks>
 				</IconContainer>
 				<IconContainer>
 					<FooterLinks>
-						<i class="fa fa-twitter-square fa-2x"></i>
+						<i className="fa fa-twitter-square fa-2x"></i>
 					</FooterLinks>
 				</IconContainer>
 			</FooterSocialIconsContainer>
