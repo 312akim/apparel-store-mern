@@ -34,10 +34,7 @@ class ProductPage extends Component {
     }
 
     render() {
-
-        // Match tester for link finding
-        console.log("Match2: " + this.props.match.item_name)
-
+        // Image Previews
         const imageMap = this.props.item.images.map((image) => {
             return (
                 <PreviewImg onClick={event => this.displayChanger(image.src)} src={image.src}></PreviewImg>
@@ -50,7 +47,7 @@ class ProductPage extends Component {
                     <StyledButton largeWidth='70%' className="snipcart-add-item"
                       data-item-id={this.props.item._id}
                       data-item-price={this.props.item.price}
-                      data-item-url="/"
+                      data-item-url={"/" + this.props.url}
                       data-item-description={this.props.item.description}
                       data-item-image={this.props.item.images[0].src}
                       data-item-name={this.props.item.name}

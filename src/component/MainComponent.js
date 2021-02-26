@@ -11,6 +11,7 @@ import ContactUs from './container/Contact/ContactComponent'
 import FooterComponent from './presentational/Footer/FooterComponent'
 import Cart from './container/Cart/CartPageComponent';
 import { LoadingContainer } from '../shared/themes';
+import { spacesToHashDelimiter } from '../shared/stringSpaceToHash';
 
 class Main extends Component {
     state = {
@@ -58,12 +59,11 @@ class Main extends Component {
 
         const ItemPage = ({match}) => {
             const product = products.products.filter(
-                (item) => item.name === match.params.item_name
+                (item) => spacesToHashDelimiter(item.name) === match.params.item_url
             )[0]
             
-            // Passing Match for snipcart Testing.
             return (
-                <ProductPage item={product} match={match.params}/>
+                <ProductPage item={product} url={spacesToHashDelimiter(product.name)}/>
             )
         }
 
@@ -93,7 +93,7 @@ class Main extends Component {
                         {/* Need to make Admin only accessible w/ login */}
                         <Route path="/admin" component={AdminPanelPage}/>
                         <Route exact path="/store" component={StorePage} />
-                        <Route path="/store/:item_name" component={ItemPage}/>
+                        <Route path="/store/:item_url" component={ItemPage}/>
                         <Route path="/cart" component={CartPage} />
                         <Route path="/about" component={AboutUs} />
                         <Route path="/contact" component={ContactUs} />
