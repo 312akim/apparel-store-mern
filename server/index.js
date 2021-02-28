@@ -76,6 +76,11 @@ setTimeout(() => {
     app.put('/api/products/:id', adminController.updateProduct);
     // Delete product
     app.delete('/api/products/:id', adminController.deleteProduct);
+
+    //Is this needed? Read specific product is above, also all products have already been passed as state.
+        // Snipcart Endpoints
+    // Get snipcart reply
+    app.get('/api/snipcart/:id', snipcartController.getResponse);
     
 }, 300)
 

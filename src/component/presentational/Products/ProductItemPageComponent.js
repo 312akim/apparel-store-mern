@@ -3,6 +3,7 @@ import { ItemPageContainer, PreviewImg, PreviewContainerDiv, MainProductImg, Ite
         OptionsContainer, SizeContainer, QuantityContainer, OptionsLabel, SelectOptions, CartContainer } from './ProductPageStyles';
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap'; 
 import { StyledButton } from '../../../shared/themes';
+import axios from 'axios';
 
 class ProductPage extends Component {
 	constructor(props) {
@@ -11,8 +12,24 @@ class ProductPage extends Component {
 		this.state = {
 			displayedImage: props.item.images[0].src,
             productQuantity: 1,
-            productSize: 'X-Small'
+            productSize: 'X-Small',
+            product: {},
+            loading: true
 		}
+    }
+
+    componentDidMount() {
+        axios.get(`/api/snipcart/${this.props.item._id}`).then(
+            res => {
+            console.log('res.data product-----------', res.data);
+            this.setState({
+                product: res.data, loading: false
+            });
+        }).catch(err => console.log('Read all products Error-------', err));
+        
+        console.log(this.state.product);
+        console.log(this.state.loading);
+        console.log("Product Component Mounted!")
     }
 
     displayChanger = (image) => {
