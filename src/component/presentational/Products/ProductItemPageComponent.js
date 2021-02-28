@@ -34,6 +34,8 @@ class ProductPage extends Component {
     }
 
     render() {
+        console.log("price: "+this.props.item.price);
+
         // Image Previews
         const imageMap = this.props.item.images.map((image) => {
             return (

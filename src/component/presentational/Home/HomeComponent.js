@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import { ProductsContainer, HeroText, ShopAllIconContainer, ShopAllLinkContainer } from './HomeComponentStyles'
 import { ProductContainer, ProductHeader } from '../Store/StorePageStyles';
-import { HeroContainer, HeroImage } from '../../../shared/themes';
+import { HeroContainer, HeroImage, StyledButton } from '../../../shared/themes';
 import ProductItem from '../Products/ProductItemComponent'
 
 
@@ -52,6 +52,18 @@ const HomePage = ({products}) => {
                 <ProductHeader>
                     Featured
                 </ProductHeader>
+                <StyledButton 
+                      largeWidth='70%' 
+                      className="snipcart-add-item"
+                      data-item-id={"Test123"}
+                      data-item-price={'5'}
+                      data-item-url={"/store/"}
+                      data-item-description={"Test description"}
+                      data-item-name={"Test312"}
+                      data-item-custom1-name="Size"
+                    >
+                        Click
+                </StyledButton>
                 <ProductsContainer>
                     {featuredProducts}
                 </ProductsContainer>
