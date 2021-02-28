@@ -27,8 +27,6 @@ class ProductPage extends Component {
             });
         }).catch(err => console.log('Read single product Error-------', err));
         
-        console.log(this.state.product);
-        console.log(this.state.loading);
         console.log("Product Component Mounted!")
     }
 
@@ -53,6 +51,10 @@ class ProductPage extends Component {
     render() {
         console.log("price: "+this.props.item.price);
         console.log("item id: "+this.props.item._id);
+        
+        // Api request tests
+        console.log(this.state.product);
+        console.log(this.state.loading);
 
         // Image Previews
         const imageMap = this.props.item.images.map((image) => {
@@ -81,6 +83,8 @@ class ProductPage extends Component {
             )
         }
 
+
+        // Change quantity picker to +- buttons instead of 1-10
         const OptionPicker = () => {
             return (
                 <OptionsContainer>
