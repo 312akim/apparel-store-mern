@@ -1,5 +1,5 @@
 const Validation = require('../models/snipcartValidation');
-
+const Product = require('../models/product');
 // Needs to return snipcart Validation?
 module.exports = {
     getResponse(req, res) {

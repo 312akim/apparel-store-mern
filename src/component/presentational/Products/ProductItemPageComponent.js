@@ -25,7 +25,7 @@ class ProductPage extends Component {
             this.setState({
                 product: res.data, loading: false
             });
-        }).catch(err => console.log('Read all products Error-------', err));
+        }).catch(err => console.log('Read single product Error-------', err));
         
         console.log(this.state.product);
         console.log(this.state.loading);
