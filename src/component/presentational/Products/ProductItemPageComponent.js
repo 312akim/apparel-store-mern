@@ -46,7 +46,7 @@ class ProductPage extends Component {
         const Cart = () => {
             return (
                 <CartContainer>
-                    <StyledButton largeWidth='70%' className="snipcart-add-item"
+                    <button class="snipcart-add-item"
                       data-item-id={this.props.item._id}
                       data-item-price={this.props.item.price}
                       data-item-url={"/store/" + this.props.url}
@@ -58,7 +58,7 @@ class ProductPage extends Component {
                       data-item-quantity={this.state.productQuantity}
                     >
                         Add to Cart
-                    </StyledButton>
+                    </button>
                 </CartContainer>
             )
         }
