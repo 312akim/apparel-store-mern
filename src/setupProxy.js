@@ -15,4 +15,11 @@ module.exports = function (app) {
       changeOrigin: true
     })
   );
+  app.use(
+    '/api/snipcart',
+    createProxyMiddleware({ 
+      target: 'https://frozen-garden-94356.herokuapp.com/',
+      changeOrigin: true
+    })
+  );
 }
