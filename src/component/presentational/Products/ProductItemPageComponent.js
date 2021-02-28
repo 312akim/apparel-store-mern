@@ -35,6 +35,7 @@ class ProductPage extends Component {
 
     render() {
         console.log("price: "+this.props.item.price);
+        console.log("item id: "+this.props.item._id);
 
         // Image Previews
         const imageMap = this.props.item.images.map((image) => {
@@ -46,9 +47,9 @@ class ProductPage extends Component {
         const Cart = () => {
             return (
                 <CartContainer>
-                    <button class="snipcart-add-item"
-                      data-item-id={this.props.item._id}
-                      data-item-price={this.props.item.price}
+                    <StyledButton largeWidth='70%' className="snipcart-add-item"
+                      data-item-id={`${this.props.item._id}`}
+                      data-item-price={`${this.props.item.price}`}
                       data-item-url={"/store/" + this.props.url}
                       data-item-description={this.props.item.description}
                       data-item-image={this.props.item.images[0].src}
@@ -58,7 +59,7 @@ class ProductPage extends Component {
                       data-item-quantity={this.state.productQuantity}
                     >
                         Add to Cart
-                    </button>
+                    </StyledButton>
                 </CartContainer>
             )
         }
