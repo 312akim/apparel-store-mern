@@ -7,6 +7,7 @@ const adminController = require('./controllers/admin_controller');
 const cloudinaryController = require('./controllers/cloudinary_controller');
 const userController = require('./controllers/user_controller');
 const productsController = require('./controllers/products_controller');
+const snipcartController = require('./controllers/snipcart_controller');
 
 const mongoose = require('mongoose');
 const express = require('express');
