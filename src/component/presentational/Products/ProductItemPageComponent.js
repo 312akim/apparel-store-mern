@@ -57,9 +57,10 @@ class ProductPage extends Component {
         console.log(this.state.loading);
 
         // Image Previews
+        let count = 0; // Unique key for each child
         const imageMap = this.props.item.images.map((image) => {
             return (
-                <PreviewImg onClick={event => this.displayChanger(image.src)} src={image.src}></PreviewImg>
+                <PreviewImg key={count++} onClick={event => this.displayChanger(image.src)} src={image.src}></PreviewImg>
             )
         })
     
