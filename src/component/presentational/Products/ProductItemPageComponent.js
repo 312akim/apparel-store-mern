@@ -13,17 +13,17 @@ class ProductPage extends Component {
 			displayedImage: props.item.images[0].src,
             productQuantity: 1,
             productSize: 'X-Small',
-            products: [],
+            product: [],
             loading: true
 		}
     }
 
     componentDidMount() {
-        axios.get('/api/products').then(
+        axios.get('/api/products/' + this.props.item._id).then(
             res => {
             console.log('res.data products-----------', res.data);
             this.setState({
-                products: res.data, loading: false
+                product: res.data, loading: false
             });
         }).catch(err => console.log('Read all products Error-------', err));
         
