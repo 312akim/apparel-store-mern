@@ -13,11 +13,24 @@ class ProductPage extends Component {
 			displayedImage: props.item.images[0].src,
             productQuantity: 1,
             productSize: 'X-Small',
-            product: {},
+            products: [],
             loading: true
 		}
     }
 
+    componentDidMount() {
+        axios.get('/api/products').then(
+            res => {
+            console.log('res.data products-----------', res.data);
+            this.setState({
+                products: res.data, loading: false
+            });
+        }).catch(err => console.log('Read all products Error-------', err));
+        
+        console.log("Component Mounted for 2nd time!")
+    }
+
+    /*
     componentDidMount() {
         axios.get(`/api/snipcart/${this.props.item._id}`).then(
             res => {
@@ -28,7 +41,7 @@ class ProductPage extends Component {
         }).catch(err => console.log('Read single product Error-------', err));
         
         console.log("Product Component Mounted!")
-    }
+    }*/
 
     displayChanger = (image) => {
         this.setState({
