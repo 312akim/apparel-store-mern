@@ -3,7 +3,7 @@ import { ItemPageContainer, PreviewImg, PreviewContainerDiv, MainProductImg, Ite
         OptionsContainer, SizeContainer, QuantityContainer, OptionsLabel, SelectOptions, CartContainer } from './ProductPageStyles';
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap'; 
 import { StyledButton } from '../../../shared/themes';
-import axios from 'axios';
+//import axios from 'axios';
 
 class ProductPage extends Component {
 	constructor(props) {
@@ -16,18 +16,6 @@ class ProductPage extends Component {
             product: [],
             loading: true
 		}
-    }
-
-    componentDidMount() {
-        axios.get('/api/products/' + this.props.item._id).then(
-            res => {
-            console.log('res.data products-----------', res.data);
-            this.setState({
-                product: res.data, loading: false
-            });
-        }).catch(err => console.log('Read all products Error-------', err));
-        
-        console.log("Component Mounted for 2nd time!")
     }
 
     /*
@@ -69,6 +57,9 @@ class ProductPage extends Component {
         console.log(this.state.product);
         console.log(this.state.loading);
 
+        // Have snipchart check here for product data verification + :id
+        let snipcartUrl="https://frozen-garden-94356.herokuapp.com/api/snipcart/";
+
         // Image Previews
         let count = 0; // Unique key for each child
         const imageMap = this.props.item.images.map((image) => {
@@ -83,7 +74,7 @@ class ProductPage extends Component {
                     <StyledButton largeWidth='70%' className="snipcart-add-item"
                       data-item-id={`${this.props.item._id}`}
                       data-item-price={`${this.props.item.price}`}
-                      data-item-url={"/store/" + this.props.url}
+                      data-item-url={snipcartUrl + this.props.item._id}
                       data-item-description={this.props.item.description}
                       data-item-image={this.props.item.images[0].src}
                       data-item-name={this.props.item.name}

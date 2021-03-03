@@ -1,6 +1,6 @@
 const Validation = require('../models/snipcartValidation');
 const Product = require('../models/product');
-// Needs to return snipcart Validation?
+
 module.exports = {
     getResponse(req, res) {
       //Destructs id from endpoint and assigns it to const id. 1 product
