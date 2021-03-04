@@ -10,7 +10,14 @@ module.exports = {
       Product.findById(id).exec((err, product) => {
         if(err) console.log('Get Single Product Error---------------', err);
         console.log('product--------------', product);
-        res.status(200).json({product});
+        res.status(200).json(
+          {
+            id: product._id,
+            price: product.price,
+            url: 'https://frozen-garden-94356.herokuapp.com/api/snipcart/' + product._id
+          }
+          );
+
       })
     }
 }
