@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavigationBar, LogoImg } from './TopNavigationSyles'
+import { NavigationBar, LogoImg, StyledCartIcon } from './TopNavigationSyles'
 import {
   Collapse,
   Navbar,
@@ -66,7 +66,7 @@ class TopNav extends Component {
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
                             </Nav>
-                            <NavbarText>My Cart</NavbarText>
+                            <StyledCartIcon className="fa fa-2x fa-shopping-cart snipcart-checkout"></StyledCartIcon>
                         </Collapse>
                 </Navbar>
             </NavigationBar>

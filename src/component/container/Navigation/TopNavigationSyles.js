@@ -9,3 +9,12 @@ export const LogoImg = styles.img`
     height: 40px;
     margin-right: 15px;
 `
+
+export const StyledCartIcon = styles.i`
+    margin-bottom: 4px;
+    color: ${COLORS.primaryDark};
+    
+    :hover {
+        color: black;
+    }
+`
