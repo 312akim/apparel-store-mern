@@ -11,15 +11,19 @@ export const HeroText = styles.div`
 
     @media (min-width: 768px) {
         position: absolute;
-        top: 20%;
+        top: 25%;
         left: 10%;
-        padding: 0 3px;
+        padding: 0 10px;
+        padding-top: 2px;
     }
 
     @media (min-width: 1200px) {
         top: 45%;
         left: 5%;
     }
+`
+
+export const HeroTextContainer = styles.div`
 `
 
 export const ShopButtonContainer = styles.div`

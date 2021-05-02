@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { ProductsContainer, HeroText, ShopAllIconContainer, ShopAllLinkContainer } from './HomeComponentStyles'
+import { ProductsContainer, HeroText, ShopAllIconContainer, ShopAllLinkContainer, HeroTextContainer } from './HomeComponentStyles'
 import { ProductContainer, ProductHeader } from '../Store/StorePageStyles';
 import { HeroContainer, HeroImage } from '../../../shared/themes';
 import ProductItem from '../Products/ProductItemComponent'
@@ -23,19 +23,6 @@ const HomePage = ({products}) => {
             return <div></div>
         }
     })
-
-    const ShopAllLink = () => {
-        return (
-            <Link to={`/store`}>
-                <ShopAllLinkContainer>
-                    Shop All
-                    <ShopAllIconContainer>
-                        <i className="fa fa-angle-right"></i>
-                    </ShopAllIconContainer>
-                </ShopAllLinkContainer>
-            </Link>
-        )
-    }
         
     const heroImage = require('../../../shared/images/home-background.jpg');
     
@@ -43,7 +30,9 @@ const HomePage = ({products}) => {
         <div>
             <HeroContainer>
                 <HeroImage src={heroImage}/>
-                <HeroText>Brand Logo/Motto here. Image is 1720x600</HeroText>
+                <HeroTextContainer>
+                    <HeroText>Bringing together Mad People & Styles</HeroText>
+                </HeroTextContainer>
             </HeroContainer>
             
             <ShopAllLink />
@@ -57,6 +46,19 @@ const HomePage = ({products}) => {
                 </ProductsContainer>
             </ProductContainer>
         </div>
+    )
+}
+
+const ShopAllLink = () => {
+    return (
+        <Link to={`/store`}>
+            <ShopAllLinkContainer>
+                Shop All
+                <ShopAllIconContainer>
+                    <i className="fa fa-angle-right"></i>
+                </ShopAllIconContainer>
+            </ShopAllLinkContainer>
+        </Link>
     )
 }
 
