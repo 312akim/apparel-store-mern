@@ -16,6 +16,14 @@
   color: black;
 }
 
+.navItem {
+  font-size: 1.2rem;
+}
+
+.navbarBrandTitle {
+  font-size: 1.4rem;
+}
+
 .delayed-spinner {
   animation: spin 5s infinite;
   animation-delay: 4s;
@@ -37,6 +45,15 @@
 body {
   background: #F3F3F3;
   font-family: sans-serif;
+}
+
+body div {
+  font-family: "Overpass", sans-serif;
+}
+
+body h1, body h2, body h3 {
+  font-family: "Chivo", serif;
+  font-weight: 600;
 }
 
 @media only screen and (min-width: 1200px) {

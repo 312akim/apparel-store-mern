@@ -11,8 +11,7 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem,
-  NavbarText
+  DropdownItem
 } from 'reactstrap';
 
 class TopNav extends Component {
@@ -42,17 +41,17 @@ class TopNav extends Component {
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav className="mr-auto" navbar>
-                                <NavItem>
+                                <NavItem className="navItem">
                                     <NavLink href="/store/">Store</NavLink>
                                 </NavItem>
-                                <NavItem>
+                                <NavItem className="navItem">
                                     <NavLink href="/about/">About Us</NavLink>
                                 </NavItem>
-                                <NavItem>
+                                <NavItem className="navItem">
                                     <NavLink href="/contact/">Contact Us</NavLink>
                                 </NavItem>
                                 <UncontrolledDropdown nav inNavbar>
-                                    <DropdownToggle nav caret>
+                                    <DropdownToggle className="navItem" nav caret>
                                         Our Brands
                                     </DropdownToggle>
                                     <DropdownMenu right>
