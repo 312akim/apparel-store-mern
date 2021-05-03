@@ -31,7 +31,7 @@ const HomePage = ({products}) => {
             <HeroContainer>
                 <HeroImage src={heroImage}/>
                 <HeroTextContainer>
-                    <HeroText>Bringing together Mad People & Styles</HeroText>
+                    <HeroText>Bringing Mad People &amp; Styles together</HeroText>
                 </HeroTextContainer>
             </HeroContainer>
             

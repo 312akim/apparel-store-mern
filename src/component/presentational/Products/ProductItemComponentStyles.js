@@ -9,10 +9,11 @@ export const ItemDisplayCard = styles.div`
     border: solid black 1px;
     border-color: ${COLORS.secondaryDark};
     background: ${COLORS.secondaryLight};
+    box-shadow: 0 2.5px 4px rgba(0, 0, 0, 0.3);
+    border: none;
 
     :hover {
         box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
-        border: none;
     }
 
     @media (min-width: 576px) {

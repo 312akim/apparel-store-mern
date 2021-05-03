@@ -24,6 +24,7 @@ export const HeroText = styles.div`
 `
 
 export const HeroTextContainer = styles.div`
+    
 `
 
 export const ShopButtonContainer = styles.div`

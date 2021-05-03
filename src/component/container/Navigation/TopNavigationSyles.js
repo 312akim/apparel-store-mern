@@ -12,9 +12,9 @@ export const LogoImg = styles.img`
 
 export const StyledCartIcon = styles.i`
     margin-bottom: 4px;
-    color: ${COLORS.primaryDark};
+    color: black;
     
     :hover {
-        color: black;
+        color: ${COLORS.primaryDark};
     }
 `
