@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ItemPageContainer, PreviewImg, PreviewContainerDiv, MainProductImg, ItemName, ItemPrice, LaptopContainer, LaptopPrice,
-        OptionsContainer, SizeContainer, QuantityContainer, OptionsLabel, SelectOptions, CartContainer } from './ProductPageStyles';
+        OptionsContainer, SizeContainer, QuantityContainer, OptionsLabel, SelectOptions, CartContainer, StyledPreviewImgCropper } from './ProductItemPageStyles';
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap'; 
 import { StyledButton } from '../../../shared/themes';
 //import axios from 'axios';
@@ -64,7 +64,9 @@ class ProductPage extends Component {
         let count = 0; // Unique key for each child
         const imageMap = this.props.item.images.map((image) => {
             return (
-                <PreviewImg key={count++} onClick={event => this.displayChanger(image.src)} src={image.src}></PreviewImg>
+                <StyledPreviewImgCropper>
+                    <PreviewImg key={count++} onClick={event => this.displayChanger(image.src)} src={image.src}></PreviewImg>
+                </StyledPreviewImgCropper>
             )
         })
     
