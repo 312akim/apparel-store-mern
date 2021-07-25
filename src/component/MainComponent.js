@@ -3,13 +3,13 @@ import { Switch, Route, Redirect } from 'react-router-dom'
 import axios from 'axios';
 import TopNav from './container/Navigation/TopNavigationComponent'
 import HomePage from './presentational/Home/HomeComponent'
-import AdminPanel from './Admin/AdminPanel'
+// import AdminPanel from './Admin/AdminPanel'
+// import Cart from './container/Cart/CartPageComponent';
 import Store from './presentational/Store/StoreComponent'
 import ProductPage from './presentational/Products/ProductItemPageComponent'
 import AboutUs from './presentational/About/AboutComponent'
 import ContactUs from './container/Contact/ContactComponent'
 import FooterComponent from './presentational/Footer/FooterComponent'
-import Cart from './container/Cart/CartPageComponent';
 import { LoadingContainer } from '../shared/themes';
 import { spacesToHashDelimiter } from '../shared/stringSpaceToHash';
 
@@ -45,11 +45,12 @@ class Main extends Component {
             )
         }
 
-        const AdminPanelPage = () => {
-            return (
-                <AdminPanel products={products}/>
-            )
-        }
+        // Currently no Admin Panel Page
+        // const AdminPanelPage = () => {
+        //     return (
+        //         <AdminPanel products={products}/>
+        //     )
+        // }
 
         const StorePage = () => {
             return (
@@ -67,11 +68,12 @@ class Main extends Component {
             )
         }
 
-        const CartPage = () => {
-            return (
-                <Cart />
-            )
-        }
+        // Cart provided by SnipCart
+        // const CartPage = () => {
+        //     return (
+        //         <Cart />
+        //     )
+        // }
 
         const footerExitHandler = () => {
             this.setState({showEmailSignup: false});
@@ -87,14 +89,13 @@ class Main extends Component {
             return (
                 <>
                     <TopNav />
-                    {/* <Cart /> */}
                     <Switch>
                         <Route exact path="/" component={Home}/>
                         {/* Need to make Admin only accessible w/ login */}
-                        <Route path="/admin" component={AdminPanelPage}/>
+                        {/* <Route path="/admin" component={AdminPanelPage}/> */}
                         <Route exact path="/store" component={StorePage} />
                         <Route path="/store/:item_url" component={ItemPage}/>
-                        <Route path="/cart" component={CartPage} />
+                        {/* <Route path="/cart" component={CartPage} /> */}
                         <Route path="/about" component={AboutUs} />
                         <Route path="/contact" component={ContactUs} />
                         <Redirect to="/"/>

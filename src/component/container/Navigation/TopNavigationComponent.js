@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavigationBar, LogoImg, StyledCartIcon } from './TopNavigationSyles'
+import { StyledNavigationBar, StyledLogoImg, StyledCartIcon } from './TopNavigationSyles'
 import {
   Collapse,
   Navbar,
@@ -32,10 +32,10 @@ class TopNav extends Component {
 
     render() {
         return (
-            <NavigationBar>
+            <StyledNavigationBar>
                 <Navbar light expand="md">
                         <div>
-                            <LogoImg src={require('../../../shared/images/sample-logo.png')} alt="Mad Crown Logo"></LogoImg>
+                            <StyledLogoImg src={require('../../../shared/images/sample-logo.png')} alt="Mad Crown Logo"></StyledLogoImg>
                             <NavbarBrand className="navbarBrandTitle" href="/">Mad Crowns</NavbarBrand>
                         </div>
                         <NavbarToggler onClick={this.toggleNav} />
@@ -68,7 +68,7 @@ class TopNav extends Component {
                             <StyledCartIcon className="fa fa-2x fa-shopping-cart snipcart-checkout"></StyledCartIcon>
                         </Collapse>
                 </Navbar>
-            </NavigationBar>
+            </StyledNavigationBar>
         )
     }
 }

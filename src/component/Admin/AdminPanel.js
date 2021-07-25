@@ -1,5 +1,5 @@
 import React from "react";
-import { AdminMain, PanelMerch, PanelOrders } from "./AdminPanelStyles";
+import { StyledAdminMain, StyledPanelMerch, StyledPanelOrders } from "./AdminPanelStyles";
 
 const AdminPanel = ({products}) => {
 
@@ -19,8 +19,8 @@ const AdminPanel = ({products}) => {
     });
 
     return (
-        <AdminMain>
-            <PanelMerch>
+        <StyledAdminMain>
+            <StyledPanelMerch>
                 <h3>
                     EDIT PRODUCTS
                 </h3>
@@ -28,14 +28,14 @@ const AdminPanel = ({products}) => {
                 <div>Click here to add new merchandise</div>
                 <hr/>
                 {productList}
-            </PanelMerch>
-            <PanelOrders>
+            </StyledPanelMerch>
+            <StyledPanelOrders>
                 <h3>
                     Orders
                 </h3>
                 Check Orders Here
-            </PanelOrders>
-        </AdminMain>
+            </StyledPanelOrders>
+        </StyledAdminMain>
     )
 }
 

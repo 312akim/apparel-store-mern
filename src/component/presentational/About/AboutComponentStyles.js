@@ -2,19 +2,19 @@ import COLORS from "../../../shared/colorScheme"
 import styled from "styled-components"
 import { fontSizeRegular } from '../../../shared/fontsTheme'
 
-export const AboutUsContainer = styled.div`
+export const StyledAboutUsContainer = styled.div`
     background: ${COLORS.primaryLight};
 `;
 
-export const TopContainer = styled.div`
+export const StyledTopContainer = styled.div`
     width: 100%;
 `
 
-export const AboutUsHero = styled.img`
+export const StyledAboutUsHero = styled.img`
     width: 100%;
 `
 
-export const MainContainer = styled.div`
+export const StyledMainContainer = styled.div`
     width: 100%;
     padding-bottom: 3vh;
     padding-top: 4vh;
@@ -26,7 +26,7 @@ export const MainContainer = styled.div`
     }
 `
 
-export const MainContainerImage = styled.img`
+export const StyledMainContainerImage = styled.img`
     width: 100%;
     padding: 0 10vw 2vh 10vw;
 
@@ -39,7 +39,7 @@ export const MainContainerImage = styled.img`
     }
 `
 
-export const MainContainerCard = styled.div`
+export const StyledMainContainerCard = styled.div`
 display: block;
 
 @media (min-width: 768px) {
@@ -49,7 +49,7 @@ display: block;
 }
 `
 
-export const MainContainerCardHeader = styled.h2`
+export const StyledMainContainerCardHeader = styled.h2`
     height: 50%;
     padding: 2vh 20vw 0 20vw;
     
@@ -63,7 +63,7 @@ export const MainContainerCardHeader = styled.h2`
     }
 `
 
-export const MainContainerCardText = styled.p`
+export const StyledMainContainerCardText = styled.p`
     height: 50%;
     padding: 2vh 20vw 2vh 20vw;
     font-size: ${fontSizeRegular};

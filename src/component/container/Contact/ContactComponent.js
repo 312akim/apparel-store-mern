@@ -1,6 +1,6 @@
 import React from 'react';
 import { Formik } from 'formik';
-import { MainContactContainer, FieldLabel, FieldInput, FieldTextArea, FormFieldContainer } from './ContactPageStyles';
+import { StyledMainContactContainer, StyledFieldLabel, StyledFieldInput, StyledFieldTextArea, StyledFormFieldContainer } from './ContactPageStyles';
 import { HeroContainer, HeroImage, HeroContainerHeader, HeroHeaderText, StyledButton } from '../../../shared/themes';
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap'; 
 
@@ -44,11 +44,11 @@ const ContactPage = () => {
                         handleSubmit
                     }) => (
                         <form onSubmit={handleSubmit}>
-                            <FormFieldContainer>
-                                <FieldLabel htmlFor="name">
+                            <StyledFormFieldContainer>
+                                <StyledFieldLabel htmlFor="name">
                                     Name
-                                </FieldLabel>
-                                <FieldInput
+                                </StyledFieldLabel>
+                                <StyledFieldInput
                                     onChange={handleChange}
                                     onBlur={handleBlur}
                                     value={values.name}
@@ -58,12 +58,12 @@ const ContactPage = () => {
                                     id="name"
                                     placeholder="Name"
                                 />
-                            </FormFieldContainer>
-                            <FormFieldContainer>
-                                <FieldLabel htmlFor="email">
+                            </StyledFormFieldContainer>
+                            <StyledFormFieldContainer>
+                                <StyledFieldLabel htmlFor="email">
                                     Email
-                                </FieldLabel>
-                                <FieldInput
+                                </StyledFieldLabel>
+                                <StyledFieldInput
                                     onChange={handleChange}
                                     onBlur={handleBlur}
                                     value={values.email}
@@ -73,12 +73,12 @@ const ContactPage = () => {
                                     id="email"
                                     placeholder="Email"
                                 />
-                            </FormFieldContainer>
-                            <FormFieldContainer>
-                                <FieldLabel htmlFor="message">
+                            </StyledFormFieldContainer>
+                            <StyledFormFieldContainer>
+                                <StyledFieldLabel htmlFor="message">
                                     Message
-                                </FieldLabel>
-                                <FieldTextArea
+                                </StyledFieldLabel>
+                                <StyledFieldTextArea
                                     onChange={handleChange}
                                     onBlur={handleBlur}
                                     value={values.message}
@@ -88,7 +88,7 @@ const ContactPage = () => {
                                     id="message"
                                     placeholder="Message"
                                 />
-                            </FormFieldContainer>
+                            </StyledFormFieldContainer>
                             <StyledButton largeWidth='30%' type="submit">Send Message</StyledButton>
                         </form>
                     )}
@@ -109,10 +109,10 @@ const ContactPage = () => {
     return (
         <>
             <BreadcrumbComponent />
-            <MainContactContainer>
+            <StyledMainContactContainer>
                 <Hero />
                 <ContactForm />
-            </MainContactContainer>
+            </StyledMainContactContainer>
         </>
     )
 }

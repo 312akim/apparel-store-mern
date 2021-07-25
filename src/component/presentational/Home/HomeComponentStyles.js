@@ -1,9 +1,9 @@
-import styles from 'styled-components';
+import styled from 'styled-components';
 import COLORS from '../../../shared/colorScheme';
 import { fontSizeRegular, fontSizeRegularPlus } from '../../../shared/fontsTheme';
 
 // Need to fix 1024x1366 ipad pro resolution
-export const HeroText = styles.div`
+export const StyledHeroText = styled.div`
     background: black;
     color: white;
     font: bold Helvetica;
@@ -23,11 +23,11 @@ export const HeroText = styles.div`
     }
 `
 
-export const HeroTextContainer = styles.div`
+export const StyledHeroTextContainer = styled.div`
     
 `
 
-export const ShopButtonContainer = styles.div`
+export const StyledShopButtonContainer = styled.div`
     background: ${COLORS.primaryLight};
     padding-bottom: 8%;
 
@@ -48,7 +48,7 @@ export const ShopButtonContainer = styles.div`
     }
 `
 
-export const ShopAllLinkContainer = styles.div`
+export const StyledShopAllLinkContainer = styled.div`
     display: inline-block;
     position: absolute;
     margin-top: 2vh;
@@ -63,11 +63,11 @@ export const ShopAllLinkContainer = styles.div`
     }
 `
 
-export const ShopAllIconContainer = styles.div`
+export const StyledShopAllIconContainer = styled.div`
     display: inline-block;
     padding-left: 8px;
 `
 
-export const ProductsContainer = styles.div`
+export const StyledProductsContainer = styled.div`
     display: block;
 `

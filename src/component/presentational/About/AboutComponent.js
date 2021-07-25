@@ -1,6 +1,6 @@
 import React from "react";
-import { AboutUsContainer, MainContainerImage,
-  MainContainer, MainContainerCard, MainContainerCardHeader, MainContainerCardText
+import { StyledAboutUsContainer, StyledMainContainerImage,
+  StyledMainContainer, StyledMainContainerCard, StyledMainContainerCardHeader, StyledMainContainerCardText
  } from "./AboutComponentStyles";
 import { HeroContainer, HeroImage, HeroContainerHeader, HeroHeaderText } from '../../../shared/themes';
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
@@ -35,27 +35,27 @@ const AboutPage = () => {
 
   const MainComponent = () => {
     return (
-      <MainContainer>
-        <MainContainerImage src={qualityImage}/>
-        <MainContainerCard>
-          <MainContainerCardHeader>
+      <StyledMainContainer>
+        <StyledMainContainerImage src={qualityImage}/>
+        <StyledMainContainerCard>
+          <StyledMainContainerCardHeader>
             WE STAND BY OUR PRODUCT
-          </MainContainerCardHeader>
-          <MainContainerCardText>
+          </StyledMainContainerCardHeader>
+          <StyledMainContainerCardText>
             You deserve the feeling of soft, plush, sturdy and well made clothes. Our products are handmade for each order to ensure you get what you deserve and experience the joy of wearing true quality clothing. 
-          </MainContainerCardText>
-        </MainContainerCard>
-      </MainContainer>
+          </StyledMainContainerCardText>
+        </StyledMainContainerCard>
+      </StyledMainContainer>
     )
   }
 
   return (
     <>
       <BreadcrumbComponent />
-      <AboutUsContainer>
+      <StyledAboutUsContainer>
         <HeroComponent />
         <MainComponent />
-      </AboutUsContainer>
+      </StyledAboutUsContainer>
     </>
   );
 };

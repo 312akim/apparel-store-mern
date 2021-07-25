@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { ProductsContainer, HeroText, ShopAllIconContainer, ShopAllLinkContainer, HeroTextContainer } from './HomeComponentStyles'
+import { StyledProductsContainer, StyledHeroText, StyledShopAllIconContainer, StyledShopAllLinkContainer, StyledHeroTextContainer } from './HomeComponentStyles'
 import { StyledProductContainer, StyledProductHeader } from '../Store/StorePageStyles';
 import { HeroContainer, HeroImage } from '../../../shared/themes';
 import ProductItem from '../Products/ProductItemComponent'
@@ -29,9 +29,9 @@ const HomePage = ({products}) => {
         <div>
             <HeroContainer>
                 <HeroImage src={heroImage}/>
-                <HeroTextContainer>
-                    <HeroText>Bringing Mad People &amp; Styles together</HeroText>
-                </HeroTextContainer>
+                <StyledHeroTextContainer>
+                    <StyledHeroText>Bringing Mad People &amp; Styles together</StyledHeroText>
+                </StyledHeroTextContainer>
             </HeroContainer>
             
             <ShopAllLink />
@@ -40,9 +40,9 @@ const HomePage = ({products}) => {
                 <StyledProductHeader>
                     Featured
                 </StyledProductHeader>
-                <ProductsContainer>
+                <StyledProductsContainer>
                     {featuredProducts}
-                </ProductsContainer>
+                </StyledProductsContainer>
             </StyledProductContainer>
         </div>
     )
@@ -51,12 +51,12 @@ const HomePage = ({products}) => {
 const ShopAllLink = () => {
     return (
         <Link to={`/store`}>
-            <ShopAllLinkContainer>
+            <StyledShopAllLinkContainer>
                 Shop All
-                <ShopAllIconContainer>
+                <StyledShopAllIconContainer>
                     <i className="fa fa-angle-right"></i>
-                </ShopAllIconContainer>
-            </ShopAllLinkContainer>
+                </StyledShopAllIconContainer>
+            </StyledShopAllLinkContainer>
         </Link>
     )
 }

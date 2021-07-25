@@ -1,5 +1,5 @@
 import React from 'react'
-import { MainFooterContainer, StaticEmailSignupContainer, FloatingSignupContainer, EmailSignupLabel, FloatingSignupExit, EmailSignupInput, EmailSignupButton, FooterSocialIconsContainer, FooterNavigationContainer, FooterLinks, FooterCopyrightContainer, IconContainer, LeftFooterContainer, RightFooterContainer } from './FooterComponentStyles';
+import { StyledMainFooterContainer, StyledStaticEmailSignupContainer, StyledFloatingSignupContainer, StyledEmailSignupLabel, StyledFloatingSignupExit, StyledEmailSignupInput, StyledEmailSignupButton, StyledFooterSocialIconsContainer, StyledFooterNavigationContainer, StyledFooterLinks, StyledFooterCopyrightContainer, StyledIconContainer, StyledLeftFooterContainer, StyledRightFooterContainer } from './FooterComponentStyles';
 import { Link } from 'react-router-dom';
 
 const Footer = ({showEmailSignup, footerExitHandler}) => {
@@ -7,14 +7,14 @@ const Footer = ({showEmailSignup, footerExitHandler}) => {
 	const EmailSignup = () => {
 		return (
 			<>
-				<EmailSignupLabel htmlFor="subEmail">
+				<StyledEmailSignupLabel htmlFor="subEmail">
 					Stay up to date!
-				</EmailSignupLabel>
-				<EmailSignupInput placeholder="Email Address" id="subEmail" name="subEmail">
-				</EmailSignupInput>
-				<EmailSignupButton type="submit">
+				</StyledEmailSignupLabel>
+				<StyledEmailSignupInput placeholder="Email Address" id="subEmail" name="subEmail">
+				</StyledEmailSignupInput>
+				<StyledEmailSignupButton type="submit">
 					<i className="fa fa-paper-plane"></i>
-				</EmailSignupButton>
+				</StyledEmailSignupButton>
 			</>
 		)
 	}
@@ -24,12 +24,12 @@ const Footer = ({showEmailSignup, footerExitHandler}) => {
 	const FloatingEmailSignup = () => {
 		if (showEmailSignup) {
 			return (
-				<FloatingSignupContainer className="fixed-bottom">
-					<FloatingSignupExit onClick={footerExitHandler}>
+				<StyledFloatingSignupContainer className="fixed-bottom">
+					<StyledFloatingSignupExit onClick={footerExitHandler}>
 						<i className="fa fa-2x fa-times"></i>
-					</FloatingSignupExit>
+					</StyledFloatingSignupExit>
 					<EmailSignup />
-				</FloatingSignupContainer>
+				</StyledFloatingSignupContainer>
 			)
 		} else {
 			return (
@@ -40,87 +40,87 @@ const Footer = ({showEmailSignup, footerExitHandler}) => {
 
 	const SocialIconComponent = () => {
 		return (
-			<FooterSocialIconsContainer>
-				<IconContainer>
-					<FooterLinks>
+			<StyledFooterSocialIconsContainer>
+				<StyledIconContainer>
+					<StyledFooterLinks>
 						<i className="fa fa-instagram fa-2x fa-spin delayed-spinner"></i>
-					</FooterLinks>
-				</IconContainer>
-				<IconContainer>
-					<FooterLinks>
+					</StyledFooterLinks>
+				</StyledIconContainer>
+				<StyledIconContainer>
+					<StyledFooterLinks>
 						<i className="fa fa-youtube-square fa-2x"></i>
-					</FooterLinks>
-				</IconContainer>
-				<IconContainer>
-					<FooterLinks>
+					</StyledFooterLinks>
+				</StyledIconContainer>
+				<StyledIconContainer>
+					<StyledFooterLinks>
 						<i className="fa fa-facebook-square fa-2x"></i>
-					</FooterLinks>
-				</IconContainer>
-				<IconContainer>
-					<FooterLinks>
+					</StyledFooterLinks>
+				</StyledIconContainer>
+				<StyledIconContainer>
+					<StyledFooterLinks>
 						<i className="fa fa-twitter-square fa-2x"></i>
-					</FooterLinks>
-				</IconContainer>
-			</FooterSocialIconsContainer>
+					</StyledFooterLinks>
+				</StyledIconContainer>
+			</StyledFooterSocialIconsContainer>
 		)
 	}
 
 	const CopyrightComponent = () => {
 		return (
-			<FooterCopyrightContainer>
+			<StyledFooterCopyrightContainer>
 				© 2020 Alex, Inc. All Rights Reserved
-			</FooterCopyrightContainer>
+			</StyledFooterCopyrightContainer>
 		)
 	}
 
 	const LeftFooter = () => {
 		return (
-			<LeftFooterContainer>
+			<StyledLeftFooterContainer>
 				<SocialIconComponent/>
-				<StaticEmailSignupContainer>
+				<StyledStaticEmailSignupContainer>
 					<EmailSignup/>
-				</StaticEmailSignupContainer>
-			</LeftFooterContainer>
+				</StyledStaticEmailSignupContainer>
+			</StyledLeftFooterContainer>
 		)
 	}
 
 	const RightFooter = () => {
 		return (
-			<RightFooterContainer>
-				<FooterNavigationContainer>
+			<StyledRightFooterContainer>
+				<StyledFooterNavigationContainer>
 					<Link to="/store/">
-						<FooterLinks>
+						<StyledFooterLinks>
 							Store
-						</FooterLinks>
+						</StyledFooterLinks>
 					</Link>
 					<Link to="/about/">
-						<FooterLinks>
+						<StyledFooterLinks>
 							About Us
-						</FooterLinks>
+						</StyledFooterLinks>
 					</Link>
 					<Link to="/contact/">
-						<FooterLinks>
+						<StyledFooterLinks>
 							Contact Us
-						</FooterLinks>
+						</StyledFooterLinks>
 					</Link>
-					<FooterLinks>
+					<StyledFooterLinks>
 						Brand1
-					</FooterLinks>
-					<FooterLinks>
+					</StyledFooterLinks>
+					<StyledFooterLinks>
 						Brand2
-					</FooterLinks>
-				</FooterNavigationContainer>
-			</RightFooterContainer>
+					</StyledFooterLinks>
+				</StyledFooterNavigationContainer>
+			</StyledRightFooterContainer>
 		)
 	}
 
 	return (
 		<>
-			<MainFooterContainer>
+			<StyledMainFooterContainer>
 				<LeftFooter />
 				<RightFooter />
 				<CopyrightComponent/>
-			</MainFooterContainer>
+			</StyledMainFooterContainer>
 			<FloatingEmailSignup />
 			
 		</>

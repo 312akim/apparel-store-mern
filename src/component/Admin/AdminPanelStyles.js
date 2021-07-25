@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-export const AdminMain = styled.div`
+export const StyledAdminMain = styled.div`
     height: 85vh;
 `
 
-export const PanelMerch = styled.div`
+export const StyledPanelMerch = styled.div`
     display: inline-block;
     padding: 5%;
     margin: 5%;
@@ -16,7 +16,7 @@ export const PanelMerch = styled.div`
     overflow: scroll;
 `
 
-export const PanelOrders = styled.div`
+export const StyledPanelOrders = styled.div`
     display: inline-block;
     padding: 5%;
     margin: 5%;
