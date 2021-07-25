@@ -50,12 +50,12 @@ class ProductPage extends Component {
 
         return (
             <StyledItemPageContainer>
-                <BreadcrumbComponent itemName={this.props.item.name}/>
+                <BreadcrumbComponent itemName={this.props.item.name} />
                 <div>
                     <StyledItemName>{this.props.item.name}</StyledItemName>
                     <StyledItemPrice>${this.props.item.price}</StyledItemPrice>
                     <LargeScreenDisplay props={this.props} itemPrice={this.props.item.price} productSize={this.state.productSize} productQuantity={this.state.productQuantity} sizeChangeHandler={this.sizeChangeHandler} quantityChangeHandler={this.quantityChangeHandler}/>
-                    <StyledMainProductImg src={this.state.displayedImage}></StyledMainProductImg>
+                    <StyledMainProductImg src={this.state.displayedImage} />
                     <StyledPreviewContainerDiv>{imageMap}</StyledPreviewContainerDiv>
                 </div>
                 <div className="hideIfLargeDisplay">    

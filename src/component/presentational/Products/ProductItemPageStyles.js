@@ -36,6 +36,11 @@ export const StyledPreviewImgCropper = styled.div`
     height: 100px;
     overflow-x: hidden;
     margin-left: 5%;
+
+    @media (min-width: 1200px) {
+        margin-left: 0%;
+        margin-right: 5%;
+    }
 `
 
 export const StyledPreviewImg = styled.img`
