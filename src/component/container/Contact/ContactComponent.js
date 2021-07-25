@@ -1,7 +1,7 @@
 import React from 'react';
 import { Formik } from 'formik';
 import { StyledMainContactContainer, StyledFieldLabel, StyledFieldInput, StyledFieldTextArea, StyledFormFieldContainer } from './ContactPageStyles';
-import { HeroContainer, HeroImage, HeroContainerHeader, HeroHeaderText, StyledButton } from '../../../shared/themes';
+import { StyledHeroContainer, StyledHeroImage, StyledHeroContainerHeader, StyledHeroHeaderText, StyledButton } from '../../../shared/themes';
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap'; 
 
 const ContactPage = () => {
@@ -9,15 +9,15 @@ const ContactPage = () => {
     
     const Hero = () => {
         return (
-            <HeroContainer>
-                <HeroImage src={contactPageHero} />
-                <HeroContainerHeader>
+            <StyledHeroContainer>
+                <StyledHeroImage src={contactPageHero} />
+                <StyledHeroContainerHeader>
                     Contact Us
-                </HeroContainerHeader>
-                <HeroHeaderText>
+                </StyledHeroContainerHeader>
+                <StyledHeroHeaderText>
                     We're so happy you're reaching out to us. We look forward to your message below!
-                </HeroHeaderText>
-            </HeroContainer>
+                </StyledHeroHeaderText>
+            </StyledHeroContainer>
         )
     }
 

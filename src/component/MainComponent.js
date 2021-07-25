@@ -10,7 +10,7 @@ import ProductPage from './presentational/Products/ProductItemPageComponent'
 import AboutUs from './presentational/About/AboutComponent'
 import ContactUs from './container/Contact/ContactComponent'
 import FooterComponent from './presentational/Footer/FooterComponent'
-import { LoadingContainer } from '../shared/themes';
+import { StyledLoadingContainer } from '../shared/themes';
 import { spacesToHashDelimiter } from '../shared/stringSpaceToHash';
 
 class Main extends Component {
@@ -87,7 +87,7 @@ class Main extends Component {
 
         if (!loading) {
             return (
-                <>
+                <div className='hideOverflowY'>
                     <TopNav />
                     <Switch>
                         <Route exact path="/" component={Home}/>
@@ -102,18 +102,18 @@ class Main extends Component {
                         <div className="MainPage">This is the main page</div>
                     </Switch>
                     <Footer />
-                </>
+                </div>
             )
         } else {
             // <Loader />
             return (
                 <>
-                    <LoadingContainer>
+                    <StyledLoadingContainer>
                         <i className="fa fa-spinner fa-pulse fa-4x"></i>
                         <h1>
                             Loading
                         </h1>
-                    </LoadingContainer>
+                    </StyledLoadingContainer>
                 </>
             )
         }

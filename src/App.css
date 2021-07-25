@@ -70,4 +70,8 @@ a:hover {
   text-decoration: none;
 }
 
+.hideOverflowY {
+  overflow-y: hidden;
+}
+
 /*# sourceMappingURL=App.css.map */

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import { StyledProductsContainer, StyledHeroText, StyledShopAllIconContainer, StyledShopAllLinkContainer, StyledHeroTextContainer } from './HomeComponentStyles'
 import { StyledProductContainer, StyledProductHeader } from '../Store/StorePageStyles';
-import { HeroContainer, HeroImage } from '../../../shared/themes';
+import { StyledHeroContainer, StyledHeroImage } from '../../../shared/themes';
 import ProductItem from '../Products/ProductItemComponent'
 
 const HomePage = ({products}) => {
@@ -27,12 +27,12 @@ const HomePage = ({products}) => {
     
     return (
         <div>
-            <HeroContainer>
-                <HeroImage src={heroImage}/>
+            <StyledHeroContainer>
+                <StyledHeroImage src={heroImage}/>
                 <StyledHeroTextContainer>
                     <StyledHeroText>Bringing Mad People &amp; Styles together</StyledHeroText>
                 </StyledHeroTextContainer>
-            </HeroContainer>
+            </StyledHeroContainer>
             
             <ShopAllLink />
             {/* Maybe limit to 3 or pass props for how many displayed for mobile/other views */}

@@ -1,13 +1,13 @@
-import styles from 'styled-components';
+import styled from 'styled-components';
 import { fontSizeRegular, fontSizeMainHeader } from './fontsTheme';
 import COLORS from './colorScheme'
 import { fontSizeButton } from './fontsTheme';
 
-export const HeroContainer = styles.div`
+export const StyledHeroContainer = styled.div`
     positiion: relative;
 `
 
-export const HeroImage = styles.img`
+export const StyledHeroImage = styled.img`
     display: block;
     left: 0;
     top: 0;
@@ -16,7 +16,7 @@ export const HeroImage = styles.img`
     filter: brightness(75%);
 `
 
-export const HeroContainerHeader = styles.h1`
+export const StyledHeroContainerHeader = styled.h1`
     margin: 0;
     padding: 5vh 15vw 2vh 15vw;
     font-size: ${fontSizeMainHeader};
@@ -36,7 +36,7 @@ export const HeroContainerHeader = styles.h1`
     }
 `
 
-export const HeroHeaderText = styles.p`
+export const StyledHeroHeaderText = styled.p`
     display: block;
     padding: 0 15vw 2vh 15vw;
     font-size: ${fontSizeRegular};
@@ -50,11 +50,11 @@ export const HeroHeaderText = styles.p`
     }
 `
 
-export const LoadingContainer = styles.div`
+export const StyledLoadingContainer = styled.div`
     margin-top: 20%;
 `
 
-export const StyledButton = styles.button`
+export const StyledButton = styled.button`
     margin-top: 2rem;
     width: 50%;
     background-color: black;

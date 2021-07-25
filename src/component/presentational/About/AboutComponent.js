@@ -2,7 +2,7 @@ import React from "react";
 import { StyledAboutUsContainer, StyledMainContainerImage,
   StyledMainContainer, StyledMainContainerCard, StyledMainContainerCardHeader, StyledMainContainerCardText
  } from "./AboutComponentStyles";
-import { HeroContainer, HeroImage, HeroContainerHeader, HeroHeaderText } from '../../../shared/themes';
+import { StyledHeroContainer, StyledHeroImage, StyledHeroContainerHeader, StyledHeroHeaderText } from '../../../shared/themes';
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 
 const AboutPage = () => {
@@ -21,15 +21,15 @@ const AboutPage = () => {
 
   const HeroComponent = () => {
     return (
-      <HeroContainer>
-        <HeroImage src={aboutHero} />
-        <HeroContainerHeader>
+      <StyledHeroContainer>
+        <StyledHeroImage src={aboutHero} />
+        <StyledHeroContainerHeader>
           WHO WE ARE
-        </HeroContainerHeader>
-        <HeroHeaderText>
+        </StyledHeroContainerHeader>
+        <StyledHeroHeaderText>
           We are MadCrown. Local individual artists brought together by love of design, anime and friends.
-        </HeroHeaderText>
-      </HeroContainer>
+        </StyledHeroHeaderText>
+      </StyledHeroContainer>
     )
   }
 
