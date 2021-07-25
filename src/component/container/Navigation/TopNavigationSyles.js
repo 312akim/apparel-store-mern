@@ -1,16 +1,16 @@
-import styles from 'styled-components';
+import styled from 'styled-components';
 import COLORS from '../../../shared/colorScheme';
 
-export const NavigationBar = styles.div`
+export const NavigationBar = styled.div`
     background: ${COLORS.primaryLight};
 `
 
-export const LogoImg = styles.img`
+export const LogoImg = styled.img`
     height: 40px;
     margin-right: 15px;
 `
 
-export const StyledCartIcon = styles.i`
+export const StyledCartIcon = styled.i`
     margin-bottom: 4px;
     color: black;
     

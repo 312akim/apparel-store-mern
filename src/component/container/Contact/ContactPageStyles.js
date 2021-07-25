@@ -1,17 +1,17 @@
-import styles from 'styled-components';
+import styled from 'styled-components';
 import COLORS from '../../../shared/colorScheme'
 import { fontSizeLabelInput } from '../../../shared/fontsTheme';
 
-export const MainContactContainer = styles.div`
+export const MainContactContainer = styled.div`
     padding-bottom: 4rem;
     background: ${COLORS.primaryLight};
 `
 
-export const FormFieldContainer = styles.div`
+export const FormFieldContainer = styled.div`
     padding-top: 4rem;
 `
 
-export const FieldLabel = styles.label`
+export const FieldLabel = styled.label`
     display: block;
     width: 20%;
     margin-left: 40%;
@@ -20,17 +20,17 @@ export const FieldLabel = styles.label`
     font-size: ${fontSizeLabelInput};
 `
 
-export const WarningText = styles.div`
+export const WarningText = styled.div`
     color: red;
 `
 
-export const FieldInput = styles.input`
+export const FieldInput = styled.input`
     width: 40%;
     background: ${COLORS.secondaryLight};
     font-size: ${fontSizeLabelInput};
 `
 
-export const FieldTextArea = styles.textarea`
+export const FieldTextArea = styled.textarea`
     width: 40%;
     height: 4rem;
     background: ${COLORS.secondaryLight};

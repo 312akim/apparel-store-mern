@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import { ProductsContainer, HeroText, ShopAllIconContainer, ShopAllLinkContainer, HeroTextContainer } from './HomeComponentStyles'
-import { ProductContainer, ProductHeader } from '../Store/StorePageStyles';
+import { StyledProductContainer, StyledProductHeader } from '../Store/StorePageStyles';
 import { HeroContainer, HeroImage } from '../../../shared/themes';
 import ProductItem from '../Products/ProductItemComponent'
-
 
 const HomePage = ({products}) => {
     //Limit # of displayed products
@@ -37,14 +36,14 @@ const HomePage = ({products}) => {
             
             <ShopAllLink />
             {/* Maybe limit to 3 or pass props for how many displayed for mobile/other views */}
-            <ProductContainer>
-                <ProductHeader>
+            <StyledProductContainer>
+                <StyledProductHeader>
                     Featured
-                </ProductHeader>
+                </StyledProductHeader>
                 <ProductsContainer>
                     {featuredProducts}
                 </ProductsContainer>
-            </ProductContainer>
+            </StyledProductContainer>
         </div>
     )
 }

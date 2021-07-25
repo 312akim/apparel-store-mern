@@ -1,21 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import { spacesToHashDelimiter } from '../../../shared/stringSpaceToHash';
-import { ItemDisplayCard, ItemDisplayImg, ItemDisplayBody, ItemDisplayName } from './ProductItemComponentStyles';
+import { StyledItemDisplayCard, StyledItemDisplayImg, StyledItemDisplayBody, StyledItemDisplayName } from './ProductItemComponentStyles';
 
 const ItemDisplay = ({item}) => {
     // Replaces spaces with -'s in URL
     let delimitedUrl = spacesToHashDelimiter(item.name);
 
     return (
-        <ItemDisplayCard>
+        <StyledItemDisplayCard>
             <Link to={`/store/${delimitedUrl}`}>
-                <ItemDisplayImg src={item.images[0].src} alt={item.name}/>
-                <ItemDisplayBody>
-                    <ItemDisplayName>{item.name}</ItemDisplayName>
-                </ItemDisplayBody>
+                <StyledItemDisplayImg src={item.images[0].src} alt={item.name}/>
+                <StyledItemDisplayBody>
+                    <StyledItemDisplayName>{item.name}</StyledItemDisplayName>
+                </StyledItemDisplayBody>
             </Link>
-        </ItemDisplayCard>
+        </StyledItemDisplayCard>
     )
 }
 

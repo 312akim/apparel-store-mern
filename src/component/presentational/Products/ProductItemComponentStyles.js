@@ -1,8 +1,8 @@
-import styles from 'styled-components';
+import styled from 'styled-components';
 import COLORS from '../../../shared/colorScheme';
 import { fontSizeRegular } from '../../../shared/fontsTheme';
 
-export const ItemDisplayCard = styles.div`
+export const StyledItemDisplayCard = styled.div`
     width: 80%;
     height: 7em;
     margin: 5% 10%;
@@ -32,7 +32,7 @@ export const ItemDisplayCard = styles.div`
     }
 `
 
-export const ItemDisplayImg = styles.img`
+export const StyledItemDisplayImg = styled.img`
     display: inline-block;
     float: left;
     width:  70%;
@@ -47,7 +47,7 @@ export const ItemDisplayImg = styles.img`
     }
 `
 
-export const ItemDisplayBody = styles.div`
+export const StyledItemDisplayBody = styled.div`
     display: inline-block;
     width: 30%;
     padding-top: 8%;
@@ -61,7 +61,7 @@ export const ItemDisplayBody = styles.div`
     }
 `
 
-export const ItemDisplayName = styles.div`
+export const StyledItemDisplayName = styled.div`
     display: inline-block;
     padding: 2% 5% 0 5%;
     font-size: ${fontSizeRegular};

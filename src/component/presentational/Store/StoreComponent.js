@@ -1,5 +1,5 @@
 import React from 'react';
-import { ProductHeader, ProductContainer } from './StorePageStyles'
+import { StyledProductHeader, StyledProductContainer } from './StorePageStyles'
 import ProductItem from '../Products/ProductItemComponent'
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 
@@ -26,28 +26,28 @@ const StorePage = ({products}) => {
         }
     })
 
-    const BreadcrumbComponent = () => {
-        return (
-                <Breadcrumb>
-                    <BreadcrumbItem><a href="/">Home</a></BreadcrumbItem>
-                    <BreadcrumbItem active>Store</BreadcrumbItem>
-                </Breadcrumb>
-        )
-    }
-
     return (
         <div>
             <BreadcrumbComponent />
 
-            <ProductContainer>
-                <ProductHeader>Featured Products</ProductHeader>
+            <StyledProductContainer>
+                <StyledProductHeader>Featured Products</StyledProductHeader>
                 {featuredProducts}
-            </ProductContainer>
-            <ProductContainer>
-                <ProductHeader>T Shirts</ProductHeader>
+            </StyledProductContainer>
+            <StyledProductContainer>
+                <StyledProductHeader>T Shirts</StyledProductHeader>
                 {tshirtCategory}
-            </ProductContainer>
+            </StyledProductContainer>
         </div>
+    )
+}
+
+const BreadcrumbComponent = () => {
+    return (
+            <Breadcrumb>
+                <BreadcrumbItem><a href="/">Home</a></BreadcrumbItem>
+                <BreadcrumbItem active>Store</BreadcrumbItem>
+            </Breadcrumb>
     )
 }
 

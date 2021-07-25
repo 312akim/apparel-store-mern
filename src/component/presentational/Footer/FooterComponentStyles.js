@@ -1,7 +1,7 @@
-import styles from 'styled-components';
+import styled from 'styled-components';
 import COLORS from '../../../shared/colorScheme';
 
-export const MainFooterContainer = styles.div`
+export const MainFooterContainer = styled.div`
     position: relative;
     z-index: 10;
     background: ${COLORS.primaryHighlight};
@@ -15,7 +15,7 @@ export const MainFooterContainer = styles.div`
         height: 26vh;
     }
 `
-export const StaticEmailSignupContainer = styles.div`
+export const StaticEmailSignupContainer = styled.div`
     width: 100%;
     margin-top: 2vh;
 
@@ -33,7 +33,7 @@ export const StaticEmailSignupContainer = styles.div`
 `
 
 // Floating signup
-export const FloatingSignupContainer = styles.div`
+export const FloatingSignupContainer = styled.div`
     text-align: center;
     border: ${COLORS.primaryDark} 2px solid;
     height: 7.5rem;
@@ -55,7 +55,7 @@ export const FloatingSignupContainer = styles.div`
     }
 `
 
-export const FloatingSignupExit = styles.button`
+export const FloatingSignupExit = styled.button`
     position: absolute;
     top: -2px;
     right: -2px;
@@ -69,13 +69,13 @@ export const FloatingSignupExit = styles.button`
     }
 `
 
-export const EmailSignupLabel = styles.label`
+export const EmailSignupLabel = styled.label`
     margin-top: 0.5rem;
     display: block;
 `
 
 
-export const EmailSignupInput = styles.input`
+export const EmailSignupInput = styled.input`
     display: inline-block
     width: 80%;
     margin-top: 0.5rem;
@@ -87,7 +87,7 @@ export const EmailSignupInput = styles.input`
     }
 `
 
-export const EmailSignupButton = styles.button`
+export const EmailSignupButton = styled.button`
     display: inline-block;
     background-color: ${COLORS.primaryHighlight};
     border: 1px solid white;
@@ -102,19 +102,19 @@ export const EmailSignupButton = styles.button`
     }
 `
 
-export const FooterSocialIconsContainer = styles.div`
+export const FooterSocialIconsContainer = styled.div`
     display: inline-block;
     height: 50%;
     width: 100%;
 `
 
-export const FooterNavigationContainer = styles.div`
+export const FooterNavigationContainer = styled.div`
     display: inline-block;
     height: 100%;
     width: 50%;
 `
 
-export const FooterLinks = styles.div`
+export const FooterLinks = styled.div`
     color: white;
     padding-bottom: 8%;
 
@@ -130,7 +130,7 @@ export const FooterLinks = styles.div`
     }
 `
 
-export const FooterCopyrightContainer = styles.div`
+export const FooterCopyrightContainer = styled.div`
     height: 20%;
     padding-top: 1vh;
     padding-bottom: 1vh;
@@ -138,12 +138,12 @@ export const FooterCopyrightContainer = styles.div`
     background: ${COLORS.primaryHighlight};
 `
 
-export const IconContainer = styles.div`
+export const IconContainer = styled.div`
     display: inline-block;
     padding: 0 3%;
 `
 
-export const LeftFooterContainer = styles.div`
+export const LeftFooterContainer = styled.div`
     display: inline-block;
     width: 50%;
     padding-left: 7%;
@@ -153,7 +153,7 @@ export const LeftFooterContainer = styles.div`
     }
 `
 
-export const RightFooterContainer = styles.div`
+export const RightFooterContainer = styled.div`
     display: inline-block;
     vertical-align: top;
     height: 80%;
