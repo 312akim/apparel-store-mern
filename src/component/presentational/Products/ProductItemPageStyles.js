@@ -2,12 +2,12 @@ import styled from 'styled-components';
 import COLORS from '../../../shared/colorScheme';
 import { fontSizeProductLabel, fontSizeProductSelect } from '../../../shared/fontsTheme';
 
-export const ItemPageContainer = styled.div`
+export const StyledItemPageContainer = styled.div`
     background: ${COLORS.primaryLight};
     
 `;
 
-export const MainProductImg = styled.img`
+export const StyledMainProductImg = styled.img`
     height: auto;
     width: 100%;
     padding: 0 5%;
@@ -17,7 +17,7 @@ export const MainProductImg = styled.img`
     }
 `;
 
-export const PreviewContainerDiv = styled.div`
+export const StyledPreviewContainerDiv = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -38,7 +38,7 @@ export const StyledPreviewImgCropper = styled.div`
     margin-left: 5%;
 `
 
-export const PreviewImg = styled.img`
+export const StyledPreviewImg = styled.img`
     display: inline-block;
     text-align: left;
     min-width: 100px;
@@ -50,12 +50,12 @@ export const PreviewImg = styled.img`
     }
 `;
 
-export const ItemName = styled.div`
+export const StyledItemName = styled.div`
     font: bold Helvetica;
     font-size: calc(1rem + 1vw);
 `
 
-export const ItemPrice = styled.div`
+export const StyledItemPrice = styled.div`
     text-align: right;
     padding-right: calc(1rem + 4vw);
     font: bold Helvetica;
@@ -67,19 +67,19 @@ export const ItemPrice = styled.div`
 `
 
 
-export const LaptopContainer = styled.div`
+export const StyledLaptopContainer = styled.div`
     position: absolute;
     top: 20vh;
     right: 0;
     width: 20%;
 `
 
-export const LaptopPrice = styled.div`
+export const StyledLaptopPrice = styled.div`
     text-align: left;
     font-size: calc(0.8rem + 0.9vw);
 `
 
-export const OptionsContainer = styled.div`
+export const StyledOptionsContainer = styled.div`
     padding-top: calc(1rem + 1vw);
     width: 100%;
 
@@ -89,7 +89,7 @@ export const OptionsContainer = styled.div`
 `
 
 
-export const OptionsLabel = styled.label`
+export const StyledOptionsLabel = styled.label`
     text-align: left;
     width: 30%;
     font-size: ${fontSizeProductLabel};
@@ -100,7 +100,7 @@ export const OptionsLabel = styled.label`
     }
 `
 
-export const SelectOptions = styled.select`
+export const StyledSelectOptions = styled.select`
     text-align: right;
     width: 50%;
     font-size: ${fontSizeProductSelect};
@@ -111,14 +111,14 @@ export const SelectOptions = styled.select`
         margin-left: 0;
     }
 `
-export const SizeContainer = styled.div`
+export const StyledSizeContainer = styled.div`
     @media (min-width: 1200px) {
         text-align: left;
         width: 100%;
     }
 `
 
-export const QuantityContainer = styled.div`
+export const StyledQuantityContainer = styled.div`
     margin: calc(1rem + 1vw) 0;
 
     @media (min-width: 1200px) {
@@ -127,7 +127,7 @@ export const QuantityContainer = styled.div`
     }
 `
 
-export const CartContainer = styled.div`
+export const StyledCartContainer = styled.div`
     padding-bottom: calc(1rem + 1vw);
 
     @media (min-width: 1200px) {
